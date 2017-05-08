@@ -1,0 +1,36 @@
+<ion-view ng-controller="addNewFriendCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span ng-click="addNewFriend()">添加新裁判</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="no-partner">
+            <div class="no-partner-title">
+                <span>
+                  <img src="img/home/partner-title-bg.png"/>
+                </span>
+                <span>
+                    <p style="font-size: 16px">添加新裁判</p>
+                   <!--<img class="img-new-partner" src="img/home/invited-partner2.png"/>-->
+                </span>
+
+            </div>
+            <div class="weChat-invited" ng-click="invite()">微信邀请（推荐）</div>
+            <!--<div class="manually-add" ng-click="editPartner()">
+                <span>手动添加</span>
+                <span>*手动添加的球友无法获得积分、现场随手礼等奖励*</span>
+            </div>-->
+            <div style="width: 100%;text-align: center;margin-top: 20px">
+                <img style="display:inline-block;width:200px;height: 200px;" ng-src="{{qrCode}}">
+                <span style="display: inline-block;width: 100%;padding:0 20px;font-size: 16px;">若分享链接无法进入，请长按上方二维码并发送给朋友</span>
+            </div>
+
+        </div>
+    </ion-content>
+    <div class="share-g" ng-show="shareShow" ng-click="shareMiss()">
+        <img src="img/pic-share.png"/>
+        <p>快点这里邀请裁判吧！</p>
+    </div>
+</ion-view>

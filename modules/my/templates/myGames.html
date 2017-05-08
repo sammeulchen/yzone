@@ -1,0 +1,129 @@
+<ion-view ng-controller="myGamesCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的比赛</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-tabs class="tabs-top">
+        <ion-tab title="平台赛事" icon-on="isReg" class="tab-title">
+            <ion-nav-view>
+                <ion-content ng-controller = 'isRegingCtrl'>
+                    <p class="no-game" ng-show="gameLists.length == 0">您还没有参加任何平台比赛</p>
+                    <div class="game-lists-my" ng-repeat="gameList in gameLists">
+                        <div class="game-list-my" ng-click="toGroupDetails(gameList.competitionId)">
+                            <div class="poster-my">
+                                <img src="{{gameList.banner}}"/>
+                            </div>
+                            <div ng-if = "gameList.status == 3" class="game-status-my">
+                                <img src="img/home/game_status3.png"/>
+                                <span>报名中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 1" class="game-status-my">
+                                <img src="img/home/game_status2.png"/>
+                                <span>进行中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 5" class="game-status-my">
+                                <img src="img/home/game_status1.png"/>
+                                <span>已结束</span>
+                            </div>
+                            <div class="game-desc-my">
+                                <h3>{{gameList.competitionTitle}}</h3>
+                                <p>比赛时间：{{gameList.beginDate|date:'yyyy.MM.dd'}}-{{gameList.endDate|date:'MM.dd'}}</p>
+                                <p>比赛地点：{{gameList.stadium}}</p>
+                                <div ng-if = "gameList.applyStatus == 10" class="game-status-btn-my">报名成功</div>
+                                <div ng-if = "gameList.applyStatus == 11" class="game-status-btn-my">未付款</div>
+                                <div ng-if = "gameList.applyStatus == 13" class="game-status-btn-my">队员数量不足</div>
+                                <div ng-if = "gameList.applyStatus == 12" class="game-status-btn-my">搭档未确认</div>
+                            </div>
+                            <div class="project-my">
+                                <p>我的项目：{{gameList.projectName}}<span ng-show="gameList.teamName != null && gameList.teamName != ''">（{{gameList.teamName}}）</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+                </ion-content>
+            </ion-nav-view>
+
+        </ion-tab>
+        <ion-tab title="俱乐部赛事" icon-on="isPlaying">
+            <ion-nav-view>
+                <ion-content ng-controller = 'isPlayingCtrl'>
+                    <p class="no-game" ng-show="gameLists.length == 0">您还没有参加任何俱乐部比赛</p>
+                    <div class="game-lists-my" ng-repeat="gameList in gameLists">
+                        <div class="game-list-my" ng-click="toGroupDetails(gameList.competitionId)">
+                            <div class="poster-my">
+                                <img src="{{gameList.banner}}"/>
+                            </div>
+                            <div ng-if = "gameList.status == 3" class="game-status-my">
+                                <img src="img/home/game_status3.png"/>
+                                <span>报名中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 1" class="game-status-my">
+                                <img src="img/home/game_status2.png"/>
+                                <span>进行中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 5" class="game-status-my">
+                                <img src="img/home/game_status1.png"/>
+                                <span>已结束</span>
+                            </div>
+                            <div class="game-desc-my">
+                                <h3>{{gameList.competitionTitle}}</h3>
+                                <p>比赛时间：{{gameList.beginDate|date:'yyyy.MM.dd'}}-{{gameList.endDate|date:'MM.dd'}}</p>
+                                <p>比赛地点：{{gameList.stadium}}</p>
+                                <div ng-if = "gameList.applyStatus == 10" class="game-status-btn-my">报名成功</div>
+                                <div ng-if = "gameList.applyStatus == 11" class="game-status-btn-my">未付款</div>
+                                <div ng-if = "gameList.applyStatus == 13" class="game-status-btn-my">队员数量不足</div>
+                                <div ng-if = "gameList.applyStatus == 12" class="game-status-btn-my">搭档未确认</div>
+                            </div>
+                            <div class="project-my">
+                                <p>我的项目：{{gameList.projectName}}<span ng-show="gameList.teamName != null && gameList.teamName != ''">（{{gameList.teamName}}）</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+                </ion-content>
+            </ion-nav-view>
+        </ion-tab>
+        <!--<ion-tab title="已结束" icon-on="isEnd">
+            <ion-nav-view>
+                <ion-content ng-controller = 'isEndCtrl'>
+                    <p class="no-game" ng-show="gameLists.length == 0">您还没有已结束的比赛</p>
+                    <div class="game-lists-my" ng-repeat="gameList in gameLists">
+                        <div class="game-list-my" ng-click="toGroupDetails(gameList.competitionId)">
+                            <div class="poster-my">
+                                <img src="{{gameList.banner}}"/>
+                            </div>
+                            <div ng-if = "gameList.status == 3" class="game-status-my">
+                                <img src="img/home/game_status3.png"/>
+                                <span>报名中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 1" class="game-status-my">
+                                <img src="img/home/game_status2.png"/>
+                                <span>进行中</span>
+                            </div>
+                            <div ng-if = "gameList.status == 5" class="game-status-my">
+                                <img src="img/home/game_status1.png"/>
+                                <span>已结束</span>
+                            </div>
+                            <div class="game-desc-my">
+                                <h3>{{gameList.name}}</h3>
+                                <p>比赛时间：{{gameList.beginDate|date:'yyyy.MM.dd'}}-{{gameList.endDate|date:'MM.dd'}}</p>
+                                <p>比赛地点：{{gameList.stadium}}</p>
+                                <div ng-if = "gameList.applyStatus == 10" class="game-status-btn-my">报名成功</div>
+                                <div ng-if = "gameList.applyStatus == 11" class="game-status-btn-my">未付款</div>
+                                <div ng-if = "gameList.applyStatus == 13" class="game-status-btn-my">队员数量不足</div>
+                                <div ng-if = "gameList.applyStatus == 12" class="game-status-btn-my">搭档未确认</div>
+                            </div>
+                            <div class="project-my">
+                                <p>我的项目：{{gameList.projectName}}<span ng-show="gameList.teamName != null && gameList.teamName != ''">（{{gameList.teamName}}）</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </ion-content>
+            </ion-nav-view>
+        </ion-tab>-->
+    </ion-tabs>
+</ion-view>

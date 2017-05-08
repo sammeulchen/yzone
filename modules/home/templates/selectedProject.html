@@ -1,0 +1,71 @@
+<ion-view ng-controller="selectedProjectCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>选择项目</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="select-project-container">
+            <div class="selectGroup" ng-show="selectGroupShow">
+                <span>选择组别</span>
+            </div>
+            <ul class="select-group" ng-show="selectGroupShow">
+               <!-- <li class="selected-none" ng-repeat="groupList in groupLists" ng-class="{true: 'selected', false: 'selected-none'}[code.active]" ng-click="code.active = !code.active">-->
+                <li class="selected-none" ng-repeat="groupList in groupLists"  ng-class="{changeGroupBg:$index == changeGroupNum}" ng-click="changeGroupBg($index,groupList.id)">
+                    <span>{{groupList.name}}</span>
+                </li>
+            </ul>
+            <div class="selectGroup" ng-show="selectClassShow">
+                <span>选择级别<b style="font-size: 12px;font-weight: 500">（风林火山水平依次升高）</b></span>
+                <!--<img class="status-grade" src="img/home/wind_status.png"/>
+                <img class="status-grade" src="img/home/forest_status.png"/>
+                <img class="status-grade" src="img/home/fire_status.png"/>
+                <img class="status-grade" src="img/home/mount_status.png"/>
+                <span class="status-text">水平依次升高</span>-->
+                <span class="standard" ng-click="standard()">查看分级标准</span>
+            </div>
+            <ul class="select-group" ng-show="selectClassShow">
+                <li class="selected-none" ng-repeat="classList in classLists" ng-class="{changeClassBg:$index == changeClassNum}" ng-click="changeClassBg($index,classList.className)">
+                    <i></i>
+                    <span>{{classList.className}}</span>
+                </li>
+            </ul>
+            <div class="selectGroup">
+                <span>项目</span>
+            </div>
+            <ul class="select-group">
+                <li class="selected-none" ng-repeat="eventList in eventsLists" ng-class="{changeEventBg:$index == changeEventNum}" ng-click="changeEventBg($index,eventList.id)">
+                    <span>{{eventList.name}}</span>
+                </li>
+            </ul>
+            <div class="owned-club" ng-click="toOwnedClub()">
+                <div class="owned-club-content">
+                    <span>所属团体</span>
+                    <i>（选填：便于抽签时同队分开）</i>
+                   <!-- <img src="img/next-page.gif"/>-->
+                </div>
+                <input ng-model="own.group" type="text" placeholder="请输入团体名称">
+            </div>
+        </div>
+        <div class="asPlayer" ng-show="isPlayer.category == 3">
+            <i>是否同时作为队员报名比赛</i>
+             <span ng-repeat="gaming in gamings" ng-class="{selectEvent:$index==asMemberNum}" ng-click="asMember($index)">
+                {{gaming.name}}
+            </span>
+
+        </div>
+    	<div class="kl_3"></div>
+    </ion-content>
+    <div class="determine-pay">
+        <div class="pay">
+            <div class="statement">
+                <span class="appear-{{isDisabled}}" ng-click="changeStates()"><img src="img/home/box.png"/></span>
+                <b ng-click="toDisclaimer()">我同意羽众的免责声明</b>
+            </div>
+        </div>
+        <div ng-show="order == null" class="pay-btn" ng-click="toPay(competitionId)">下一步</div>
+        <div ng-show="order != null" class="pay-btn" ng-click="toPay(competitionId)">完成</div>
+    </div>
+</ion-view>

@@ -1,0 +1,83 @@
+<ion-view ng-controller="childrenInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>管理儿童信息</span>
+        <a href="{{myUrl}}" ng-show="noChildInfo"><img src="img/btn-home.gif"/></a>
+        <b ng-show="hasChildInfo" ng-click="addChildrenInfo()"><img src="img/btn-addchild.png"/> </b>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-show="noChildInfo">
+            <div class="child-page-bg1">
+                <div class="child-page-bg2">
+                    <p>此功能针对青少年儿童家长</p>
+                    <p>儿童参赛可由家长代报名</p>
+                    <!--<p>您还没有添加任何孩子的信息</p>-->
+                </div>
+            </div>
+            <div class="add-child">
+                <span ng-click="addChildrenInfo()">新建儿童信息</span>
+            </div>
+        </div>
+        <div ng-show="hasChildInfo">
+            <div class="every-child-info" ng-repeat="childMsg in childMsges">
+                <div class="child-title">儿童{{$index+1}}</div>
+                <div class="child-name-details">
+                    <div class="child-name">
+                        <span>
+                            <img class="child-avatar" src="{{childMsg.avatar}}"/>
+                            <i class="child-sex">
+                                <img ng-show="childMsg.manShow" src="img/icon-boy.png"/>
+                                <img ng-show="childMsg.womanShow" src="img/icon-girl.png"/>
+                                <b>{{childMsg.age}}</b>
+                            </i>
+                        </span>
+                        <span>
+                            {{childMsg.realname}}
+                        </span>
+                        <img class="edit-child" ng-click="editChildInfo(childMsg.userid)" src="img/btn-edit.gif"/>
+                    </div>
+
+                </div>
+                <div class="user-grade1">
+                    <div class="grade-sd">
+                        <i class="single-rank-pic1">
+                            <img ng-if="level.singleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                            <img ng-if="level.singleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                            <img ng-if="level.singleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                            <img ng-if="level.singleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                            <img ng-if="level.singleLevel == null || level.singleLevel == ''" src="img/home/w_f_f_m.png"/>
+                        </i>
+                        <div class="rank-desc1">
+                            <span>单打</span>
+                            <span ng-if="level.singleLevel != null && level.singleLevel != ''">{{level.singleLevel}}-第{{level.singleRank}}名</span>
+                            <span ng-if="level.singleLevel == null || level.singleLevel == ''">无级-请定级</span>
+                        </div>
+                    </div>
+                    <div class="grade-sd">
+                        <div class="rank-desc1">
+                            <span>双打</span>
+                            <span ng-if="level.doubleLevel != null && level.doubleLevel != ''">{{level.doubleLevel}}-第{{level.doubleRank}}名</span>
+                            <span ng-if="level.doubleLevel == null || level.doubleLevel == ''">无级-请定级</span>
+                        </div>
+                        <i class="double-rank-pic1">
+                            <img ng-if="level.doubleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                            <img ng-if="level.doubleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                            <img ng-if="level.doubleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                            <img ng-if="level.doubleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                            <img ng-if="level.doubleLevel == null || level.doubleLevel == ''" src="img/home/w_f_f_m.png"/>
+                        </i>
+                    </div>
+                </div>
+                <div class="my-verify-card-child">
+                    <span>证件信息</span>
+                    <span>身份证</span>
+                </div>
+                <div class="kl_4"></div>
+
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

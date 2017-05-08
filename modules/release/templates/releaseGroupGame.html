@@ -1,0 +1,194 @@
+<ion-view ng-controller="releaseGroupGameCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>发布团体赛</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="release-list match-name">
+            <div class="list">
+                <a></a>
+                <span>
+                    比赛名称
+                </span>
+                <input type="text">
+            </div>
+        </div>
+        <div class="release-list update-details-procedures">
+            <div class="list">
+                <a></a>
+                <span>上传比赛详细规程</span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list tournament-level">
+            <div class="list list-single">
+                <a></a>
+                <span>赛事级别</span>
+                <form class="event-grade">
+                    <ul>
+                        <li ng-repeat="item in clientSideList" >
+                            <input type="radio" name="grade" value="{{ item.id }}" ng-model="addMatch.levelId"><span>{{ item.name }}</span>
+                        </li>
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="release-list update-details-procedures game-time" ng-click="toGameTime()">
+            <div class="list">
+                <a></a>
+                <span>
+                    比赛时间
+                </span>
+                <b></b>
+            </div>
+        </div>
+
+        <div class="release-list update-details-procedures game-time groups-details" ng-click="toGroupSettingGroup()">
+            <div class="list">
+                <a></a>
+                <span>分组及项目项目详情设置</span>
+                <b></b>
+            </div>
+        </div>
+
+        <div class="release-list update-details-procedures enter-deadline" ng-click="showEndTime()">
+            <div class="list">
+                <a></a>
+                <span>
+                    报名及退出截止
+                </span>
+                <b></b>
+                <time-picker class="end-times" title="开始时间" yearstart="2016" yearend="2017"  time-picker-result="result">
+                </time-picker>
+            </div>
+        </div>
+        <div class="release-list update-details-procedures enter-deadline location" ng-click="toGameLocation()">
+            <div class="list">
+                <a></a>
+                <span>
+                    地点
+                </span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list update-details-procedures game-time game-location" ng-click="showLocationNum()">
+            <div class="list">
+                <a></a>
+                <span>
+                    场地号码
+                </span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list tournament-level concurrent-privilege">
+            <div class="list">
+                <a></a>
+                <span>
+                    兼项权限
+                </span>
+                <b>不能兼项</b>
+                <b>允许兼项</b>
+                <div>
+                    <textarea cols="40" rows="3">
+
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="release-list tournament-level registration-fee registration-fee-group">
+            <div class="list">
+
+                <a></a>
+                <span>
+                    报名费用
+                </span>
+                <div class="write-fee">
+                   <input type="text"><i>元/队</i>
+                </div>
+
+            </div>
+        </div>
+        <div class="release-list tournament-level">
+            <div class="list">
+                <a></a>
+                <span>
+                    是否允许线下支付
+                </span>
+                <form class="select-pay">
+                    <input type="radio" name="pay"><lable>是</lable>
+                    <input type="radio" name="pay"><lable>否</lable>
+                </form>
+            </div>
+        </div>
+        <div class="release-list game-time code">
+            <div class="list">
+                <a></a>
+                <span>证件要求（可多选）</span>
+                <div class="code-btn">
+                    <span class="changeCode-{{isDisabled1}}" ng-click="selectCode1()">
+                        身份证
+                    </span>
+                    <span class="changeCode-{{isDisabled2}}" ng-click="selectCode2()">
+                        军官证
+                    </span>
+                    <span class="changeCode-{{isDisabled3}}" ng-click="selectCode3()">
+                        护照证
+                    </span>
+                    <span class="changeCode-{{isDisabled4}}" ng-click="selectCode4()">
+                        户口簿
+                    </span>
+                    <form class="code-select">
+                        <input type="radio" name="code"><label>需要填写证件号码</label>
+                        <input type="radio" name="code"><label>需要填写证件号码并上传证件照片</label>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="release-list match-name contacts">
+            <div class="list">
+                <a></a>
+                <span>
+                    联系人
+                </span>
+                <input type="text">
+            </div>
+        </div>
+        <div class="release-list match-name game-time contact-information">
+            <div class="list">
+                <a></a>
+                <span>
+                    联系方式
+                </span>
+                <input type="text">
+            </div>
+        </div>
+        <div class="release-list update-details-procedures enter-deadline">
+            <div class="list">
+                <a></a>
+                <span>抽奖设置</span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list tournament-level youth-tournament">
+            <div class="list">
+                <a></a>
+                <span>是否是青少年赛事</span>
+                <form class="select-pay">
+                    <input type="radio" name="tour"><lable>是</lable>
+                    <input type="radio" name="tour"><lable>否</lable>
+                </form>
+                <p>*青少年赛事均由家长代报名</p>
+            </div>
+        </div>
+        <div class="save-release">
+            <div class="save-release-btn">保存</div>
+            <div class="save-release-btn" ng-click="releaseGroup()">发布</div>
+        </div>
+    </ion-content>
+</ion-view>

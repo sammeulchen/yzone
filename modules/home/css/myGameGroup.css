@@ -1,0 +1,232 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.my-game-title{
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding-left: 12px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+}
+.my-game-title .span1{
+    color: #EC6845;
+}
+.my-game-title .span2{
+    color: #EC6845;
+}
+.my-game-title div{
+    width: 180px;
+    float: right;
+    margin-top:4px;
+    margin-right: 12px;
+}
+.my-game-title .cancle-reg{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    float: right;
+}
+.my-game-title .pay-immed{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background: #EC6845;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    float: right;
+}.my-game-title .drawImme{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    float: right;
+    background: #E70112;
+}
+.my-game-title .viewPac{
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background: #F8B62A;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    float: right;
+}
+.my-gg-details{
+    width: 100%;
+    padding: 0 12px;
+}
+.my-gg-details li{
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid #DDDAD7;
+}
+.my-gg-details li span:nth-of-type(1){
+    display: inline-block;
+    font-size: 16px;
+    color: #727171;
+    width: 90px;
+    height: 49px;
+    line-height: 49px;
+    overflow: hidden;
+}
+.my-gg-details li span:nth-of-type(2){
+    display: inline-block;
+    height: 49px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 49px;
+    overflow: hidden;
+    width: 60%;
+    position: absolute;
+}
+.my-gg-details li span:nth-of-type(3){
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    overflow: hidden;
+    width: 72px;
+    color: #8DC21F;
+    border: 1px solid #8DC21F;
+    border-radius: 5px;
+    font-size: 15px;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+
+
+.my-gg-details li:nth-of-type(1){
+    height: 90px;
+    position: relative;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(1){
+    display: inline-block;
+    width: 60px;
+    height: 90px;
+
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(1) img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    border-radius: 100%;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2){
+    display: inline-block;
+    height: 90px;
+    margin-left: 10px;
+    overflow: hidden;
+    padding-top: 25px;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2) i{
+    display: block;
+    font-size: 14px;
+    color: #727171;
+    height: 25px;
+    overflow: hidden;
+    line-height: 25px;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2) i:nth-of-type(1){
+    /*margin-top: 10px;*/
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2) i b{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(3){
+    display: inline-block;
+    width: 93px;
+    height: 25px;
+    font-size: 14px;
+    color: #8DC21F;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #8DC21F;
+    border-radius: 5px;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+.my-gg-details .team-grade{
+    position: relative;
+}
+.my-gg-details .team-grade span:nth-of-type(3){
+    display: inline-block;
+    width: 93px;
+    height: 25px;
+    font-size: 14px;
+    color: #8DC21F;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #8DC21F;
+    border-radius: 5px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.my-gg-details .team-name1{
+    position: relative;
+    height: 48px;
+}
+.my-gg-details .team-name1 img{
+    width: 9px;
+    height: 20px;
+    position: absolute;
+    right: 6px;
+    top: 16px;
+}
+.kong-gg{
+    width: 100%;
+    height: 85px;
+}
+.back-tp-page{
+    width: 100%;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 10px;
+}
+button{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #8DC21F;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

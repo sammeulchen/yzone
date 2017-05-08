@@ -1,0 +1,88 @@
+<ion-view ng-controller="dPDetailsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div  ng-click="toMyProjects()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的项目</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="d-timeline">
+            <i ng-show="applyerInfo.applyer">
+                <!--<img ng-show="!progressInfo.paySuccess" src="img/home/d-timeline1.png"/>-->
+                <img ng-show="!progressInfo.paternerCompleted" src="img/home/d-timeline2.png"/>
+                <img ng-show="progressInfo.paternerCompleted" src="img/home/d-timeline3.png"/>
+                <img ng-show="progressInfo.applySuccess" src="img/home/d-timeline4.png"/>
+                <img ng-show="progressInfo.drawlogStatus == 2" src="img/home/d-timeline5.png"/>
+                <img ng-show="progressInfo.competitionBegin" src="img/home/d-timeline6.png"/>
+            </i>
+            <i ng-if="!applyerInfo.applyer" ng-show="!applyerInfo.applyer">
+                <!--<img ng-show="!progressInfo.paySuccess" src="img/home/partner_01.png"/>-->
+                <img ng-show="progressInfo.drawlogStatus != 2" src="img/home/partner_02.png"/>
+                <img ng-show="progressInfo.drawlogStatus == 2" src="img/home/partner_03.png"/>
+                <img ng-show="progressInfo.competitionBegin" src="img/home/partner_04.png"/>
+            </i>
+        </div>
+        <div class="timeline-desc-d" ng-show="applyerInfo.applyer">
+            <span>{{progressInfo.payStatus}}</span>
+            <span ng-show="projectCategory ==2">添加搭档完成</span>
+            <span ng-show="projectCategory ==3">添加队员完成</span>
+            <span>报名成功</span>
+            <span>抽签完成</span>
+            <span>比赛</span>
+        </div>
+        <div class="timeline-desc-dp" ng-if="!applyerInfo.applyer" ng-show="!applyerInfo.applyer">
+            <span>{{progressInfo.payStatus}}</span>
+            <span>抽签完成</span>
+            <span>比赛</span>
+        </div>
+        <div class="kl_2"></div>
+        <div class="partner-details-tabs" ng-if="applyerInfo">
+            <div class="partner-details-tab" ng-repeat="tabName in tabNames" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab-select' : '' ">
+                <span>{{tabName}}</span>
+            </div>
+        </div>
+        <div class="kl_2"></div>
+        <ul ng-if="applyerInfo">
+            <li>
+                <div ng-include="pages[slectIndex]"></div>
+            </li>
+        </ul>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="project-details-btn" ng-show="projectCategory == 2 && applyerInfo.enableCancel && progressInfo.paternerCompleted">
+        <span class="cancel" ng-click="cancelReg()">取消报名</span>
+    </div>
+    <div class="project-details-btn" ng-show="applyerInfo.applyer && projectCategory == 3 && applyerInfo.enableCancel && progressInfo.paternerCompleted && currentMemberCount == maxMemberCount">
+        <span class="cancel" ng-click="cancelReg()">取消报名</span>
+    </div>
+    <div class="project-details-btn" ng-show="!applyerInfo.applyer && projectCategory == 3 && applyerInfo.enableCancel">
+    <span class="cancel" ng-click="cancelReg()">取消报名</span>
+    </div>
+    <div class="project-details-btn" ng-show="applyerInfo.applyer && progressInfo.drawlogStatus == 1 && !progressInfo.competitionBegin" ng-click="drawImmediately()">
+        <span class="draw">立即抽签</span>
+    </div>
+    <div class="project-details-btn" ng-show="afterApplyDate && applyerInfo.applyer && !afterUpdateMemberDate" ng-click="addNewPartner()">
+        <span class="draw">添加队员</span>
+    </div>
+    <div class="project-details-btn project-details-btn1" ng-show="applyerInfo.applyer && applyerInfo.orderStatus == 1">
+        <span class="cancel2" ng-click="cancelReg()">取消报名</span>
+        <span style="background: #e83133" class="add2" ng-click="toPay()">
+            <div style="height: 25px;line-height: 32px">立即支付</div>
+            <div style="width: 100%;text-align: center;color: #ffffff;font-size: 12px;height: 23px;line-height: 23px">剩余时间：{{paracont*1000|date:'mm分ss秒'}}</div>
+        </span>
+        <!--<div class="project-details-btn-l">
+            <i>参赛名额有限，请尽快支付</i>
+            <i ng-if="paracont">剩余时间：{{paracont*1000|date:'mm分ss秒'}}</i>
+        </div>
+        <div class="project-details-btn-r" ng-click="toPay()">立即支付</div>-->
+    </div>
+    <div class="project-details-btn project-details-btn1" ng-show="applyerInfo.applyer && applyerInfo.orderStatus == 2 && !progressInfo.paternerCompleted && projectCategory == 2 && !afterApplyDate">
+        <span class="cancel2" ng-click="cancelReg()">取消报名</span>
+        <span class="add2" ng-click="addNewPartner()">添加搭档</span>
+    </div>
+    <div class="project-details-btn project-details-btn1" ng-show="applyerInfo.applyer && applyerInfo.orderStatus == 2 && currentMemberCount < maxMemberCount && projectCategory == 3 && !afterApplyDate">
+        <span class="cancel2" ng-click="cancelReg()">取消报名</span>
+        <span class="add2" ng-click="addNewPartner()">添加队员</span>
+    </div>
+</ion-view>

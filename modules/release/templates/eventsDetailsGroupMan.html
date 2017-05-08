@@ -1,0 +1,130 @@
+<ion-view class="height-total" ng-controller="eventsDetailsGroupManCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>项目详情设定</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <!--男团-->
+        <div class="events-lists-man" ng-show="manShow">
+            <div class="events-list">
+                <div class="events-list-title">
+                    项目
+                </div>
+                <ul class="events-list-content">
+                    <li ng-repeat="manEvent in manEvents">
+                        <span>{{manEvent.name}}</span>
+                        <i ng-click="reduce1(manEvent.id)">-</i>
+                        <input type="text" value="0" ng-model="manEvent.count">
+                        <i ng-click="add1(manEvent.id)">+</i>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="team-number">
+                <span>团队数量上限</span>
+                <input type="text">
+                <i>队</i>
+            </div>
+            <div class="team-player-number">
+                <div class="team-player-number-title">
+                    队员数量
+                </div>
+                <ul class="team-player-number-content">
+                    <li ng-repeat="manPlayer in manPlayers">
+                        <span>{{manPlayer.name}}</span>
+                        <i ng-click="reduce2(manPlayer.id)">-</i>
+                        <input type="text" value="0" ng-model="manPlayer.count">
+                        <i ng-click="add2(manPlayer.id)">+</i>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-sure-man" ng-click="manEventSetting(manEvent)">
+                确定
+            </button>
+        </div>
+        <!--女团-->
+        <div class="events-lists-women" ng-show="womanShow">
+            <div class="events-list">
+                <div class="events-list-title">
+                    项目
+                </div>
+                <ul class="events-list-content">
+                    <li ng-repeat="womanEvent in womanEvents">
+                        <span>{{womanEvent.name}}</span>
+                        <i ng-click="reduce3(womanEvent.id)">-</i>
+                        <input type="text" value="0" ng-model="womanEvent.count">
+                        <i ng-click="add3(womanEvent.id)">+</i>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="team-number">
+                <span>团队数量上限</span>
+                <input type="text">
+                <i>队</i>
+            </div>
+            <div class="team-player-number">
+                <div class="team-player-number-title">
+                    队员数量
+                </div>
+                <ul class="team-player-number-content">
+                    <li ng-repeat="womanPlayer in womanPlayers">
+                        <span>{{womanPlayer.name}}</span>
+                        <i ng-click="reduce4(womanPlayer.id)">-</i>
+                        <input type="text" value="0" ng-model="womanPlayer.count">
+                        <i ng-click="add4(womanPlayer.id)">+</i>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-sure-man">
+                确定
+            </button>
+        </div>
+        <!--混团-->
+        <div class="events-lists-mixed" ng-show="mixedShow">
+            <div class="events-list">
+                <div class="events-list-title">
+                    项目
+                </div>
+                <ul class="events-list-content">
+                    <li ng-repeat="mixedEvent in mixedEvents">
+                        <span>{{mixedEvent.name}}</span>
+                        <i ng-click="reduce5(mixedEvent.id)">-</i>
+                        <input type="text" value="0" ng-model="mixedEvent.count">
+                        <i ng-click="add5(mixedEvent.id)">+</i>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="team-number">
+                <span>团队数量上限</span>
+                <input type="text">
+                <i>队</i>
+            </div>
+            <div class="team-player-number">
+                <div class="team-player-number-title">
+                    队员数量
+                </div>
+                <ul class="team-player-number-content">
+                    <li ng-repeat="mixedPlayer in mixedPlayers">
+                        <span>{{mixedPlayer.name}}</span>
+                        <i ng-click="reduce6(mixedPlayer.id)">-</i>
+                        <input type="text" value="0" ng-model="mixedPlayer.count">
+                        <i ng-click="add6(mixedPlayer.id)">+</i>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn-sure-man">
+                确定
+            </button>
+        </div>
+
+    </ion-content>
+
+</ion-view>

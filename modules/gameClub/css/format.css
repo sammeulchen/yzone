@@ -1,0 +1,45 @@
+.format-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../../img/paySuccessBg.gif");
+    background-size: 330px 43px;
+}
+.format-title{
+    padding-left: 15px;
+    height: 28px;
+    line-height: 28px;
+    background: #79CAE0;
+    color: #ffffff;
+    font-size: 16px;
+}
+.format-desc{
+    padding-left: 23px;
+}
+.format-desc p{
+    font-size: 16px;
+    color: #000000;
+    margin-top: 5px;
+}
+.format-desc-bg1{
+    width: 278px;
+    height: 178px;
+    background: url("../../../img/game_club/format_desc1.png") no-repeat;
+    background-size: 278px 178px;
+    margin-bottom: 10px;
+}
+.format-desc-bg2{
+    width: 95%;
+    height: 442px;
+    background: url("../../../img/game_club/format_desc2.png") no-repeat;
+    background-size: 95% 442px;
+    margin-bottom: 30px;
+}
+.format-content{
+    width: 100%;
+    padding: 16px;
+}
+.format-content p{
+    font-size: 16px;
+    color: #000000;
+}

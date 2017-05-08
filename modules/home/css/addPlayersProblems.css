@@ -1,0 +1,61 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+}
+.problems-title{
+    width: 100%;
+    height: 50px;
+    background: #FAC600;
+    font-size: 16px;
+    padding: 5px 9px 0 6px;
+    color: #ffffff;
+}
+.problems-reason{
+    width: 100%;
+    padding: 10px 10px 0 8px;
+}
+.problems-reason li{
+    width: 100%;
+    height: 27px;
+    margin-bottom: 10px;
+}
+.problems-reason li input{
+    width: 23px;
+    height: 23px;
+}
+.problems-reason li span{
+    display: inline-block;
+    height: 27px;
+    overflow: hidden;
+    line-height: 32px;
+    margin-left: 10px;
+}
+.submit-btn{
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 22px;
+}
+.submit-btn span{
+    display: inline-block;
+    width: 45%;
+    height: 46px;
+    background: #8DC21F;
+    line-height: 46px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+}
+.submit-btn span:nth-of-type(2){
+    position: absolute;
+    right: 12px;
+}
+.textarea{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #646262;
+    background: #F7F8F7;
+}

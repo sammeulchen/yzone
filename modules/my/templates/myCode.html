@@ -1,0 +1,50 @@
+<ion-view ng-controller="myCodeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>证件信息</span>
+        <i ng-click="toCreateCode()">添加证件</i>
+    </ion-header-bar>
+    <ion-content>
+        <div class="code-bg">
+            <div class="my-verify-card-c" ng-repeat="myCode in myCodes">
+                <div class="list">
+                    <div class="item">
+                        <img src="img/icon-card.png"/>
+                        <i>证件类型</i>
+                        <span>{{myCode.typeName}}</span>
+                        <div class="card-front" ng-click="toFilePhoto()">
+                            <img src="{{myCode.pictureUrls}}"/>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item card-number">
+                        <img src="img/icon-card-number.png"/>
+                        <i>证件号码</i>
+                        <!--<input type="text" ng-model="myCode.credentialNumber">-->
+                        <span>{{myCode.credentialNumber}}</span>
+                    </div>
+                </div>
+                <div class="delete-btn">
+                    <div ng-click="deleteCode(myCode.id)">
+                        <img src="img/my/delete_my.png"/>
+                        <span>删除</span>
+                    </div>
+                    <div ng-click="editCode(myCode.id,myCode.pictureUrls,myCode.typeName,myCode.credentialNumber)">
+                        <img src="img/my/edit_my.png"/>
+                        <span>修改</span>
+                    </div>
+
+                </div>
+            </div>
+            <div style="height: 80px"></div>
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view ng-controller="eventsGradeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>项目及等级设定（多选）</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="scale" ng-repeat="devList in devLists">
+            <div class="scale-title">
+                <i></i>
+                <span>{{devList.name}}</span>
+                <b></b>
+            </div>
+            <div class="scale-events">
+                <div class="list" ng-repeat="item in devList.items">
+                    <ion-checkbox id="item.id" name="{{item.text}}" ng-model="isChecked" ng-init='isChecked=false'  ng-click="updateSelection($event,item.id,item)">
+                        {{item.text}}
+                    </ion-checkbox>
+                    <input type="number" ng-model="item.maxCount"  id="item.id" placeholder="人数上限">
+                </div>
+
+            </div>
+        </div>
+
+    </ion-content>
+    <div class="btn-sure" ng-click="backToPrePage()">
+        确定
+    </div>
+</ion-view>

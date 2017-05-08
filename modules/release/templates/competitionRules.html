@@ -1,0 +1,18 @@
+<ion-view ng-controller="competitionRulesCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>比赛规程及注意事项</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="competition-rules">
+            <textarea class="competition-rules-details" ng-model="competitionRules.rules" placeholder="请输入比赛规程及注意事项"></textarea>
+        </div>
+
+    </ion-content>
+    <div class="rules-details-btn">
+        <span ng-click="rulesSetting()">确定</span>
+    </div>
+</ion-view>

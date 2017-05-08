@@ -1,0 +1,44 @@
+<ion-view ng-controller="ownRankingCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span ng-show="setSingleShow">设置单打羽众级别</span>
+        <span ng-show="setDoubleShow">设置双打羽众级别</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content class="own-ranking">
+        <div class="own-ranking-bg1">
+            <div class="tips-top">
+                正确估计自己的技术等级才能找到适合自己的球友哟！
+            </div>
+            <div class="tips-desc">
+                自己设置参考等级将作为参赛依据，第二次参加积分赛前，您共有三次修改机会。
+                <a ng-click="toGradeRules()">详情查看羽众等级规范</a>
+            </div>
+
+            <ul class="group-class-desc">
+                <li ng-repeat="groupDesc in groupDesces" ng-click="getLevel($index,groupDesc.id)"   ng-class="{changeLevelBg:$index == changeLevelNum}">
+                    <div class="group-cd-grade">
+                        <span>
+                            <i ng-style="setColor(groupDesc.id)">{{groupDesc.class}}</i>
+                            <img src="img/{{groupDesc.picImg}}"/>
+                        </span>
+                    </div>
+                    <div class="group-cd-desc">
+                        {{groupDesc.desc}}
+                    </div>
+                </li>
+            </ul>
+
+            <div class="kl_3"></div>
+        </div>
+
+    </ion-content>
+    <div class="ranking-btn">
+        <span ng-click="submitLevel()">完成</span>
+    </div>
+<!--    <div class="ranking-btn" ng-show="setDoubleShow">
+        <span ng-click="submitLevel()">完成</span>
+    </div>-->
+</ion-view>

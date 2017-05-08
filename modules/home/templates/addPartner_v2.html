@@ -1,0 +1,113 @@
+<ion-view ng-controller="addPartnerV2Ctrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span ng-show="projectCategory == 2">添加搭档</span>
+        <span ng-show="projectCategory == 3">添加队员</span>
+        <span ng-click="addNewPartner(competitionId)" ng-show="projectCategory == 2 && partnerLists.length > 0">添加新搭档</span>
+        <span ng-click="addNewPartner(competitionId)" ng-show="projectCategory == 3 && partnerLists.length > 0">添加新队员</span>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-show="partnerLists.length == 0">
+            <div class="no-partner">
+                <div class="no-partner-title">
+                    <span>
+                      <img src="img/home/partner-title-bg.png"/>
+                    </span>
+                    <span>
+                       <img ng-show="projectCategory == 2"  src="img/home/invited-partner1.png"/>
+                       <img ng-show="projectCategory == 3" src="img/home/invited-partner2.png"/>
+                    </span>
+
+                </div>
+                <div ng-show="projectCategory == 2"  class="weChat-invited" ng-click="invite(orderId)">微信邀请搭档（推荐）</div>
+                <div ng-show="projectCategory == 3" class="weChat-invited" ng-click="invite(orderId)">微信邀请队员（推荐）</div>
+               <!-- <div class="manually-add" ng-click="editPartner()" ng-show="projectCategory == 3">
+                    <span>手动添加队员</span>
+                    <span>*手动添加的队员无法获得积分、现场随手礼等奖励*</span>
+                </div>
+                <div class="manually-add" ng-click="editPartner()" ng-show="projectCategory == 2">
+                    <span>手动添加搭档</span>
+                    <span>*手动添加的搭档无法获得积分、现场随手礼等奖励*</span>
+                </div>-->
+                <div style="width: 100%;text-align: center">
+                    <img style="display:inline-block;width:200px;height: 200px;" ng-src="{{qrCode}}">
+                    <span style="display: inline-block;width: 100%;padding:0 20px;font-size: 16px;">若分享链接无法进入，请长按上方二维码并发送给朋友，邀请好友加入队伍</span>
+                </div>
+            </div>
+        </div>
+        <div ng-show="partnerLists.length > 0">
+            <ul class="players-list" ng-show="projectCategory == 2">
+                <li class="players-list-member" ng-repeat="partnerList in partnerLists">
+                    <div class="list-left">
+                        <input name="partner" type="radio" value="{{partnerList.paternerId}}"  ng-model="partnerL.paternerId"/>
+                    </div>
+                    <div class="list">
+                        <div class="item item-avatar perfert-player ">
+                            <img class="head-portrait" src="{{partnerList.avatar}}"/>
+                            <span class="name">{{partnerList.realname}}</span>
+                            <span class="sex-p" ng-show="partnerList.age >= 0">
+                                <img ng-show="partnerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="partnerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{partnerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="partnerList.age < 0">
+                                <img ng-show="partnerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="partnerList.gender == 0" src="img/home/femal.png">
+                            </span>
+
+                            <div class="rank-g">
+                                <span ng-show="partnerList.singleLevel >= 1 && partnerList.singleLevel <= 3"  class="wind">单打<img src="img/wind-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel >= 4 && partnerList.singleLevel <= 6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel >= 7 && partnerList.singleLevel <= 9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel >= 10 && partnerList.singleLevel <= 12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel >= 1 && partnerList.doubleLevel <= 3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel >= 4 && partnerList.doubleLevel <= 6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel >= 7 && partnerList.doubleLevel <= 9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel >= 10 && partnerList.doubleLevel <= 12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="players-list" ng-show="projectCategory == 3">
+                <li  ng-repeat="partnerList in partnerLists">
+                    <ion-checkbox id="{{partnerList.paternerId}}" gender="partnerList.gender" ng-model="isChecked"  ng-click="updateSelection($event,partnerList.paternerId)">
+                        <span class="header-photo"><img src="{{partnerList.avatar}}"/> </span>
+                        <span class="name-gp">
+                            {{partnerList.realname}}
+                            <span class="sex-gp" ng-show="partnerList.age >= 0">
+                                <img ng-show="partnerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="partnerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{partnerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="partnerList.age < 0">
+                                <img ng-show="partnerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="partnerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="rank-g players-info1">
+                            <span ng-show="partnerList.singleLevel >= 1 && partnerList.singleLevel <= 3"  class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 4 && partnerList.singleLevel <= 6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 7 && partnerList.singleLevel <= 9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 10 && partnerList.singleLevel <= 12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 1 && partnerList.doubleLevel <= 3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 4 && partnerList.doubleLevel <= 6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 7 && partnerList.doubleLevel <= 9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 10 && partnerList.doubleLevel <= 12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                    </ion-checkbox>
+
+                </li>
+            </ul>
+            <div class="kl_3"></div>
+        </div>
+    </ion-content>
+    <div class="add-p-btn" ng-show="partnerLists.length > 0" ng-click="addPartner(partnerList.paternerId)">完成</div>
+    <div class="share-g" ng-show="shareShow" ng-click="shareMiss()">
+        <img src="img/pic-share.png"/>
+        <p ng-show="projectCategory == 2">快点这里邀请搭档吧！</p>
+        <p ng-show="projectCategory == 3">快点这里邀请队员吧！</p>
+    </div>
+</ion-view>

@@ -1,0 +1,21 @@
+.wx-leader-bg1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../../img/paySuccessBg.gif") repeat;
+    background-size: 100% 44px;
+}
+.wx-leader-bg2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../../img/up-bg.gif") no-repeat center;
+    background-size: 90% 60%;
+}
+.wx-leader-bg3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../../img/change-leader.png") no-repeat center;
+    background-size: 270px 60px;
+}

@@ -1,0 +1,87 @@
+<ion-view ng-controller="changeMyInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>修改资料</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="change-personal-info">
+            <li class="pe-fist">
+                <span>头像</span>
+                <input type="file" id="fileElem" class="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                <div id="fileSelect" class="fileSelect">
+                    <img ng-show="filePreShow" src="{{userInfo.avatar}}"/>
+                </div>
+
+                <!--<img ng-show="fileLastShow" src="{{serverId}}"/>-->
+                <img class="next" src="img/next-page.gif"/>
+            </li>
+            <li ng-click="toChangeSingleInfo1()">
+                <span>姓名</span>
+                <span>{{userInfo.realname}}</span>
+               <!-- <input type="text" ng-model="userInfo.realname">-->
+            </li>
+            <li ng-click="toChangeMobile()">
+                <span>手机号码</span>
+                <span>{{userInfo.mobile}}</span>
+                <!-- <input type="text" ng-model="userInfo.realname">-->
+            </li>
+            <li>
+                <span>性别</span>
+                <span class="select-sex">
+                    <select ng-options="mySex.text for mySex in mySexs" ng-model="selectSex.sex" ng-change="changeSex()">
+                    </select>
+                </span>
+
+                <img src="img/next-page.gif"/>
+            </li>
+            <li class="birth">
+                <span>生日</span>
+                <input id="date-selector-input" type="text" readonly/>
+                <img src="img/next-page.gif"/>
+            </li>
+            <li class="my-code" ng-click="toMyCode()">
+                <div class="my-code-details">
+                    <span>证件信息</span>
+                    <div style="display: inline-block;overflow: hidden;width: 60%;height: 49px">
+                        <i ng-repeat="code in codes">{{code.typeName}}、</i>
+                    </div>
+
+                    <img src="img/next-page.gif"/>
+                </div>
+            </li>
+        </ul>
+        <div class="privacy-title">
+            更多资料
+        </div>
+        <ul class="change-personal-info">
+            <li ng-click="toChangeSingleInfo2()">
+                <span>公司</span>
+               <span>{{userInfo.company}}</span>
+            </li>
+            <li ng-click="toChangeSingleInfo3()">
+                <span>学校</span>
+                <span>{{userInfo.school}}</span>
+            </li>
+            <li ng-click="toGoodAtProjects()">
+                <span>擅长项目</span>
+               <!-- <span class="projects" ng-style="setBg(myProject.text,code.active )" ng-repeat="myProject in myProjects" ng-class="{changeCode:code.active}" ng-click="code.active = !code.active;getContent(myProject.text,code.active)">
+                    {{myProject.text}}
+                </span>-->
+                <span>{{goodAtProject}}</span>
+            </li>
+            <li ng-click="toChangeSingleInfo4()">
+                <span>活跃球馆</span>
+                <span>{{userInfo.stadium}}</span>
+            </li>
+            <li ng-click="toChangeSingleInfo5()">
+                <span>我的球拍</span>
+                <span>{{userInfo.racket}}</span>
+            </li>
+        </ul>
+
+    </ion-content>
+    <div id="targetContainer"></div>
+</ion-view>

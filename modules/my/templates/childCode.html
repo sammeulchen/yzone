@@ -1,0 +1,54 @@
+<ion-view ng-controller = 'childCodeCtrl'>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>儿童证件</span>
+        <i ng-click="toCreateCode()">添加证件</i>
+    </ion-header-bar>
+    <ion-content>
+        <div class="code-bg">
+            <div class="my-verify-card-c" ng-repeat="childCode in childCodes">
+                <div class="list">
+                    <div class="item">
+                        <img src="img/icon-card.png"/>
+                        <i>证件类型</i>
+                        <span>{{childCode.typeName}}</span>
+                        <div class="card-front" ng-show="childCode.hasCodeUrl" ng-click="toFilePhoto()">
+                            <img src="{{childCode.pictureUrls}}"/>
+                        </div>
+                        <div class="card-front1" ng-show="childCode.noCodeUrl" ng-click="toFilePhoto()">
+                            <img src="img/front.gif"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item card-number">
+                        <img src="img/icon-card-number.png"/>
+                        <i>证件号码</i>
+                        <span>{{childCode.credentialNumber}}</span>
+                    </div>
+                </div>
+                <div class="delete-btn">
+                    <div ng-click="editCode(childCode.id,childCode.pictureUrls,childCode.typeName,childCode.credentialNumber)">
+                        <img src="img/btn-edit.gif"/>
+                        <span>编辑</span>
+                    </div>
+                    <div ng-click="deleteCode(childCode.id)">
+                        <img src="img/delete.gif"/>
+                        <span>删除</span>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 80px"></div>
+        </div>
+
+
+
+    </ion-content>
+    <div class="save-my-info1" on-tap="goBack()">
+        <span>返回</span>
+    </div>
+
+</ion-view>

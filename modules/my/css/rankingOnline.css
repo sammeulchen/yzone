@@ -1,0 +1,105 @@
+.ranking-online-bg{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F7;
+    position: absolute;
+}
+.your-reason{
+    width: 100%;
+    padding: 12px 12px 0;
+}
+.your-reason textarea{
+    width: 100%;
+    height: 180px;
+    padding: 12px 12px 0;
+    border: 1px solid #B9B3B2;
+}
+.ranking-img{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 12px;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+.ranking-img-one{
+    display: inline-block;
+    width: 90px;
+    height: 56px;
+    border: 1px solid #95908F;
+    background: #ffffff;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+.ranking-img-one11{
+    display: inline-block;
+}
+.ranking-img-one11 img{
+    width: 90px;
+    height: 56px;
+    margin-right: 6px;
+}
+.ranking-img-one11 video{
+    width: 90px;
+    height: 56px;
+    margin-right: 6px;
+}
+.ranking-img-one p{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.ranking-img-one p:nth-of-type(1){
+    margin-top: 10px;
+}
+.ranking-img-two{
+    display: inline-block;
+    width: 100px;
+    height: 56px;
+    background: #AFAEAF;
+    position: relative;
+
+}
+.ranking-img-two img{
+    width: 24px;
+    position: absolute;
+    top: 16px;
+    left: 38px;
+}
+.ranking-online-tips{
+    width: 100%;
+    padding-left: 12px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #E48F15;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ranking-online-btn{
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 10px;
+}
+.ranking-online-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #8DC21F;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+}

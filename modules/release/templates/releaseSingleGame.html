@@ -1,0 +1,193 @@
+<ion-view ng-controller="releaseSingleGameCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>发布单项赛</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="release-list match-name">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    比赛名称
+                </span>
+                <input type="text" placeholder="请填写比赛名称" ng-model="addMatch.name">
+
+            </div>
+        </div>
+        <div class="release-list update-details-procedures" ng-click="toCompetitionRules()">
+            <div class="list list-single">
+                <a></a>
+                <span>比赛规程及注意事项</span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list tournament-level" ng-click="toTournamentLevel()">
+            <div class="list list-single">
+                <a></a>
+                <span>赛事级别</span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list update-details-procedures game-time" ng-click="toGameTime()">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    比赛时间
+                </span>
+                <b></b>
+            </div>
+        </div>
+
+        <div class="release-list update-details-procedures game-time groups-details" ng-click="toGroupSetting()">
+            <div class="list">
+                <a></a>
+                <span>分组及项目详情设置</span>
+                <b></b>
+            </div>
+        </div>
+
+        <div class="release-list update-details-procedures enter-deadline">
+            <div class="list list-single">
+
+                <div>
+                    <a></a>
+                    <span>
+                        报名及退出截止
+                    </span>
+                    <b></b>
+                </div>
+                <time-picker class="end-times" title="开始时间" yearstart="2016" yearend="2017"  time-picker-result="result">
+                </time-picker>
+            </div>
+        </div>
+        <div class="release-list update-details-procedures enter-deadline location" ng-click="toGameLocation()">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    地点
+                </span>
+                <b></b>
+            </div>
+        </div>
+        <div class="release-list update-details-procedures game-time game-location">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    场地号码
+                </span>
+                <i ng-repeat="allLocal in allLocals" ng-class="{changeBg:$index==localNum}" ng-click="showLocationNum($index)">{{allLocal.text}}</i>
+            </div>
+        </div>
+        <div class="release-list tournament-level concurrent-privilege">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    兼项权限
+                </span>
+                <i ng-repeat="alow in alowDoubles" ng-class="{changeBg:$index==bgNum}" ng-click="isAlowed($index)">{{alow.text}}</i>
+                <div ng-show="allowShow">
+                    <textarea class="allow-details" placeholder="请填写兼项描述" ng-model="addMatch.mutiIntro"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="release-list tournament-level registration-fee">
+            <div class="list list-single">
+
+                <a></a>
+                <span>
+                    报名费用
+                </span>
+                <div class="write-fee">
+                    <i>单打</i><input type="text" ng-model="addMatch.price"><i>元/人</i>
+                    <i>双打</i><input type="text" ng-model="addMatch.price2"><i>元/组</i>
+                </div>
+
+            </div>
+        </div>
+        <div class="release-list tournament-level tournament-level1">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    是否允许线下支付
+                </span>
+                <i ng-repeat="offLinePay in offLinePays" ng-class="{changeBg:$index==offLinePayMethod}" ng-click="isOffLinePay($index)">{{offLinePay.text}}</i>
+
+            </div>
+        </div>
+        <div class="release-list match-name contacts">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    联系人
+                </span>
+                <input type="text" placeholder="请填写联系人" ng-model="addMatch.contactUser">
+            </div>
+        </div>
+        <div class="release-list match-name game-time contact-information">
+            <div class="list list-single">
+                <a></a>
+                <span>
+                    联系方式
+                </span>
+                <input type="text" placeholder="请填写联系方式" ng-model="addMatch.contactPhone">
+            </div>
+        </div>
+        <div class="more-info-title" ng-click="showMoreSetting()">
+            点击展开更多选项
+        </div>
+        <div ng-show="moreSettingShow">
+            <div class="release-list update-details-procedures enter-deadline location game-di1">
+                <div class="list list-single">
+                    <a></a>
+                <span>
+                    比赛海报
+                </span>
+                    <b></b>
+                </div>
+            </div>
+            <div class="release-list tournament-level registration-fee not-all-game game-di2">
+                <div class="list list-single">
+                    <a></a>
+                    <span>
+                        本次比赛为内部不公开报名的比赛
+                    </span>
+                    <i ng-repeat="offLinePay in offLinePays" ng-class="{changeBg:$index==offSetting}" ng-click="setting($index)">{{offLinePay.text}}</i>
+                   <div ng-show="showMore">
+                       <div class="input-all-game">
+                           <div class="input-all-game1"></div>
+                       </div>
+                       <input type="text" maxlength="6" placeholder="请设置6位数字参赛密码">
+                       <p>所有队员参赛前需输入密码，外部人士无法参赛</p>
+                   </div>
+
+                </div>
+            </div>
+            <div class="release-list update-details-procedures enter-deadline location game-di3">
+                <div class="list list-single">
+                    <a></a>
+                    <span>
+                        证件要求
+                    </span>
+                    <i ng-repeat="offLinePay in offLinePays" ng-class="{changeBg:$index==needCodeNum}" ng-click="isNeedCode($index)">{{offLinePay.text}}</i>
+                </div>
+            </div>
+            <div class="release-list update-details-procedures enter-deadline location game-di4" ng-click="toOrganization()">
+                <div class="list list-single">
+                    <a></a>
+                <span>
+                    所属组织类型
+                </span>
+                    <b></b>
+                </div>
+            </div>
+        </div>
+        <div class="save-release">
+            <div class="save-release-btn" ng-click="saveGame()">保存</div>
+            <div class="save-release-btn" ng-click="releaseGame()">发布</div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,27 @@
+<ion-view ng-controller="viewPacketCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>查看分组</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-repeat=" packet in packets">
+            <div class="group-tt">
+                {{packet.vsGroupName}}
+            </div>
+            <ul class="group-ti">
+                <li ng-repeat="item in packet.items">
+                    <span>{{item.position}}</span>
+                    <span>{{item.playerName}}</span>
+                </li>
+            </ul>
+        </div>
+        <div style="height: 100px"></div>
+        <div class="view-packet-back">
+            <button on-tap="goBack()">确定</button>
+        </div>
+
+    </ion-content>
+</ion-view>

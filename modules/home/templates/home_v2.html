@@ -1,0 +1,103 @@
+<ion-content ng-controller = 'homeV2Ctrl'>
+   <!-- <div class="search">
+        <span ng-click="getCityList()">
+            <img src="img/home/location1.png"/>
+            <i>{{city.name}}</i>
+        </span>
+        <span>
+            羽众
+        </span>
+    </div>-->
+    <div class="banner">
+        <ion-slide-box class="banner-container" ng-if="bannerImgs" on-slide-changed="slideHasChanged($index)" auto-play="true" slide-interval="4000" delegate-handle="slideimgs" does-continue="true">
+            <ion-slide ng-repeat="bannerImg in bannerImgs">
+                <a href="{{bannerImg.forwardValue}}" target="_blank" >
+                    <img ng-src="{{bannerImg.picUrl}}">
+                </a>
+            </ion-slide>
+        </ion-slide-box>
+    </div>
+    <div class="user-grade">
+        <i class="single-rank-pic">
+            <img ng-if="singleLevelInfo.parentLvel == '风级'" src="img/home/wind_last_home.png"/>
+            <img ng-if="singleLevelInfo.parentLvel == '林级'" src="img/home/forest_last_home.png"/>
+            <img ng-if="singleLevelInfo.parentLvel == '火级'" src="img/home/fire_last_home.png"/>
+            <img ng-if="singleLevelInfo.parentLvel == '山级'" src="img/home/mount_last_home.png"/>
+            <img ng-if="singleLevelInfo.parentLvel == null" src="img/home/w_f_f_m.png"/>
+        </i>
+        <div class="rank-desc" ng-if="singleLevelInfo == null" ng-click="toOwnRanking1()">
+            <span>单打</span>
+            <span>暂无排名</span>
+        </div>
+        <div class="rank-desc" ng-if="singleLevelInfo != null" ng-click="toRank1()">
+            <span>单打</span>
+            <span>{{singleLevelInfo.parentLvel}}-第{{singleLevelInfo.rank}}名</span>
+        </div>
+        <span class="user-photo">
+            <span>
+               <img src="{{avatar}}"/>
+            </span>
+        </span>
+        <div class="rank-desc" ng-if="doubleLevelInfo == null" ng-click="toOwnRanking2()">
+            <span>双打</span>
+            <span>暂无排名</span>
+        </div>
+        <div class="rank-desc" ng-if="doubleLevelInfo != null" ng-click="toRank2()">
+            <span>双打</span>
+            <span>{{doubleLevelInfo.parentLvel}}-第{{doubleLevelInfo.rank}}名</span>
+        </div>
+        <i class="double-rank-pic">
+            <img ng-if="doubleLevelInfo.parentLvel == '风级'" src="img/home/wind_last_home.png"/>
+            <img ng-if="doubleLevelInfo.parentLvel == '林级'" src="img/home/forest_last_home.png"/>
+            <img ng-if="doubleLevelInfo.parentLvel == '火级'" src="img/home/fire_last_home.png"/>
+            <img ng-if="doubleLevelInfo.parentLvel == '山级'" src="img/home/mount_last_home.png"/>
+            <img ng-if="doubleLevelInfo.parentLvel == null" src="img/home/w_f_f_m.png"/>
+        </i>
+    </div>
+    <div style="width: 100%;height: 2px;background: #DCDDDD"></div>
+    <div class="my-game-h" ng-if="latestApply != null" ng-click="toMyGames()">
+        <span>
+            <img src="img/home/my_game.png"/>
+        </span>
+        <span>
+            <p>{{latestApply.name}}</p>
+            <p ng-if="latestApply.status == 3">状态：报名中</p>
+            <p ng-if="latestApply.status == 1">状态：进行中</p>
+            <p ng-if="latestApply.status == 5">状态：已结束</p>
+        </span>
+        <span>
+            查看更多
+            <img src="img/home/unfold.png"/>
+        </span>
+    </div>
+    <div class="game-lists">
+        <div class="game-list" ng-repeat="gameList in gameLists" ng-click="toGroupDetails(gameList.competitionId,gameList.type)">
+            <div class="poster">
+                <img src="{{gameList.banner}}"/>
+            </div>
+            <div ng-if = "gameList.status == 3" class="game-status">
+                <img src="img/home/game_status3.png"/>
+                <span>报名中</span>
+            </div>
+            <div ng-if = "gameList.status == 1" class="game-status">
+                <img src="img/home/game_status2.png"/>
+                <span>进行中</span>
+            </div>
+            <div ng-if = "gameList.status == 5" class="game-status">
+                <img src="img/home/game_status1.png"/>
+                <span>已结束</span>
+            </div>
+            <div class="game-desc">
+                <h3>{{gameList.name}}</h3>
+                <p>比赛时间：{{gameList.beginDate|date:'yyyy.MM.dd'}}-{{gameList.endDate|date:'MM.dd'}}</p>
+                <p>比赛项目：{{gameList.projects}}</p>
+                <p>比赛地点：{{gameList.stadium}}</p>
+                <div ng-if = "gameList.status == 3" class="game-status-btn">点击报名</div>
+           </div>
+           <div class="icon-grade">
+               <img src="img/home/icon_grade.png"/>
+           </div>
+        </div>
+    </div>
+    <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+</ion-content>

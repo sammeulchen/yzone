@@ -1,0 +1,217 @@
+/*.scroll{
+    background: #F7F8F7;
+}*/
+.my-info{
+    width: 100%;
+    height: 139px;
+    background: #A5D7EC;
+    text-align: center;
+    position: relative;
+}
+.btn-letter{
+    width: 23px;
+    height: 18px;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+}
+.read-message{
+    width: 15px;
+    height: 15px;
+    background: #F8B62B;
+    color: #ffffff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 7px;
+    border-radius: 100%;
+    position: absolute;
+    left: 30px;
+    top: 6px;
+    z-index: 2;
+}
+.my-info .bg-img{
+    width: 100%;
+    height: 139px;
+}
+.my-avatar{
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    position: absolute;
+    top: 36px;
+    left: 42%;
+    z-index: 50;
+}
+.user-grade1{
+    width: 100%;
+    height: 45px;
+    padding: 0 8px;
+    text-align: center;
+    display: -webkit-flex;
+    position: relative;
+}
+.user-grade1 .grade-sd{
+    -webkit-flex: 1;
+    border-right: 1px solid #D8D9D9;
+}
+.user-grade1 .grade-sd:last-of-type{
+    border: none;
+}
+.single-rank-pic1{
+    display: inline-block;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+}
+.single-rank-pic1 img{
+    width: 30px;
+    height: 32px;
+}
+.rank-desc1{
+    display: inline-block;
+    height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.double-rank-pic1{
+    display: inline-block;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+}
+.double-rank-pic1 img{
+    width: 30px;
+    height: 32px;
+}
+.rank-desc1 span{
+    display: block;
+    font-size: 14px;
+}
+.my-age{
+    display: inline-block;
+    width: 61px;
+    height: 17px;
+    position: absolute;
+    top: 90px;
+    z-index: 50;
+    left: 42%;
+}
+.my-age img{
+    width: 31px;
+}
+.my-age b{
+    display: inline-block;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 23px;
+    width: 20px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+.my-name{
+    color: #ffffff;
+    position: relative;
+    top: -35px;
+    display: inline-block;
+    width: 61px;
+    font-size: 16px;
+}
+.my-games{
+    padding: 0 10px;
+    height: 50px;
+    background:#ffffff;
+    position: relative;
+}
+.my-games-s{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #D5D5D5;
+}
+.my-games:last-child{
+    margin-bottom: 20px;
+}
+.my-games .img1{
+    width: 14px;
+    height: 22px;
+    position: absolute;
+    left: 19px;
+    top: 14px;
+}
+.my-games .img2{
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    left: 19px;
+    top: 17px;
+}
+.my-games .img3{
+    width: 17px;
+    height: 14px;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+}
+.my-games .img4{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 18px;
+    top: 17px;
+}
+.my-games .img5{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 18px;
+    top: 17px;
+}
+.my-games .img6{
+    width: 16px;
+    height: 19px;
+    position: absolute;
+    left: 19px;
+    top: 15px;
+}
+.my-games .img7{
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    left: 17px;
+    top: 16px;
+}
+.my-games span:nth-of-type(1){
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 41px;
+    color: #221613
+}
+.my-games img:nth-of-type(2){
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

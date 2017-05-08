@@ -1,0 +1,24 @@
+<ion-view ng-controller="recordCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>积分记录</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+
+    <ion-tabs class="tabs-top">
+        <ion-tab title="解读积分" icon-on="interpretation" href="/record/interpretation">
+            <ion-nav-view name="record-interpretation">
+
+            </ion-nav-view>
+
+        </ion-tab>
+        <ion-tab title="积分记录" icon-on="creditsLog" href="/record/creditsLog">
+            <ion-nav-view name="record-creditsLog">
+
+            </ion-nav-view>
+
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

@@ -1,0 +1,43 @@
+<ion-view class="game-time-view" ng-controller="gameTimeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>比赛时间</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="game-time-list" ng-show="isShow">
+            <span class="game-time-title">比赛时间</span>
+            <li ng-repeat="gameTime in gameTimes">
+
+                <span>{{gameTime.startTime}}</span>
+                <span>-</span>
+                <span>{{gameTime.endTime}}</span>
+                <b ng-click="removegameTimes()"><img src="img/delete.gif"/></b>
+            </li>
+
+        </ul>
+        <div class="game-time-title">
+            选择时间
+        </div>
+        <div class="select-game-time">
+            <span>开始时间：</span>
+            <time-picker title="开始时间" yearstart="2016" yearend="2017"  time-picker-result="result" class="begin-time start-time">
+            </time-picker>
+            <span>结束时间</span>
+            <time-picker title="结束时间" yearstart="2016" yearend="2017"  time-picker-result="result" class="begin-time end-time">
+            </time-picker>
+        </div>
+        <div class="fix-hour">
+            <span ng-click="addTime()">
+                <i>确定</i>
+            </span>
+        </div>
+        <div class="sure-bottom">
+            <button class="btn-sure" ng-click="backToPre()">
+                确定
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

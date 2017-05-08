@@ -1,0 +1,61 @@
+<ion-view ng-controller="editChildInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>编辑儿童信息</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="change-personal-info1">
+            <li>
+                <span>头像</span>
+                <input type="file" id="fileElem" class="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                <div id="fileSelect" class="fileSelect">
+                    <img src="{{childInfo.avatar}}"/>
+                </div>
+                <img class="img-next" src="img/next-page.gif"/>
+            </li>
+            <li>
+                <span>姓名</span>
+                <input type="text" ng-model="childInfo.realname">
+            </li>
+            <li>
+                <span>性别</span>
+                <span class="select-sex">
+                    <select ng-options="mySex.text for mySex in mySexs" ng-model="selectSex.sex" ng-change="changeSex()">
+                    </select>
+                </span>
+
+                <img src="img/next-page.gif"/>
+            </li>
+            <li class="birth">
+                <span>生日</span>
+                <onezone-datepicker datepicker-object="onezoneDatepicker">
+                    <div class=" show-onezone-datepicker">
+                        {{onezoneDatepicker.date | date:'yyyy年MM月dd日'}}
+                    </div>
+                </onezone-datepicker>
+                <img src="img/next-page.gif"/>
+            </li>
+
+
+        </ul>
+
+        <div class="my-code" ng-click="toChildCode()">
+            <div class="my-code-details">
+                <span>证件信息</span>
+                <i>{{childInfo.crelistStr}}</i>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+
+        <div class="delete-child-info" ng-click="deleteChildInfo()">
+            <img src="img/icon-reddelete.png"/>
+            <span>删除</span>
+        </div>
+    </ion-content>
+    <div class="save-child-info" ng-click="saveChildInfo()">
+        <span>保存</span>
+    </div>
+</ion-view>

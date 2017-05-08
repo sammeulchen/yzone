@@ -1,0 +1,118 @@
+<ion-view ng-controller="singleRankCtrl">
+    <div class="my-rank" ng-show="!singleLevel.enableEdit && !singleLevel.enableDown">
+        <div class="my-rank-details" ng-style="setBg(singleLevel.parentLevel)">
+            <div class="my-rd-left" ng-click="toSingleRanking()">
+                <div class="my-rdl-top">
+                    <span></span>
+                    <img ng-src="{{singleLevel.icon}}">
+                    <span>{{singleLevel.parentLevelName}}{{singleLevel.subLevelName}}级</span>
+                </div>
+                <div class="my-rdl-center">
+                    <div class="grade-rank">
+                        <span ng-style="setBg1(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg2(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg3(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg4(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg5(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg6(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg7(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg8(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg9(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg10(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg11(singleLevel.currentScore)"></span>
+                        <span ng-style="setBg12(singleLevel.currentScore)"></span>
+                    </div>
+                    <div class="rank-score">{{singleLevel.currentScore}}分/{{singleLevel.nextLevelScore}}分</div>
+                </div>
+                <div class="my-rdl-bottom">
+                    <span ng-show="singleLevel.currentScore < 108037">风丙</span>
+                    <span ng-show="singleLevel.currentScore < 108037">风乙</span>
+                    <span ng-show="singleLevel.currentScore < 108037">风甲</span>
+                   <span ng-show="singleLevel.currentScore >= 108037">
+                        <i>风</i>
+                    </span>
+                    <span ng-show="singleLevel.currentScore < 125359">林丙</span>
+                    <span ng-show="singleLevel.currentScore < 125359">林乙</span>
+                    <span ng-show="singleLevel.currentScore < 125359">林甲</span>
+                    <span ng-show="singleLevel.currentScore >= 125359">
+                        <i>林</i>
+                    </span>
+                    <span ng-show="singleLevel.currentScore < 162680">火丙</span>
+                    <span ng-show="singleLevel.currentScore < 162680">火乙</span>
+                    <span ng-show="singleLevel.currentScore < 162680">火甲</span>
+                    <span ng-show="singleLevel.currentScore >= 162680">
+                        <i>火</i>
+                    </span>
+                    <span ng-show="singleLevel.currentScore >= 162680">山丙</span>
+                    <span ng-show="singleLevel.currentScore >= 162680">山乙</span>
+                    <span ng-show="singleLevel.currentScore >= 162680">山甲</span>
+                    <span ng-show="singleLevel.currentScore < 162680">
+                        <i>山</i>
+                    </span>
+                </div>
+
+            </div>
+            <div class="my-rd-right">
+                <span>{{singleLevel.rank}}名</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="change-class"  ng-click="changeClass(singleLevel.parentLevel)"  ng-show="!singleLevel.enableEdit && !singleLevel.enableDown && singleLevel.enableReset">修改自定义级别</div>
+    <div class="rank-title"  ng-show="!singleLevel.enableEdit && !singleLevel.enableDown">
+        <div class="show-list">
+            <div class="rs-list">
+                <select ng-style="setColor()" ng-model="selectRank.rank" ng-options="rankingGrade.name for rankingGrade in rankingGrades" ng-change = changeRank(rankingGrade.id)>
+                </select>
+            </div>
+            <div class="rs-list">
+                <select ng-model="selectSex.sex" ng-options="sex.text for sex in sexs" ng-change = changeSex()>
+                </select>
+            </div>
+        </div>
+    </div>
+    <ion-content class="content-height" ng-show="!singleLevel.enableEdit && !singleLevel.enableDown">
+        <ul class="all-players-rank">
+            <li ng-repeat="singlePlayer in singlePlayers">
+                <i ng-style="setRankBg(singlePlayer.rank)" ng-show="singlePlayer.rank<=3"></i>
+                <i ng-style="setRankBg(singlePlayer.rank)"ng-show="singlePlayer.rank>3">{{singlePlayer.rank}}</i>
+                <span ng-click="toBallFriend(singlePlayer.current,singlePlayer.userId)">
+                    <img src="{{singlePlayer.avatar}}"/>
+                </span>
+                <span>
+                    {{singlePlayer.userName}}
+                    <img ng-show="singlePlayer.gender == 1" src="img/home/man.png">
+                    <img ng-show="singlePlayer.gender == 0" src="img/home/femal.png">
+                </span>
+                <span>{{singlePlayer.score}}分</span>
+            </li>
+        </ul>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+    <div class="look-more" ng-click="lookMore()" ng-show="!singleLevel.enableEdit && !singleLevel.enableDown">上拉查看更多</div>
+    <div class="tips-message1" ng-show="singleLevel.enableEdit">
+        <div class="tips-message1-bg1">
+            <div class="tips-message1-bg2">
+            </div>
+            <div class="tips-message1-content">
+                您的当前级别为“火级”。为保证日后参赛体验，请根据自己的真实水平和本次竞赛体验确定羽众等级。第二次参加分级赛后您将无法主动修改等级。等等级确定后，您可参加所在等级火更高级别的比赛，无法参加低级别比赛。
+                <a ng-click="toYZRank()">详情查看羽众等级规范</a>
+            </div>
+        </div>
+    </div>
+    <div class="tips-message1" ng-show="singleLevel.enableDown">
+        <div class="tips-message1-bg3">
+        </div>
+        <div class="tips-message1-content">
+            您的单打项目在本期积分排名中位于该级别全部人员的后10%中，为保证参赛体验，您有一次选择降级机会。降级后，将变成N甲级的初始积分。您也可以继续留在该级。
+        </div>
+    </div>
+    <div class="tips-btn"  ng-show="singleLevel.enableEdit">
+        <span ng-click="changeClass(singleLevel.parentLevel)">修改等级</span>
+        <span ng-click="stayClass()">留在该级</span>
+    </div>
+    <div class="tips-btn" ng-show="singleLevel.enableDown">
+        <span ng-click="stayClass()">留在该级</span>
+        <span ng-click="downClass()">下降一级</span>
+    </div>
+</ion-view>

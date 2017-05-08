@@ -1,0 +1,37 @@
+<ion-modal-view class="project-setting-view">
+    <ion-header-bar>
+        <div ng-click="closeModal()">
+            <img src="img/back.gif"/>
+        </div>
+        <h1 class="title">项目设置</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="project-setting-title">项目</div>
+        <div class="project-setting">
+            <div class="project-setting-details">
+                <input type="text" ng-model="selectProject.description" placeholder="项目描述">
+                <i>如：45岁以上（选填）</i>
+                <select ng-options="allProject.name for allProject in allProjects" ng-model="selectProject.project" ng-change="getProject()"></select>
+                <input type="text" ng-model="selectProject.maxCount" placeholder="填写数字">
+                <i>最大人数或组数（必填）</i>
+                <span>人/组</span>
+                <span ng-click="addProject()" ng-show="editShow">添加</span>
+            </div>
+
+        </div>
+        <ul class="project-setting-content">
+            <li ng-repeat="project in projects">
+                <span>项目{{$index+1}}：</span>
+                <span>{{project.projectName}}——{{project.maxCount}}</span>
+                <div class="optera-btn">
+                    <i ng-click="editProject(project.id,projects[$index])"><img src="img/btn-edit.gif"/></i>
+                    <i ng-click="deleteProject(project.id,projects[$index])"><img src="img/delete.gif"/></i>
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+    <div class="set-my-project">
+        <span ng-show="editShow" ng-click="closeModal()">完成</span>
+        <span ng-show="editLastShow" ng-click="editLast()">确定</span>
+    </div>
+</ion-modal-view>

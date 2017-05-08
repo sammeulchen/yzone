@@ -1,0 +1,13 @@
+<ion-view ng-controller="addLocationCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>添加场馆</span>
+    </ion-header-bar>
+    <ion-content>
+        <iframe id="mapPage" width="100%" height="100%" style="position: absolute" frameborder=0
+                src="http://apis.map.qq.com/tools/locpicker?search=1&type=1&key=XREBZ-7Z5WP-VT5DQ-LKLMC-7KUM3-XTBZP&referer=yuZoneApp">
+        </iframe>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,74 @@
+<ion-view ng-controller="clubMyProjectCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToDetails()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的项目</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="partner-details-tabs" ng-show="category == 2">
+            <div class="partner-details-tab" ng-repeat="tabName in tabNames" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab-select' : '' ">
+                <span>{{tabName}}</span>
+            </div>
+        </div>
+        <ul  ng-show="category == 2">
+            <li>
+                <div ng-include="pages[slectIndex]">
+
+                </div>
+            </li>
+        </ul>
+        <div ng-show="category == 1">
+            <ul class="club-my-info">
+                <li class="mp-info">
+                    <div class="photo">
+                <span class="img1">
+                    <img class="img2" src="{{applyerInfo.avatar}}">
+                </span>
+                    </div>
+            <span class="name">
+                {{applyerInfo.nickname}}
+                <span class="sex-p" ng-show="applyerInfo.age >= 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/icon-boy.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/icon-girl.png">
+                    <i>{{applyerInfo.age}}</i>
+                </span>
+                <span class="sex-pm" ng-show="applyerInfo.age < 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/home/man.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/home/femal.png">
+                </span>
+            </span>
+                    <div class="level">
+                        <span ng-show="applyerInfo.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="applyerInfo.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="applyerInfo.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="applyerInfo.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+                    </div>
+                </li>
+            </ul>
+            <div class="kl_4"></div>
+            <div class="club-my-info">
+                <span class="add-p">参与项目</span>
+                <span class="add-d">{{project}}</span>
+            </div>
+            <div class="kl_4"></div>
+            <div class="club-my-info" ng-show="position !=''">
+                <span class="add-p">分组结果</span>
+                <span class="add-d">{{position}}</span>
+            </div>
+            <div class="kl_4" ng-show="position !=''"></div>
+        </div>
+    </ion-content>
+    <div class="project-details-btn project-details-btn1" ng-show="category == 2 && paternerInfo == null">
+        <span class="cancel2" ng-click="cancelReg(id)">取消报名</span>
+        <span class="add2" ng-click="addNewPartner()">添加搭档</span>
+    </div>
+    <div class="project-details-btn">
+        <span class="cancel1" ng-click="cancelReg(id)" ng-show="category == 1 || (category == 2 && paternerInfo != null)">取消报名</span>
+    </div>
+</ion-view>

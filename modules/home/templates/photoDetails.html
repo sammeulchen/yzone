@@ -1,0 +1,91 @@
+<ion-view ng-controller="photoDetailsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>照片详情</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="pic-img">
+            <ion-scroll scrollbar-x="false" overflow-scroll='false' direction="x"  delegate-handle="photo" on-scroll="scrollPhoto()" has-bouncing="true">
+                <div class="img1" ng-click="downLoad()">
+                    <img ng-src="{{photoDetail.bigPhotoPath}}?imageView2/2/w/350">
+                </div>
+
+                <div class="pic-img-desc">
+
+                    <span class="file-time">
+                        {{photoDetail.createDate | date:'yyyy.MM.dd HH:mm'}}
+                    </span>
+                    <span class="sees_d">
+                        <img src="img/home/see.png">
+                        {{photoDetail.viewCount}}
+                    </span>
+                    <span class="says_d" ng-click="writeComment()">
+                        <img src="img/home/say.png">
+                        {{photoDetail.commentCount}}
+                   </span>
+                   <span class="says_d" ng-click="downLoad()" style="border: none">
+                        <img src="img/home/down_load.png">
+                       {{photoDetail.downloadCount}}
+                   </span>
+                    <span class="loves_d" ng-click="likePic()" ng-show="photoDetail.followed == 0">
+                        <img src="img/home/love.png">
+                        {{photoDetail.followCount}}
+                    </span>
+                   <span class="loves_d" ng-click="likePic()" ng-show="photoDetail.followed == 1">
+                        <img src="img/home/love_click.png">
+                        {{photoDetail.followCount}}
+                   </span>
+
+
+                </div>
+            </ion-scroll>
+        </div>
+        <div class="pic-img">
+
+        </div>
+        <div class="comments">
+            <div class="comment" ng-repeat="userComment in userComments">
+                <div class="comment-user">
+                    <span>
+                        <img ng-src="{{userComment.avatar}}">
+                    </span>
+                    <span>
+                        <i>{{userComment.realName}}<a ng-if="userComment.parentId != 0">回复{{userComment.remark}}</a></i>
+                        <i>{{userComment.commentDate | date:'yyyy.MM.dd HH:mm'}}</i>
+                    </span>
+                    <span class="replay" ng-click="writeReply(userComment.commentId)" ng-if="userComment.deleteAble == 0">
+                        <img src="img/home/say.png">
+                        回复
+                    </span>
+                    <span class="delete" ng-if="userComment.deleteAble == 1" ng-click="deleteComment(userComment.commentId,$index)">
+                        <img src="img/delete.gif">
+                        删除
+                    </span>
+                </div>
+                <div class="comment-content">
+                    <p>{{userComment.content}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="kl_3"></div>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+    <div class="comment-input" ng-show="commentInput">
+        <textarea id="contentFocus"  ng-model="comment.commentContent" rows=1  style='padding: 5px;display: inline-block;font-size: 14px;width:80%;min-height: 20px;overflow:scroll;overflow-y:hidden;overflow-x:hidden;border: none'
+                  onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},200);" onblur="clearInterval(this.clock); " autofocus></textarea>
+        <!--<div id="contentFocus" style='padding: 5px;display: inline-block;font-size: 14px;width:80%;min-height: 20px;overflow:scroll;overflow-y:hidden;overflow-x:hidden;border: none;background: #ffffff' contenteditable="true"></div>-->
+        <span ng-click="submitComment()">提交</span>
+    </div>
+    <div class="comment-btn" ng-show="commentBtn">
+        <span ng-click="sharePhoto()">分享照片</span>
+        <span ng-click="writeComment()">写评论</span>
+    </div>
+    <div class="share-g" ng-show="shareShow" ng-click="shareMiss()">
+        <img src="img/pic-share.png"/>
+        <p>快快分享这个精彩瞬间吧！</p>
+    </div>
+    <div class="comment-bg" ng-show="commentBgShow" ng-click="commentBgMiss()">
+    </div>
+</ion-view>

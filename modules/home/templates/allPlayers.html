@@ -1,0 +1,50 @@
+<ion-view ng-controller="allPlayersCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>全部队员</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+
+        <div class="all-players-list">
+            <div class="list">
+                <a class="item item-avatar perfert-player" ng-repeat="user in users2">
+                    <img  ng-click="toBallFriend(user.userId)" class="head-portrait" src="{{user.avatar}}"/>
+                    <p>{{user.realname}}</p>
+                    <p>手机号：{{user.mobile}}</p>
+                   <!-- <div class="grade">
+                        <img src="img/wind.gif"/>
+                        <span>{{user.clazzLevelName}}</span>
+                    </div>-->
+                </a>
+                <a class="item item-avatar imperfect-information-top" ng-repeat="user in users1">
+                    <img  ng-click="toBallFriend(user.userId)" class="head-portrait" src="{{user.avatar}}"/>
+                    <p>{{user.realname}}</p>
+                    <p>手机号：{{user.mobile}}</p>
+                    <p>*ta还不是羽众用户，注册后才能参加比赛</p>
+                    <!-- <div class="grade">
+                         <img src="img/wind.gif"/>
+                         <span>{{user.clazzLevelName}}</span>
+                     </div>-->
+                </a>
+                <!--<div class="item" ng-repeat="user in users1">
+                    <div class="imperfect-information-top">
+                        <i>{{user.realname}}</i>
+                        <b>{{user.mobile}}</b>
+                    </div>
+                    <div class="imperfect-information-bottom"></div>
+                </div>-->
+
+
+            </div>
+
+
+        </div>
+        <div class="btn">
+            <div class="bottom-btns" on-tap="goBack()">返回</div>
+
+        </div>
+    </ion-content>
+</ion-view>

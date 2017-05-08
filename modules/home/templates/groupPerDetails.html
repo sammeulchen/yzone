@@ -1,0 +1,28 @@
+<ion-view ng-controller = 'groupPerDetailsCtrl'>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>成绩及分组</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+
+    <ion-tabs class="tabs-top">
+        <ion-tab title="小组赛" icon-on="group" href="#/groupPerDetails/groupMatch">
+            <ion-nav-view name="groupPerDetails-groupMatch">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="淘汰赛" icon-on="single" href="#/groupPerDetails/knockout">
+            <ion-nav-view name="groupPerDetails-knockout">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="成绩" icon-on="grade" href="#/groupPerDetails/groupGrade">
+            <ion-nav-view name="groupPerDetails-groupGrade">
+
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+
+</ion-view>

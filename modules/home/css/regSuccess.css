@@ -1,0 +1,44 @@
+
+.height-total{
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/paySuccessBg.gif") repeat-y;
+    background-size:100% 43px;
+}
+.success-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../../../img/up-bg.gif") no-repeat;
+    background-size:302px 248px;
+    background-position: 38px 120px;
+}
+.success-bg p{
+    width: 100%;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding-top:216px;
+}
+.back-reg-success{
+    text-decoration: none;
+    width: 40%;
+    height: 45px;
+    background: #ffffff;
+    border:1px solid #8DC21F;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 22px;
+}
+.back-home-reg{
+    color: #8DC21F;
+    left: 15px;
+}
+.back-game-reg{
+    color: #ffffff;
+    background: #8DC21F;
+    right: 15px;
+}

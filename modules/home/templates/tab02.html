@@ -1,0 +1,55 @@
+<div>
+    <div class="kl_5"></div>
+    <div class="game-tb" ng-click="toTimeUrl()">
+        <div class="game-tb-title">
+            <img src="img/home/time_table.png">
+            <span>比赛时间表</span>
+            <span>查看全部</span>
+        </div>
+        <div class="game-tb-img">
+            <img ng-show="timeSecduleUrl.length > 0"  src="{{timeSecduleUrl[0]}}">
+            <p ng-show="timeSecduleUrl.length == 0">竞赛秩序表暂未上传，请您耐心等待！</p>
+        </div>
+    </div>
+    <div class="kl_5"></div>
+    <div class="gp-title">
+        <span>分组与成绩</span>
+        <span>（选择项目查看详情）</span>
+    </div>
+    <div class="gp-details">
+        <div ng-repeat="event in events" class="event-aa">
+            <div class="game-ge-group" ng-if="event.gorupName != '不分组' && event.gorupName != '' && event.gorupName != null">
+                <div class="aa"></div>
+                {{event.gorupName}}
+            </div>
+            <div class="game-ge-cp_last">
+                <div class="game-ge-c_last" ng-if=" event.className == '风级'">
+                <span>
+                    <img src="img/home/wind_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '林级'">
+                <span>
+                    <img src="img/home/forest_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '火级'">
+                <span>
+                    <img src="img/home/fire_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '山级'">
+                <span>
+                    <img src="img/home/mount_last.png"/>
+                </span>
+                </div>
+                <ul class="game-ge-p_last game-ge-p_last_tab2">
+                    <li ng-repeat="project in event.applyList" ng-click="toGroupPerDetails(project.projectId)">
+                        <span>{{project.name}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kl_6"></div>
+</div>

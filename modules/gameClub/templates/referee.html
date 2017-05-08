@@ -1,0 +1,53 @@
+<ion-view ng-controller="refereeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>裁判</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="no-partner" ng-show="referees.length == 0">
+            <div class="no-partner-title">
+                    <span>
+                      <img src="img/game_club/xiaoren.png"/>
+                    </span>
+            </div>
+            <p class="no-friend">您还没有添加裁判，快去添加吧</p>
+        </div>
+        <div ng-show="referees.length != 0">
+            <ul class="referee-my-info">
+                <li class="mp-info" ng-repeat="referee in referees">
+                    <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{referee.avatar}}">
+                        </span>
+                    </div>
+                    <span class="name">
+                        {{referee.nickName}}
+                        <span class="sex-p" ng-show="referee.age >= 0">
+                            <img ng-show="referee.gender == 1" src="img/icon-boy.png">
+                            <img ng-show="referee.gender == 0" src="img/icon-girl.png">
+                            <i>{{referee.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="referee.age < 0">
+                                <img ng-show="referee.gender == 1" src="img/home/man.png">
+                                <img ng-show="referee.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+
+                    <div class="delete-referee-btn" ng-click="deleteReferee(referee.id,$index)">
+                        删除
+                        <img src="img/home/delete_new.png">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <!--<div class="share-to-referee" ng-show="shareShow" ng-click="shareMiss()">
+        <img src="img/pic-share.png">
+        <p>请发送邀请链接给新的裁判</p>
+    </div>-->
+
+    <div class="choice-project-btn" ng-click="toShare()">添加裁判</div>
+</ion-view>

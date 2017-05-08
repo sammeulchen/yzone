@@ -1,0 +1,49 @@
+<ion-view ng-controller="deletePlayersCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>删除选手</span>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-repeat="playerList in playerLists">
+            <ul class="club-my-info">
+                <li class="mp-info">
+                    <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{playerList.avatar}}">
+                        </span>
+                    </div>
+                    <span class="name">
+                        {{playerList.nickname}}
+                        <span class="sex-p" ng-show="playerList.age >= 0">
+                            <img ng-show="playerList.gender == 1" src="img/icon-boy.png">
+                            <img ng-show="playerList.gender == 0" src="img/icon-girl.png">
+                            <i>{{playerList.age}}</i>
+                        </span>
+                        <span class="sex-pm" ng-show="playerList.age < 0">
+                            <img ng-show="playerList.gender == 1" src="img/home/man.png">
+                            <img ng-show="playerList.gender == 0" src="img/home/femal.png">
+                        </span>
+                    </span>
+                    <div class="level">
+                        <span ng-show="playerList.slevel >=1 && playerList.slevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="playerList.slevel >=4 && playerList.slevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="playerList.slevel >=7 && playerList.slevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="playerList.slevel >=10 && playerList.slevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                        <span ng-show="playerList.dlevel >=1 && playerList.dlevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="playerList.dlevel >=4 && playerList.dlevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="playerList.dlevel >=7 && playerList.dlevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="playerList.dlevel >=10 && playerList.dlevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                    </div>
+                </li>
+                <div class="delete-player-btn" ng-click="deletePlayer(playerList.id,$index)">
+                    删除
+                    <img src="img/home/delete_new.png">
+                </div>
+            </ul>
+
+            <div class="kl_4"></div>
+        </div>
+    </ion-content>
+</ion-view>

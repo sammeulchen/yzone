@@ -1,0 +1,49 @@
+<ion-view ng-controller="clubGradeGroupCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>分组与成绩</span>
+    </ion-header-bar>
+    <ion-tabs class="tabs-top" ng-if="items.length == 2 && items[0].type == 0 && items[1].type == 1">
+        <ion-tab title="小组赛" icon-on="group" href="#/clubGradeGroup/clubGroupMatch">
+            <ion-nav-view name="clubGradeGroup-clubGroupMatch">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="淘汰赛" icon-on="konck" href="#/clubGradeGroup/clubKnockout">
+            <ion-nav-view name="clubGradeGroup-clubKnockout">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="成绩" icon-on="grade" href="#/clubGradeGroup/clubGrade">
+            <ion-nav-view name="clubGradeGroup-clubGrade">
+
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+    <ion-tabs class="tabs-top" ng-if="items.length == 1 && items[0].type == 0">
+        <ion-tab title="循环赛" icon-on="round" href="#/clubGradeGroup/clubRoundRobin">
+            <ion-nav-view name="clubGradeGroup-clubRoundRobin">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="成绩" icon-on="grade" href="#/clubGradeGroup/clubGrade">
+            <ion-nav-view name="clubGradeGroup-clubGrade">
+
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+    <ion-tabs class="tabs-top" ng-if="items.length == 1 && items[0].type == 1">
+        <ion-tab title="淘汰赛" icon-on="konck" href="#/clubGradeGroup/clubKnockout">
+            <ion-nav-view name="clubGradeGroup-clubKnockout">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="成绩" icon-on="grade" href="#/clubGradeGroup/clubGrade">
+            <ion-nav-view name="clubGradeGroup-clubGrade">
+
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

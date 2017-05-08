@@ -1,0 +1,52 @@
+<ion-view ng-controller="setLevelCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>设置羽众等级</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="set-level-desc">
+            <div class="set-level-dc">
+                <div class="set-level-l">
+                    <img src="img/game_club/sun.png">
+                </div>
+                <div class="set-level-r">
+                    <p>请判断自己的单打、双打等级</p>
+                    <p>正确估计自己的水平才能找到适合自己的球友哟！</p>
+                </div>
+            </div>
+        </div>
+        <ul class="set-level-c">
+            <li ng-click="toOwnRanking1()">
+                <div class="set-level-title">单打等级</div>
+                <div class="set-level-d">
+                    <span ng-if="members.singleLevel>=1 && members.singleLevel <= 3" class="is-set">风级</span>
+                    <span ng-if="members.singleLevel>=4 && members.singleLevel <= 6" class="is-set">林级</span>
+                    <span ng-if="members.singleLevel>=7 && members.singleLevel <= 9" class="is-set">火级</span>
+                    <span ng-if="members.singleLevel>=10 && members.singleLevel <= 12" class="is-set">山级</span>
+                    <span ng-if="members.singleLevel == -1 || members.singleLevel == null" class="no-set">未设置</span>
+                    <img src="img/next-page.gif">
+                </div>
+            </li>
+            <li ng-click="toOwnRanking2()">
+                <div class="set-level-title">双打等级</div>
+                <div class="set-level-d">
+                    <span ng-if="members.doubleLevel>=1 && members.doubleLevel <= 3" class="is-set">风级</span>
+                    <span ng-if="members.doubleLevel>=4 && members.doubleLevel <= 6" class="is-set">林级</span>
+                    <span ng-if="members.doubleLevel>=7 && members.doubleLevel <= 9" class="is-set">火级</span>
+                    <span ng-if="members.doubleLevel>=10 && members.doubleLevel <= 12" class="is-set">山级</span>
+                    <span ng-if="members.doubleLevel == -1 || members.doubleLevel == null" class="no-set">未设置</span>
+                    <img src="img/next-page.gif">
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+    <div class="create-game-btn">
+        <span>
+             <i class="appear-{{isDisabled}}" ng-click="changeStates()"><img src="img/home/box.png"/></i>
+             <b ng-click="toDisclaimer()">我同意羽众的免责声明</b>
+        </span>
+        <span ng-click="toRegSuccess()">完成报名</span>
+    </div>
+</ion-view>

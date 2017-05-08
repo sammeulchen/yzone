@@ -1,0 +1,40 @@
+<ion-view ng-controller="improveInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>完善信息</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="tips-title">先完善个人信息，才能进行下一步操作</div>
+        <ul class="improve-info">
+            <li>
+                <img src="img/icon-name.png"/>
+                <span>姓名</span>
+                <input type="text" ng-model="myInfo.realname" placeholder="请输入真实姓名"/>
+            </li>
+            <li>
+                <img src="img/icon-sex.png"/>
+                <span>性别</span>
+                <span>
+                    <select ng-model="myInfo.gender" ng-options="mySex.text for mySex in mySexs" ng-change="changeSex()"></select>
+                </span>
+                <img src="img/next-page2.gif"/>
+            </li>
+            <li>
+                <img src="img/icon-tel.png"/>
+                <span>联系电话</span>
+                <input type="number" placeholder="请输入手机号" ng-model="myInfo.mobile"/>
+                <span  ng-show="codePreShow" ng-click="getCode()">发送验证码</span>
+                <span ng-show="codeLastShow">{{second}}秒后再次获取</span>
+            </li>
+            <li>
+                <img src="img/icon-captcha.png"/>
+                <span>验证码</span>
+                <input type="number" ng-model="myInfo.code" placeholder="请输入验证码"/>
+            </li>
+        </ul>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="completeMyInfo()">完成</div>
+</ion-view>

@@ -1,0 +1,105 @@
+
+.bodyHeight{
+
+    background: #F7F8F8;
+}
+.scroll{
+    width: 100%;
+    min-height: 100%;
+}
+.select-groups{
+    width: 100%;
+    height: 112px;
+}
+.select-teams{
+    width: 100%;
+}
+.confirm-name{
+    width: 100%;
+}
+.select-team-title,.confirm-name-title{
+    width: 100%;
+    height: 23px;
+    padding-left:14px;
+    font-size:14px;
+    color: #ffffff;
+    line-height:23px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);;
+}
+.team-name{
+    width: 100%;
+    padding-top:10px;
+    font-size:14px;
+    color: #000000;
+    text-align: center;
+}
+.players-name{
+    width: 100%;
+    padding: 22px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.players-name li{
+    width: 30%;
+    height: 25px;
+    border:1px solid #727171;
+    border-radius: 3px;
+    margin-bottom:15px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    color: #727171;
+}
+.contact-us{
+    width: 100%;
+    height: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #F39800;
+    margin-bottom: 14px;
+}
+.contact-us a{
+    color: #F39800;
+}
+.bottom-btn-sure{
+    width: 100%;
+    height: 46px;
+    padding: 0 8px;
+ }
+.bottom-btn-sure a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 46px;
+    background: #8DC21F;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

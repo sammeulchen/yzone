@@ -1,0 +1,35 @@
+<ion-view>
+    <div class="show-location">
+        这里显示定位地图 AK:MsLO5W1VGuug6LDrgMA1dMRcQIkQYFWq
+    </div>
+    <div class="show-location-title">
+        地点
+    </div>
+    <div class="location-information">
+        <div class="location-information-content">
+            <select ng-model="selectProvince" ng-options="provinve.name for provinve in provinces" ng-change = changeProvince()>
+                <!--<option ng-repeat="province in provinces" value="{{}}" ng-model="$parent.$index">{{province.name}}</option>-->
+            </select>
+
+            <span>——</span>
+            <select ng-model="selectCity" ng-options="city.name for city in cities" ng-change = changeCity()>
+                <option></option>
+            </select>
+            <span>——</span>
+            <select ng-model="selectArea" ng-options="area.area for area in areaes">
+                <option></option>
+            </select>
+        </div>
+    </div>
+    <ul class="all-locations">
+        <li>北航羽毛球馆</li>
+        <li>北航羽毛球馆</li>
+        <li>北航羽毛球馆</li>
+        <li>北航羽毛球馆</li>
+    </ul>
+    <div class="sure-bottom">
+        <button class="btn-sure" on-tap="goBack()">
+            确定
+        </button>
+    </div>
+</ion-view>

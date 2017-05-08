@@ -1,0 +1,21 @@
+
+<ion-view ng-controller="knockoutCtrl">
+    <ion-content>
+        <!--<ion-scroll has-bouncing="false" style="width:100%;position:absolute;overflow-x:scroll;overflow-y:scroll" direction="x,y">
+            <div style="width:100%;">
+                <div class="game-tree-btn" ng-show="treeShow">
+                    <div class="chart" id="custom-colored"> --@-- </div>
+                </div>
+                <img ng-show="picShow" src="{{pictureUrls}}"/>
+            </div>
+        </ion-scroll>-->
+
+        <ion-scroll has-bouncing="true" style="width:100%;position:absolute;overflow-x:scroll;overflow-y:scroll" direction="x,y" scrollbar-x="false" scrollbar-y = "false">
+            <div style="width:100%;">
+                <div class="chart" id="custom-colored"> </div>
+                <img ng-show="picShow" src="{{pictureUrls}}"/>
+            </div>
+        </ion-scroll>
+        <!--<img ng-show="picShow" src="{{pictureUrls}}"/>-->
+    </ion-content>
+</ion-view>

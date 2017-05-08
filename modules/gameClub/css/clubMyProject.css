@@ -1,0 +1,218 @@
+.partner-details-tabs{
+    font-size: 16px;
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    display: -webkit-flex;
+}
+.partner-details-tab{
+    height: 24px;
+    line-height: 24px;
+    -webkit-flex:1;
+    text-align: center;
+    border-right: 1px solid #000000;
+}
+.partner-details-tab:last-child{
+    border: none;
+}
+.partner-details-tab span{
+    display: inline-block;
+    padding: 0 10px;
+}
+.tab-select span{
+    color: #78CBE0;
+    border-bottom: 2px solid #78CBE0;
+}
+.club-my-info{
+    padding: 0 18px;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    position: relative;
+}
+.club-my-info li{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D8D9D9;
+}
+.club-my-info li:last-of-type{
+    border: none;
+}
+.club-my-info li span:nth-of-type(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    color: #717071;
+}
+.club-my-info li span:nth-of-type(2){
+    font-size: 14px;
+    color: #000000;
+}
+.club-my-info .mp-info{
+    height: 93px;
+    position: relative;
+}
+.club-my-info .mp-info .photo{
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    top: 19px;
+}
+.club-my-info .mp-info .img1{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+}
+.club-my-info .mp-info .img2{
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+.club-my-info .mp-info .name{
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.club-my-info .mp-info .sex-p img{
+    width: 28px;
+    height: 12px;
+}
+.club-my-info .mp-info .sex-p i{
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: -20px;
+}
+.club-my-info .mp-info .level{
+    width: 150px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+.club-my-info .mp-info .level span {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.sex-pm img{
+    width: 15px;
+}
+.club-my-info .mp-info .level .wind{
+    background: #2DA7E0;
+}
+.club-my-info .mp-info .level .forest{
+    background: #009F40;
+}
+.club-my-info .mp-info .level .fire{
+    background: #D7000F;
+}
+.club-my-info .mp-info .level .mount{
+    background: #717071;
+}
+.club-my-info .mp-info .level span img{
+    width: 12px;
+}
+.club-my-info .add-p {
+    display: inline-block;
+    width: 70px;
+    height: 39px;
+    font-size: 14px;
+    color: #717071;
+    line-height: 39px;
+}
+.club-my-info .add-d {
+    display: inline-block;
+    height: 39px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 39px;
+}
+.project-info-btn-club{
+    width: 30%;
+    height: 93px;
+    font-size: 14px;
+    color: #78CBE0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.project-info-btn-club img {
+    width: 18px;
+    margin-left: 6px;
+}
+.project-details-btn{
+    width: 100%;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 10px;
+    display: -webkit-flex;
+}
+.project-details-btn1{
+    -webkit-justify-content: space-between;
+}
+.project-details-btn .cancel1{
+    display: block;
+    font-size: 19px;
+    width: 100%;
+    height: 46px;
+    background: #79CAE0;
+    border: 1px solid #78CBE0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 46px;
+}
+.project-details-btn .cancel2{
+    width: 45%;
+    border: 1px solid #78CBE0;
+    background: #ffffff;
+    color: #78CBE0;
+    font-size: 19px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+.project-details-btn .add2{
+    width: 45%;
+    color: #ffffff;
+    background: #78CBE0;
+    font-size: 19px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+.no-club-partner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../../../img/paySuccessBg.gif") repeat;
+    background-size: 330px 44px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    padding-top: 80px;
+}
+.no-club-partner img{
+
+    width: 288px;
+    height: 138px;
+
+}
+

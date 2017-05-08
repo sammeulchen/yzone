@@ -1,0 +1,21 @@
+<ion-modal-view class="location-view">
+    <ion-header-bar>
+        <h1 class="title">所属组织类型</h1>
+    </ion-header-bar>
+    <ion-content>
+            <div class="release-code-details">
+                <span ng-class="{changeBg:code.active}" ng-click="code.active = !code.active;getOrganization(organization.id)" ng-repeat="organization in organizations">{{organization.name}}</span>
+
+                <div class="aa" ng-show="showMoreOrgan">
+                    <div class="bb"></div>
+                </div>
+                <input ng-show="showMoreOrgan" type="text" placeholder="请填写组织名称">
+
+
+            </div>
+
+    </ion-content>
+    <div class="release-code-btn" ng-click="organizationSetting()">
+        <span>确定</span>
+    </div>
+</ion-modal-view>

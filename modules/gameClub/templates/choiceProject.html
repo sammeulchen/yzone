@@ -1,0 +1,62 @@
+<ion-view ng-controller="choiceProjectCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>选择项目</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="choice-project-title">
+            <span>{{name}}</span>
+            <span ng-click="toFormat()">
+                <img src="./img/game_club/format_game.png">
+                <a>了解赛制</a>
+            </span>
+        </div>
+        <div class="choice-single-project">
+            <div class="choice-sp" ng-repeat="projectList in projectLists">
+                <div  ng-click="toChangeGrade(projectList.id)">
+                    {{projectList.name}}
+                    <div class="choice-desc" ng-show="projectDetails.projectId == projectList.id">
+                        <span ng-show="projectDetails.classLevel == 1">级别：风级</span>
+                        <span ng-show="projectDetails.classLevel == 2">级别：林级</span>
+                        <span ng-show="projectDetails.classLevel == 3">级别：火级</span>
+                        <span ng-show="projectDetails.classLevel == 4">级别：山级</span>
+                        <span ng-show="projectDetails.classLevel == 0">级别：无极</span>
+                        <span ng-show="projectDetails.maxCount != null">人数：{{projectDetails.maxCount}}人</span>
+                    </div>
+                    <img class="next-p" ng-show="projectDetails.projectId != projectList.id || (projectDetails.projectId == projectList.id && projectDetails.classLevel == null)" src="img/next-page.gif">
+                </div>
+
+                <div class="change-cp" ng-click="toChangeGrade(projectList.id)" ng-show="projectDetails.projectId == projectList.id && projectDetails.classLevel != null && projectDetails.maxCount != null">
+                    修改
+                    <img src="./img/home/edit_btn.png">
+                </div>
+            </div>
+            <!--<ion-list>
+                <div class="choice-sp" ng-repeat="projectList in projectLists">
+                    <ion-radio ng-model="project.projectId" ng-value="projectList.id"  ng-click="toChangeGrade(projectList.id)">
+                        {{projectList.name}}
+                        <div class="choice-desc" ng-show="projectDetails.projectId == projectList.id">
+                            <span ng-show="projectDetails.classLevel == 1">级别：风级</span>
+                            <span ng-show="projectDetails.classLevel == 2">级别：林级</span>
+                            <span ng-show="projectDetails.classLevel == 3">级别：火级</span>
+                            <span ng-show="projectDetails.classLevel == 4">级别：山级</span>
+                            <span ng-show="projectDetails.classLevel == 0">级别：无极</span>
+                            <span ng-show="projectDetails.maxCount != null">人数：{{projectDetails.maxCount}}人</span>
+                        </div>
+                    </ion-radio>
+                    <div class="change-cp" ng-click="toChangeGrade()" ng-show="projectDetails.projectId == projectList.id && projectDetails.classLevel != null && projectDetails.maxCount != null">
+                        修改
+                        <img src="./img/home/edit_btn.png">
+                    </div>
+                </div>
+
+
+            </ion-list>-->
+
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="toCreateGameDetails()">下一步</div>
+</ion-view>

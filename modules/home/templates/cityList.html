@@ -1,0 +1,16 @@
+<ion-modal-view>
+    <!--<ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="closeModal()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>选择城市</span>
+    </ion-header-bar>-->
+    <ion-content>
+        <div class="all-city">
+            <span ng-click="allCity()">全国</span>
+        </div>
+        <ul class="citys">
+            <li ng-repeat="location in locations" ng-click="getCity(location)">{{location.name}}</li>
+        </ul>
+    </ion-content>
+</ion-modal-view>

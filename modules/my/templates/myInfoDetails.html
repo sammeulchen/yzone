@@ -1,0 +1,98 @@
+<ion-view ng-controller="myInfoDetailsCtrl">
+
+    <ion-content>
+        <div class="my-info">
+            <img class="bg-img" src="{{userInfo.bgImgUrl}}"/>
+            <div on-tap="goBack()" class="my-back">
+                <img src="img/back.gif"/>
+            </div>
+            <a class="to-home" href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+            <div class="my-id">
+                <span class="my-photo1" ng-style="setBg(userInfo.singleClassLevel)">
+
+                </span>
+                <span class="my-photo2" ng-style="setBg1(userInfo.doubleClassLevel)">
+
+                </span>
+                <img class="my-avatar" src="{{userInfo.avatar}}"/>
+
+                <span class="my-idi1" ng-click="myInfoDetails()">
+                    <span>
+                        {{userInfo.realname}}
+                         <i class="my-age">
+                             <img ng-show="manShow" src="img/icon-boy.png"/>
+                             <img ng-show="womanShow" src="img/icon-girl.png"/>
+                             <b ng-show="myAgeShow">{{userInfo.age}}</b>
+                         </i>
+                    </span>
+
+                    <!--<span>风级-丙</span>-->
+                    <i ng-show="singleGradeShow" ng-style="setBorder(userInfo.singleAuth,userInfo.singleClassLevel)" class="user-level">
+                        单打
+                        <img src="img/{{singleLevelPic}}"/>
+                    </i>
+                    <i ng-show="doubleGradeShow" ng-style="setBorder(userInfo.doubleAuth,userInfo.doubleClassLevel)" class="user-level">
+                        双打
+                        <img src="img/{{doubleLevelPic}}"/>
+                    </i>
+
+                </span>
+            </div>
+        </div>
+
+        <ul class="personal-info">
+            <!--<li>
+                <span>俱乐部</span>
+                <span>公司</span>
+            </li>-->
+            <li>
+                <span>公司</span>
+                <span>{{userInfos.company}}</span>
+            </li>
+            <li>
+                <span>学校</span>
+                <span>{{userInfos.school}}</span>
+            </li>
+            <li>
+                <span>擅长项目</span>
+                <span>{{userInfos.goodAtProjects}}</span>
+            </li>
+            <li>
+                <span>活跃球馆</span>
+                <span>{{userInfos.stadium}}</span>
+            </li>
+            <li>
+                <span>我的球拍</span>
+                <span>{{userInfos.racket}}</span>
+            </li>
+        </ul>
+        <div class="privacy-title">
+            私密资料，仅自己可看
+        </div>
+        <div class="my-verify-card" ng-repeat="myCode in myCodes">
+            <div class="list">
+                <div class="item">
+                    <img src="img/icon-card.png"/>
+                    <i>证件类型</i>
+                    <span>{{myCode.typeName}}</span>
+                    <div class="card-front">
+                        <img src="{{myCode.pictureUrls}}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="item card-number">
+                    <img src="img/icon-card-number.png"/>
+                    <i>证件号码</i>
+                    <span>{{myCode.credentialNumber}}</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div style="width: 100%;height: 100px"></div>
+    </ion-content>
+    <div class="button-span" ng-click="changeMyInfo()">
+        <span>修改资料</span>
+    </div>
+</ion-view>

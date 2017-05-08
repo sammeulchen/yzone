@@ -1,0 +1,142 @@
+.verify-identity-details{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F6F6;
+    position: absolute;
+}
+.verify-it{
+    width: 100%;
+    height: 51px;
+    background: #F7F6F6;
+    border-bottom: 1px solid #E8E7E6;
+    display: -webkit-flex;
+}
+.verify-it span{
+    display: inline-block;
+    width: 50%;
+    height: 51px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 51px;
+}
+.verify-it .span1{
+    color: #79CAE0;
+}
+.verify-im{
+    width: 100%;
+    height: 109px;
+    background: #ffffff;
+    padding: 0 10px;
+    border-bottom: 1px solid #E8E7E6;
+}
+.verify-im li{
+    width:100%;
+    height: 54px;
+    border-bottom: 1px solid #E8E7E6;
+    position: relative;
+}
+.verify-im li:last-child{
+    padding-top: 8px;
+    border: none;
+}
+.verify-im li:nth-of-type(1){
+    padding-top: 2px;
+}
+.verify-im li:nth-of-type(1) span:nth-of-type(1){
+    display: inline-block;
+    width: 27%;
+    height: 50px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 10px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.verify-im li:nth-of-type(1) span:nth-of-type(2){
+    display: inline-block;
+    width: 37%;
+    height: 50px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 50px;
+    border-right: 1px solid #E8E7E6;
+    overflow: hidden;
+}
+.verify-im li:nth-of-type(1) button{
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    font-size: 16px;
+    color: #79CAE0;
+    line-height: 50px;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+    background: #ffffff;
+    position: absolute;
+    top: 2px;
+    padding: 0;
+}
+
+.verify-im li:nth-of-type(1) span:nth-of-type(3){
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    font-size: 12px;
+    color: #727171;
+    line-height: 50px;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+}
+.verify-im li:nth-of-type(2) input{
+    width: 200px;
+    height: 38px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+}
+.verify-identity-details p{
+    width: 100%;
+    padding: 11px 12px 0;
+    font-size: 16px;
+    color: #727171;
+}
+.to-next-pg{
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 10px;
+}
+.to-next-pg span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    background: #79CAE0;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

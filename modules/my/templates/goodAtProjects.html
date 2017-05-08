@@ -1,0 +1,18 @@
+<ion-view ng-controller="goodAtProjectsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>更改擅长项目</span>
+        <!--<b class="save" ng-click="save()">保存</b>-->
+    </ion-header-bar>
+    <ion-content>
+        <ion-checkbox ng-repeat="item in devList" ng-model="item.checked" ng-checked="item.checked">
+            {{ item.text }}<img src="{{item.imgUrl}}">
+        </ion-checkbox>
+        <div class="change-content">
+            <p>认真选择您所擅长的项目，才能更快的找到一起打球的球友</p>
+        </div>
+    </ion-content>
+    <div class="change-single-info-btn" ng-click="save()">确定</div>
+</ion-view>

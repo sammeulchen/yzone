@@ -1,0 +1,20 @@
+<ion-view ng-controller="createSuccessCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>创建成功</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="create-success-bg1">
+            <div class="share-bg"></div>
+            <p>恭喜您，比赛发布成功</p>
+            <p>直接转发此页或转发下方二维码</p>
+            <p>邀请朋友参加吧</p>
+            <div class="code-share">
+                <img ng-src="{{shareQr.qrcodeUrl}}">
+            </div>
+        </div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="backToMyGame()">返回我发布的比赛</div>
+</ion-view>

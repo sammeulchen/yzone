@@ -1,0 +1,795 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+}
+.release-list{
+    width: 100%;
+    min-height: 36px;
+    background: #F7F8F7;
+    padding: 0 14px 0 9px;
+}
+.list-single{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F7;
+    border-bottom: 1px solid #E7E6E5;
+    padding-bottom: 0;
+    margin-bottom: 1px;
+}
+/*.tournament-level .list-single form{
+    width: 100%;
+    padding-left: 30px;
+}*/
+.list-single form ul{
+    padding-top:10px;
+}
+.list-single form ul li{
+    width: 100%;
+    height: 23px;
+    margin-bottom: 11px;
+}
+.list-single form ul li input{
+    width: 23px;
+    height: 23px;
+    margin-right: 16px;
+}
+.list-single form ul li span{
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    font-size: 16px;
+    color: #000000;
+}
+.list span{
+    position: relative;
+}
+.list span img{
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+}
+.release-list .list a{
+    display: inline-block;
+    width: 24px;
+}
+.match-name .list a{
+    height: 14px;
+    background: url("../../../img/icon-name1.png") no-repeat;
+    background-size: 15px 14px;
+}
+.match-name .list span{
+    display: inline-block;
+    width: 75px;
+    height: 23px;
+    border-right: 1px solid #E7E6E5;
+    margin:5px 0;
+}
+.match-name .list span img{
+    right: 5px;
+}
+.match-name .list input{
+    display: inline-block;
+    width: 150px;
+    height: 23px;
+    background: #F7F8F7;
+}
+.update-details-procedures{
+    line-height: 36px;
+}
+.update-details-procedures .list a{
+
+    height: 13px;
+    background: url("../../../img/icon-word.png") no-repeat;
+    background-size: 14px 13px;
+}
+.update-details-procedures .list b{
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: url("../../../img/next-page.gif") no-repeat;
+    background-size: 9px 16px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.tournament-level{
+    padding-top: 10px;
+}
+.tournament-level .list a{
+    height: 17px;
+    background: url("../../../img/icon-level.png") no-repeat;
+    background-size: 13px 17px;
+}
+.game-time .list a{
+    height: 17px;
+    background: url("../../../img/icon-time.png") no-repeat;
+    background-size: 16px 17px;
+}
+.tournament-level .list b{
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: url("../../../img/next-page.gif") no-repeat;
+    background-size: 9px 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.game-time{
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding: 0;
+    padding-bottom: 5px;
+}
+.game-time .list{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F7;
+    padding: 0 14px 0 9px;
+}
+.game-time .list b{
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: url("../../../img/next-page.gif") no-repeat;
+    background-size: 9px 16px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.enter-deadline .list b{
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: url("../../../img/next-page.gif") no-repeat;
+    background-size: 9px 16px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.youth-tournament .list{
+    border: 0;
+}
+.groups-details .list a{
+
+    height: 16px;
+    background: url("../../../img/icon-badminton.png") no-repeat;
+    background-size: 13px 16px;
+}
+.enter-deadline .list a{
+    height: 16px;
+    background: url("../../../img/icon-ddl.png") no-repeat;
+    background-size: 14px 16px;
+}
+
+.location .list a{
+
+    height: 15px;
+    background: url("../../../img/icon-address.png") no-repeat;
+    background-size: 15px 15px;
+}
+.game-location .list a{
+
+    height: 15px;
+    background: url("../../../img/icon-number.png") no-repeat;
+    background-size: 15px 15px;
+}
+.game-location .list-single i{
+    font-weight: 500;
+    display: inline-block;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: 8px;
+}
+.game-location .list-single i:nth-of-type(1){
+    right: 89px;
+}
+.game-location .list-single i:nth-of-type(2){
+    right: 14px;
+}
+.concurrent-privilege .list a{
+
+    height: 18px;
+    background: url("../../../img/icon-jianxiang.png") no-repeat;
+    background-size: 16px 18px;
+}
+.concurrent-privilege .list i{
+    font-weight: 500;
+    display: inline-block;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+}
+.concurrent-privilege .list i:nth-of-type(1){
+    right: 75px;
+}
+.concurrent-privilege .list i:nth-of-type(2){
+    right: 0;
+}
+.tournament-level1 .list i{
+    font-weight: 500;
+    display: inline-block;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: -3px;
+}
+.tournament-level1 .list i:nth-of-type(1){
+    right: 75px;
+}
+.tournament-level1 .list i:nth-of-type(2){
+    right: 0;
+}
+.allow-details{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #DCDCDD;
+    background: #F7F8F8;
+    margin-top: 10px;
+}
+.registration-fee{
+    width: 100%;
+}
+.registration-fee .list a{
+    height: 15px;
+    background: url("../../../img/icon-money.png") no-repeat;
+    background-size: 15px 15px;
+}
+.registration-fee .list a{
+    height: 15px;
+    background: url("../../../img/icon-money.png") no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+}
+.tournament-level1 .list a{
+    height: 15px;
+    background: url("../../../img/icon-pay.png") no-repeat;
+    background-size: 15px 15px;
+    position: absolute;
+}
+.tournament-level1 .list span{
+    margin-left: 25px;
+}
+.registration-fee .list i{
+    display: inline-block;
+    font-size: 14px;
+    color: #000000;
+
+}
+.registration-fee .list input{
+    display: inline-block;
+    width: 80px;
+    height: 16px;
+    margin: 0 10px;
+    background: #F7F8F7;
+    border: 1px solid #9C9D9D;
+}
+.write-fee{
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    margin-left: 45px;
+}
+.code .list{
+    padding-top:13px;
+}
+.code .list a{
+    height: 14px;
+    background: url("../../../img/identity-card.gif") no-repeat;
+    background-size: 20px 14px;
+}
+.code-btn{
+    width: 100%;
+    padding: 0 10px 0 26px;
+    margin-top:12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.code-btn span{
+    width: 45%;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    background: #C3C1C1;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+/*
+    点击证件按钮前后按钮的颜色
+*/
+.code-btn .changeCode-true{
+    background: #89B929;
+}
+.code-btn .changeCode-false{
+    background: #B5B6B6;
+}
+
+.code-select{
+    height: 60px;
+}
+.code-select input{
+    width: 22px;
+    height: 22px;
+    margin-right:12px;
+}
+.code-select label{
+    display: inline-block;
+    width: 85%;
+    overflow: hidden;
+}
+.contacts .list a{
+    height: 16px;
+    background: url("../../../img/icon-people.png") no-repeat;
+    background-size: 14px 16px;
+}
+.contact-information .list a{
+
+    height: 14px;
+    background: url("../../../img/icon-phone.png") no-repeat;
+    background-size: 12px 14px;
+}
+.save-release{
+    width: 100%;
+    height: 56px;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    background: #F7F8F7;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.save-release-btn{
+    width: 45%;
+    height: 46px;
+    background: #89B929;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+    color: #ffffff;
+    font-size: 18px;
+}
+.item-radio .radio-icon{
+    left:0;
+    padding: 0;
+    padding-left: 20px;
+}
+.item-complex .item-content, .item-radio .item-content{
+    height: 36px;
+    padding: 0;
+    padding-left:60px;
+    background-color: #F7F8F7;
+    line-height: 36px;
+}
+.item{
+    border: none;
+    height: 36px;
+}
+.radio-content{
+    height: 36px;
+}
+.select-pay{
+    width: 120px;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+.select-pay input{
+    width: 22px;
+    height: 22px;
+}
+.select-pay lable{
+    display: inline-block;
+    font-size: 14px;
+    color: #000000;
+    margin-right:20px;
+    overflow: hidden;
+}
+.youth-tournament p{
+    width: 100%;
+    font-size: 12px;
+    color: #F39800;
+    margin: 0 0 45px 25px;
+    text-overflow: ellipsis;
+}
+.tournament-level .list span{
+    bottom: 5px;
+}
+.registration-fee .list span{
+    top: -20px;
+    left: 28px;
+}
+
+.end-times{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+/*报名结束时间*/
+.pickerContainer .header,.pickerContainer span{
+    background: #89B929;
+}
+/*场地号码*/
+
+.location-view{
+    width: 100%;
+    height: 70%;
+    padding-top: 44px;
+    position: absolute;
+    top: 30%;
+    background: #F7F8F7;
+}
+.modal{
+     min-height:70%;
+ }
+.height-total{
+    width: 100%;
+  /*  height: 70%;*/
+}
+.modal-backdrop-bg{
+    background: #000000;
+    opacity: 0.4;
+}
+.bar-header{
+    background: #89B929;
+}
+.bar .title{
+    font-size: 18px;
+    color: #ffffff;
+}
+.site-number{
+    width: 100%;
+    padding: 12px 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50%;
+}
+.add-site-number{
+    width: 50%;
+    height: 36px;
+    margin-bottom: 10px;
+    margin:12px 0 0 15px;
+    background: #F7F8F7;
+}
+.add-site-number span{
+    display: inline-block;
+    width: 54%;
+    height: 34px;
+    border: 1px solid #89B929;
+    overflow: hidden;
+}
+.add-site-number span input{
+    display: inline-block;
+    width: 70%;
+    height: 32px;
+    background: #F7F8F7;
+
+}
+.add-site-number span i{
+    display: inline-block;
+    width: 25%;
+    text-align: right;
+}
+.add-site-number .btn{
+    display: inline-block;
+    height: 35px;
+    background: #89B929;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    line-height: 35px;
+    position: absolute;
+    top: 56px;
+}
+.site-number li{
+    width: 50%;
+    height: 36px;
+    margin-bottom: 10px;
+}
+.site-number li span:nth-of-type(1){
+    display: inline-block;
+    width: 60%;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #89B929;
+    overflow: hidden;
+}
+.site-number li span:nth-of-type(2){
+    display: inline-block;
+    width: 30%;
+    height: 35px;
+    background: #C6C6C7;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: -5px;
+    overflow: hidden;
+    position: relative;
+}
+.site-number li span:nth-of-type(2) img{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 8px;
+    left: 25%;
+}
+
+.ensure-bottom{
+    width: 100%;
+    height: 77px;
+    padding: 20px 10px 10px;
+    position: absolute;
+    bottom: 0;
+
+}
+.btn-ensure {
+    width: 100%;
+    height: 47px;
+    background: #89B929;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.game-location .list .changeBg{
+    background: #89B929;
+
+}
+.concurrent-privilege .list .changeBg{
+    background: #89B929;
+    color: #ffffff;
+}
+
+
+.tournament-level1 .list .changeBg{
+    background: #89B929;
+
+}
+.game-di1 .list a{
+    height: 14px;
+    background: url("../../../img/icon-poster.png") no-repeat;
+    background-size: 14px 14px;
+}
+.game-di2 .list a{
+    height: 17px;
+    background: url("../../../img/icon-lock.png") no-repeat;
+    background-size: 15px 17px;
+}
+.game-di3 .list a{
+    height: 11px;
+    background: url("../../../img/icon-card1.png") no-repeat;
+    background-size: 15px 11px;
+}
+.game-di4 .list a{
+    height: 13px;
+    background: url("../../../img/icon-type.png") no-repeat;
+    background-size: 16px 13px;
+}
+.not-all-game .list .changeBg{
+    background: #89B929;
+
+}
+
+.code-btn .changeCode{
+    background: #89B929;
+}
+.more-info-title{
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+}
+.not-all-game{
+    width: 100%;
+}
+.not-all-game .list{
+    min-height: 60px;
+}
+.not-all-game .list span{
+    top: 0;
+}
+.not-all-game .list i{
+    font-weight: 500;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+}
+.not-all-game .list i:nth-of-type(1){
+    right: 75px;
+}
+.not-all-game .list i:nth-of-type(2){
+    right: 0;
+}
+.game-di3 .list i{
+    font-weight: 500;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: 7px;
+}
+.game-di3 .list i:nth-of-type(1){
+    right: 75px;
+}
+.game-di3 .list i:nth-of-type(2){
+    right: 0;
+}
+.game-di3 .list .changeBg{
+    background: #8DC21F;
+}
+.input-all-game{
+    width: 0;
+    height: 0;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #8DC21F transparent;
+    position: absolute;
+    top: 57px;
+    right: 30px;
+    z-index: 1;
+}
+.input-all-game1{
+    width: 0;
+    height: 0;
+    border-left-width: 7px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #F7F8F8 transparent;
+    position: absolute;
+    top: 1px;
+    left: -7px;
+
+}
+.not-all-game .list input {
+    width: 95%;
+    height: 32px;
+    border-top: 1px solid #8DC21F;
+    margin-top: 44px;
+}
+.not-all-game .list p{
+    font-size: 12px;
+    color: #EA6122;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+
+/************设置证件**************/
+.release-code{
+    width: 100%;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding-bottom: 3px;
+}
+.release-code-details{
+    width: 100%;
+    background: #F7F8F7;
+    padding: 22px 15px 20px;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    flex-wrap: wrap;
+}
+.release-code-details span{
+    display: block;
+    width: 45%;
+    height: 34px;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.release-code-details .changeBg{
+    background: #8DC21F;
+}
+.release-code-details input{
+    width: 47%;
+    height: 34px;
+    background: #F7F8F7;
+    border: 1px solid #8DC21F;
+    padding-left: 5px;
+}
+.release-code-details .aa{
+    width: 0;
+    height: 0;
+    border-top-width: 9px;
+    border-right-width: 10px;
+    border-bottom-width: 9px;
+    border-style: solid;
+    border-color: transparent #8DC21F transparent transparent;
+    position: absolute;
+    top: 108px;
+    right: 47%;
+    z-index: 1;
+}
+.release-code-details .bb{
+    width: 0;
+    height: 0;
+    border-top-width: 8px;
+    border-right-width: 9px;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-color: transparent #F7F8F7 transparent transparent;
+    position: absolute;
+    top: -8px;
+    right: -11px;
+    z-index: 1;
+}
+.is-number{
+    width: 100%;
+    padding: 22px 0 0 30px;
+}
+.is-number input{
+    width: 20px;
+    height: 20px;
+}
+.is-number span{
+    display: block;
+    margin-bottom: 10px;
+}
+.is-number span i{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+}
+.release-code-btn{
+    width: 100%;
+    height: 45px;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 10px;
+}
+.release-code-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background: #8DC21F;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+}

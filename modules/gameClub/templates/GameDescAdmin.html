@@ -1,0 +1,117 @@
+<div class="game-details-announcements">
+    <div class="game-details-slide">
+        <ion-slide-box class="announcements-slider" ng-if="tips" does-continue="true" slide-interval="2000">
+            <ion-slide ng-repeat = "tip in tips" ng-click="goToTips(tip.hrefLink)">
+                <div>
+                    <div class="game-tips-title">
+                        <img src="{{tip.icon}}"/>
+                        <h3>{{tip.title}}</h3>
+                        <span>点击查看</span>
+                    </div>
+                    <p class="game-tips-content">{{tip.content}}</p>
+                </div>
+            </ion-slide>
+
+
+        </ion-slide-box>
+    </div>
+</div>
+<ul class="game-details-desc1">
+    <li>
+        <span>时间</span>
+        <span>{{competitions.beginDate|date:'MM.dd HH:mm'}}-{{competitions.endDate|date:'MM.dd HH:mm'}}</span>
+    </li>
+    <li ng-click="toLocation()">
+        <span>地点</span>
+        <span>{{stadium.name}}</span>
+        <img class="location" src="img/home/location.png"/>
+    </li>
+    <li>
+        <span>场地号</span>
+        <span>{{competitions.siteNumbers}}</span>
+    </li>
+    <li class="class-level class-level1" ng-show="classLevel != 0">
+        <span>水平要求</span>
+        <span>
+            <img ng-if="classLevel == 1" src="img/home/wind_status.png"/>
+            <img ng-if="classLevel == 2" src="img/home/forest_status.png"/>
+            <img ng-if="classLevel == 3" src="img/home/fire_status.png"/>
+            <img ng-if="classLevel == 4" src="img/home/mount_status.png"/>
+        </span>
+    </li>
+    <li class="class-level">
+        <span>比赛项目</span>
+        <span>{{competitions.projects}}</span>
+    </li>
+</ul>
+<div class="game-details-desc1">
+    <div class="reg-players" ng-click="toClubAllPlayers(projectId)">
+        <span>已报名（{{currentCount}}/{{allowMaxCount}}）</span>
+        <span class="reg-players-btn">
+            查看所有
+            <img src="img/home/unfold.png">
+        </span>
+        <div class="reg-players-col">
+            <div class="e-reg-players" ng-repeat="playerList in playerLists">
+                <img ng-src="{{playerList.avatar}}">
+                <span>{{playerList.nickname}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="game-details-desc1">
+    <!--<li ng-if="competitions.type == 2 && competitions.projects.indexOf('单') > 0 && competitions.projects.indexOf('双') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price > 0">单打￥{{competitions.price}}</span>
+        <span ng-if="competitions.price2 > 0">双打￥{{competitions.price2}}</span>
+        <span ng-if="competitions.price == 0">单打：免费</span>
+        <span ng-if="competitions.price2 == 0">双打：免费</span>
+    </li>
+    <li ng-if="competitions.type == 2 && competitions.projects.indexOf('单') == -1 && competitions.projects.indexOf('双') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price2 == 0">免费</span>
+        <span ng-if="competitions.price2 > 0">双打￥{{competitions.price2}}</span>
+    </li>
+    <li ng-if="competitions.type == 2 && competitions.projects.indexOf('双') == -1 && competitions.projects.indexOf('单') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price == 0 ">免费</span>
+        <span ng-if="competitions.price > 0">单打￥{{competitions.price}}</span>
+    </li>
+    <li ng-if="competitions.type == 1">
+        <span>报名费</span>
+        <span ng-if="competitions.price == 0">免费</span>
+        <span ng-if="competitions.price > 0">￥{{competitions.price}}</span>
+    </li>-->
+    <li>
+        <span>报名费</span>
+        <span>￥{{competitions.price}}</span>
+    </li>
+</ul>
+<ul class="game-details-desc1">
+    <li>
+        <span>联系人</span>
+        <span>{{competitions.contactUser}}</span>
+        <a href="tel:{{competitions.contactPhone}}">
+            <img src="img/home/contact.png"/>
+        </a>
+    </li>
+    <li class="apply-time">
+        <span>报名截止时间</span>
+        <span>{{competitions.applyEnddate|date:'yyyy.MM.dd HH:mm'}}</span>
+    </li>
+</ul>
+<div class="manage-btn">
+    <span ng-show="operation.enableEditCompetition" ng-click="toChangeGameInfo()">修改比赛</span>
+    <span ng-show="operation.enableAddApply" ng-click="toAddPartner(projectId)">代报名</span>
+    <span ng-show="operation.enableMatchPaterner" ng-click="toMatchPartner(projectId)">匹配搭档</span>
+    <span ng-show="operation.enableSubGroup" ng-click="toGrouping(projectId)">分组</span>
+    <span ng-show="operation.enableAddSeed" ng-click="toSetSeed(projectId)">设置种子</span>
+    <span ng-show="operation.enableSubGroupSubmit" ng-click="toGroupSetting(projectId)">分组</span>
+    <span ng-show="operation.enableAddScore" ng-click="toClubGroupGrade(projectId)">登记比分</span>
+    <span ng-show="operation.enableAddReferee" ng-click="toReferee(projectId)">裁判</span>
+    <span ng-show="operation.enableEditScore" ng-click="toClubGroupGrade(projectId)">修改比分</span>
+    <span ng-show="operation.enableFinishCompetition">结束比赛</span>
+    <span ng-show="operation.enableQueryScore" ng-click="toClubGroupGrade(projectId)">查看成绩</span>
+</div>
+
+

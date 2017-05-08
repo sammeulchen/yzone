@@ -1,0 +1,54 @@
+<ion-view ng-controller="myPartnerCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的球友</span>
+        <img class="add-more-player" ng-click="showAlert()" src="img/icon-addfriend.png"/>
+        <span ng-show="friendCountShow" class="friend-count">
+            {{friendMsgCount}}
+        </span>
+    </ion-header-bar>
+    <ion-content>
+
+        <ul class="my-partner">
+            <li class="notUser" ng-repeat="myPartner in myPartners2" ng-click="toBallFriend(myPartner.userid)">
+                <!--<span ng-click="toBallFriend(myPartner.userid)">
+                    <img src="{{myPartner.avatar}}"/>
+                </span>
+                <span>
+                    <i>{{myPartner.realname}}</i>
+                </span>-->
+                <div class="photo">
+                    <span class="img1">
+                        <img class="img2" src="{{myPartner.avatar}}">
+                    </span>
+                </div>
+                <span class="name">
+                    {{myPartner.realname}}
+                    <span class="sex-p" ng-show="myPartner.age >= 0">
+                        <img ng-show="myPartner.gender == 1" src="img/icon-boy.png">
+                        <img ng-show="myPartner.gender == 0" src="img/icon-girl.png">
+                        <i>{{myPartner.age}}</i>
+                    </span>
+                    <span class="sex-pm" ng-show="myPartner.age < 0">
+                        <img ng-show="myPartner.gender == 1" src="img/home/man.png">
+                        <img ng-show="myPartner.gender == 0" src="img/home/femal.png">
+                    </span>
+                </span>
+                <div class="level">
+                    <span ng-show="myPartner.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                    <span ng-show="myPartner.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                    <span ng-show="myPartner.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                    <span ng-show="myPartner.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                    <span ng-show="myPartner.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                    <span ng-show="myPartner.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                    <span ng-show="myPartner.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                    <span ng-show="myPartner.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+                </div>
+            </li>
+        </ul>
+    </ion-content>
+
+</ion-view>

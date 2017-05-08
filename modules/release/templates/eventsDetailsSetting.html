@@ -1,0 +1,50 @@
+<ion-view ng-controller="eventsDetailsSettingCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>分组及项目详情设置</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-repeat="releaseEvent in releaseEvents">
+            <div class="add-group-title">
+                组{{$index+1}}
+            </div>
+            <div class="group-event-title">
+                <span>{{releaseEvent.groupName}}</span>
+                <span ng-show="releaseEvent.descShow">——</span>
+                <span>{{releaseEvent.groupDesc}}</span>
+            </div>
+            <div class="group-event-content" ng-repeat="project in releaseEvent.groupProject" ng-show="project.liShow">
+                <div class="project-group-name">
+                    <b ng-style="setBg(project.groupId)"></b>
+                    <span ng-style="setColor(project.groupId)">{{project.projectName}}</span>
+                    <img src="img/{{project.groupImg}}"/>
+                </div>
+                <ul class="project-setting-content">
+                    <li ng-repeat="pro in project.details">
+                        <span>项目：{{$index+1}}</span>
+                        <span>{{pro.projectName}}——{{pro.maxCount}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="opera-btn">
+                <span ng-click="deleteGroup(releaseEvent)">
+                    <img src="img/delete.gif"/>
+                    删除
+                </span>
+                <span ng-click="editGroup(releaseEvent)">
+                    <img src="img/btn-edit.gif"/>
+                    编辑
+                </span>
+            </div>
+        </div>
+
+    <div style="height: 100px"></div>
+    </ion-content>
+    <div class="event-setting-btn">
+        <span ng-click="addEventsAgain()">添加一组</span>
+        <span ng-click="completeProjectSetting()">完成</span>
+    </div>
+</ion-view>

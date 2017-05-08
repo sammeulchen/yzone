@@ -1,0 +1,39 @@
+<ion-view ng-controller="changeSingleInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span ng-show="realnameShow">更改姓名</span>
+        <span ng-show="companyShow">更改公司名称</span>
+        <span ng-show="schoolShow">更改学校名称</span>
+        <span ng-show="stadiumShow">更改活跃球馆</span>
+        <span ng-show="racketShow">更改我的球拍</span>
+       <!-- <b class="save" ng-click="save()">保存</b>-->
+    </ion-header-bar>
+    <ion-content>
+        <div class="change-content">
+            <div ng-show="realnameShow">
+                <input type="text" ng-model="personal.realname">
+                <p>请填写您的真实姓名</p>
+            </div>
+            <div ng-show="companyShow">
+                <input type="text" ng-model="personal.company">
+                <p>填写您的公司，别人才能更好的认识你</p>
+            </div>
+            <div ng-show="schoolShow">
+                <input type="text" ng-model="personal.school">
+                <p>填写您的学校，也许就会遇到您的校友哦</p>
+            </div>
+            <div ng-show="stadiumShow">
+                <input type="text" ng-model="personal.stadium">
+                <p>填写您的活跃场馆，也许能够很快找到附近的人一起打球哟</p>
+            </div>
+            <div ng-show="racketShow">
+                <input type="text" ng-model="personal.racket">
+                <p>填写您的球拍名称，让别人看看您的装备</p>
+            </div>
+
+        </div>
+    </ion-content>
+    <div class="change-single-info-btn" ng-click="save()">确定</div>
+</ion-view>

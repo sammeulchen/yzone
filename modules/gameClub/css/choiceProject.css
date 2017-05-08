@@ -1,0 +1,98 @@
+.choice-project-title{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 21px;
+    background: linear-gradient(to right,#79CAE0,#ffffff);
+}
+.choice-project-title span:nth-of-type(1){
+    font-size: 14px;
+    color: #ffffff;
+}
+.choice-project-title span:nth-of-type(2){
+    font-size: 12px;
+    color: #79CAE0;
+    text-decoration: none;
+    position: absolute;
+    right: 12px;
+}
+.choice-project-title span:nth-of-type(2) img{
+    width: 9px;
+}
+.choice-project-title span:nth-of-type(2) a{
+    color: #79CAE0;
+}
+.choice-single-project{
+    padding: 0 12px;
+}
+/*.choice-single-project .item-radio .item-content{
+    padding-left: 64px;
+}
+.choice-single-project .ion-checkmark{
+    left: 0;
+}
+.choice-single-project .disable-pointer-events{
+    background-image: url('../../../img/game_club/radio.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 14px 17px;
+}
+.choice-single-project .item-radio input:checked + .radio-content .item-content{
+    background: #ffffff;
+}
+.choice-single-project .ion-checkmark:before{
+    background-image: url('../../../img/game_club/radio_checked.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    content: "";
+    width: 22px;
+    height: 22px;
+}
+.choice-single-project .item{
+    border-left: none;
+    border-right: none;
+}
+.choice-single-project .choice-sp:nth-of-type(1) .item{
+    border-top: none;
+}*/
+.choice-sp{
+    min-height: 53px;
+    font-size: 16px;
+    color: #000000;
+    border-bottom: 1px solid #E2E2E1;
+    padding-left: 12px;
+    padding-top: 18px;
+    position: relative;
+}
+.choice-sp .next-p{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+}
+.choice-desc{
+    font-size: 14px;
+    color: #717071;
+    margin-top: 6px;
+    padding-bottom: 8px;
+}
+.change-cp{
+    width: 60px;
+    height: 100%;
+    font-size: 14px;
+    color: #79CAE0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.change-cp img{
+    width: 18px;
+    margin-left: 5px;
+}

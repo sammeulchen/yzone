@@ -1,0 +1,249 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.tips-header{
+    height: 28px;
+    background: #E94830;
+    color: #ffffff;
+    line-height: 28px;
+    padding-left: 15px;
+}
+.team-all-players{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.team-all-players li{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #B5B6B6;
+    position: relative;
+}
+.team-all-players .hasInfo{
+    width: 100%;
+    padding: 0 12px;
+}
+.team-all-players li span:nth-of-type(3){
+    display: inline-block;
+    height: 20px;
+    font-size: 16px;
+    position: absolute;
+    right: 16px;
+    top: 22px;
+}
+.team-all-players .hasInfo span:nth-of-type(1){
+    display: inline-block;
+    width: 60px;
+    height: 80px;
+    overflow: hidden;
+}
+.team-all-players .hasInfo span:nth-of-type(1) img{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+.team-all-players .hasInfo span:nth-of-type(2){
+    display: inline-block;
+    height: 80px;
+    margin-left: 10px;
+    padding-top: 16px;
+    overflow: hidden;
+}
+.team-all-players .hasInfo span:nth-of-type(2) i{
+    display: block;
+    font-size: 14px;
+    color: #727171;
+    height: 30px;
+}
+.team-all-players .hasInfo span:nth-of-type(2) i b{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+.edit-player-info{
+    width: 57px;
+    height: 26px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+
+.team-all-players .hasInfo .edit-player-info span:nth-of-type(1){
+    display: inline-block;
+    width: 49px;
+    height: 26px;
+    /*border-right: 1px solid #B5B5B6;*/
+    position: relative;
+}
+/*.team-all-players .hasInfo .edit-player-info span:nth-of-type(2){
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    position: relative;
+}*/
+.team-all-players .hasInfo .edit-player-info span img{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    margin: 0;
+    border-radius: 0;
+}
+/*.team-all-players .hasInfo .edit-player-info span:nth-of-type(2) img{
+    position: absolute;
+    top: 5px;
+    left: 2px;
+}*/
+.team-all-players .noInfo span:nth-of-type(2){
+    width: 75%;
+    overflow: hidden;
+}.team-all-players .noInfo span:nth-of-type(3){
+    width: 72px;
+    height: 26px;
+    border: 1px solid #8DC21F;
+    color: #8DC21F;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.team-all-players .noInfo span:nth-of-type(2) i{
+    height: 20px;
+
+}
+.team-all-players .noInfo span:nth-of-type(2) i:nth-of-type(3){
+    height: 20px;
+    font-size: 12px;
+    color: #E81B2B;
+    flex-wrap: nowrap;
+}
+
+.bb{
+    width: 100%;
+    padding: 0 16px;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+}
+.bb span{
+    width: 45%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    background: #8DC21F;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.bb-back{
+    width: 100%;
+    padding: 0 16px;
+    position: absolute;
+    bottom: 10px;
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+}
+.bb-back span{
+    display: inline-block;
+    width: 45%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    background: #8DC21F;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+/*修改队员信息样式*/
+.change-pi{
+    width: 100%;
+}
+.change-pi li{
+    width: 100%;
+    height: 52px;
+    padding: 0 17px;
+    border-bottom: 1px solid #D3D0CF;
+    position: relative;
+}
+.change-pi li span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+}
+.change-pi li span img{
+    width: 14px;
+    height: 19px;
+}
+.change-pi li input{
+    display: inline-block;
+    width: 240px;
+    border: 1px solid #D3D0CF;
+    margin: 10px 0 0 30px;
+}
+
+/*分享*/
+.share{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.share img{
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 110px;
+}
+.share p{
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

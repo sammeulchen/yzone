@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #79CAE0;
+            width: 100%;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            color: #FFFFFF;
+            font-size: 18px;
+        }
+        .create-success-bg1{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            background: url("../../../img/paySuccessBg.gif") repeat;
+            background-size: 330px 43px;
+        }
+        .share-bg{
+            width:50px;
+            height:63px;
+            background: url("../../../img/game_club/share_bg.png") no-repeat;
+            background-size: 50px 63px;
+            position: absolute;
+            top:54px;
+            right:20px;
+        }
+        .create-success-bg1 p{
+            text-align:center;
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
+        .create-success-bg1 p:nth-of-type(1){
+            margin-top: 85px;
+        }
+        .code-share{
+            width:100%;
+            height:200px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .code-share img{
+            width:200px;
+            height:200px;
+        }
+        .create-success-btn{
+            width: 100%;
+            height: 46px;
+            background: #79CAE0;
+            font-size: 19px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 46px;
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-success-bg1">
+        <header>创建成功</header>
+        <div class="share-bg"></div>
+        <p>恭喜您，比赛发布成功</p>
+        <p>直接转发此页或转发下方二维码</p>
+        <p>邀请朋友参加吧</p>
+        <div class="code-share">
+            <img ng-src="{{shareQr.qrcodeUrl}}">
+        </div>
+        <div class="create-success-btn">返回我发布的比赛</div>
+    </div>
+</body>
+</html>

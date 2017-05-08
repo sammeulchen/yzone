@@ -1,0 +1,48 @@
+<ion-view ng-controller="groupSettingCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>项目及等级设定</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="add-group-title">
+            组别
+        </div>
+        <div class="add-group">
+            <div class="group-input-box">
+                <span>组别</span>
+                <input type="text" ng-model="selectProject.groupName" placeholder="组别名称">
+                <input type="text" ng-model="selectProject.groupDesc" placeholder="组别描述">
+            </div>
+        </div>
+        <div class="project-details-title">项目详情</div>
+        <div class="project-details">
+            <div class="project-detail" ng-repeat="projectDetail in projectDetails">
+                <div class="project-group-name">
+                    <b ng-style="setBg(projectDetail.groupId)"></b>
+                    <span ng-style="setColor(projectDetail.groupId)">{{projectDetail.projectName}}</span>
+                    <img src="img/{{projectDetail.groupImg}}"/>
+                    <span ng-click="toProjectSetting(projectDetail.groupId)">点击设置</span>
+                </div>
+                <ul class="project-setting-content">
+                    <li ng-repeat="project in projectDetail.details">
+                        <span>项目{{$index+1}}：</span>
+                        <span>{{project.projectName}}——{{project.maxCount}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="check-standard">
+            <span>查看分级标准</span>
+        </div>
+
+    </ion-content>
+    <div class="sure-btn">
+        <button class="button button-block button-positive" ng-click="addMore()">
+            添加
+        </button>
+    </div>
+</ion-view>

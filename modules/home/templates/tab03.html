@@ -1,0 +1,53 @@
+<div style="width:100%;text-align: center;padding-top:30px;" ng-show="photoLists.length == 0">
+    <div style="width: 100%;text-align: center">
+        <img style="width: 255px;height: 155px;" src="img/home/no-pic.png">
+    </div>
+
+</div>
+<div ng-show="photoLists.length != 0">
+    <div class="klg_1"></div>
+    <div class="hot-photo">
+        <div class="hot-photo-title">热门照片</div>
+        <div class="hot-photo-slide">
+            <ion-slide-box class="photo-slider" ng-if="hotPhotoLists" does-continue="true" slide-interval="2000">
+                <ion-slide ng-repeat = 'hotPhotoList in hotPhotoLists' ng-click = toPhotoDetails(hotPhotoList.id)>
+                   <img ng-src="{{hotPhotoList.path}}?imageView2/2/h/123">
+                </ion-slide>
+            </ion-slide-box>
+        </div>
+    </div>
+    <div class="klg_1"></div>
+    <div class="all-photo-part">
+        <div class="all-photo-part-title">
+            <span>全部照片</span>
+            <span ng-click="toAllPictures()">
+                点击查看全部
+                <img src="img/home/unfold.png">
+            </span>
+        </div>
+        <ul class="all-photo-pic">
+            <li ng-repeat="photoList in photoLists" ng-click = toPhotoDetails(photoList.id)>
+                <img ng-src="{{photoList.path}}?imageView2/2/h/102">
+                <div class="photo-desc">
+                    <span class="see">
+                        <img src="img/home/see.png">
+                        {{photoList.viewCount}}
+                    </span>
+                    <span class="love" ng-show="photoList.followed == 0">
+                        <img src="img/home/love.png">
+                        {{photoList.likeCount}}
+                    </span>
+                   <span class="love" ng-show="photoList.followed == 1">
+                        <img src="img/home/love_click.png">
+                        {{photoList.likeCount}}
+                    </span>
+                    <span class="say">
+                        <img src="img/home/say.png">
+                        {{photoList.commentCount}}
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="kl_3"></div>

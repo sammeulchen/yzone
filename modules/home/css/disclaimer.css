@@ -1,0 +1,18 @@
+.disclaimer{
+    width: 100%;
+    padding: 15px 14px 0;
+}
+.disclaimer h3{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+.disclaimer p{
+    width: 100%;
+    font-size: 16px;
+}
+.disclaimer p:nth-of-type(2){
+    width: 100%;
+    font-size: 16px;
+    text-indent: 32px;
+}

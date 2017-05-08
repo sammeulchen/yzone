@@ -1,0 +1,20 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+    position: relative;
+}
+.personal-information-title div:nth-of-type(2) span{
+    color: #FDDC2F;
+}
+.determine-pay{
+    position: absolute;
+    bottom: 0;
+}
+.owned-club select{
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background: #F7F8F7;
+}

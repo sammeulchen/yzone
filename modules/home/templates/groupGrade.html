@@ -1,0 +1,116 @@
+<ion-view ng-controller="groupGradeCtrl">
+    <ion-content class="grade-bg">
+        <div class="grade-top" ng-show="firstShow">
+            <img class="light-left" src="img/icon-light-left.png"/>
+            <img class="light-mid" src="img/icon-light-mid.png"/>
+            <img class="light-right" src="img/icon-light-right.png"/>
+            <img class="rank-pic" src="img/pic-prize.gif"/>
+            <div ng-show="singleShow">
+                <div class="rank-first">
+                    <img src="{{first.player1Avatar}}"/>
+                    <span ng-show="category == 1">{{first.player1Name}}</span>
+                    <span ng-show="category == 3">{{first.playerName}}</span>
+                </div>
+                <div class="rank-second">
+                    <img src="{{second.player1Avatar}}"/>
+                    <span ng-show="category == 1">{{second.player1Name}}</span>
+                    <span ng-show="category == 3">{{second.playerName}}</span>
+                </div>
+                <div class="rank-third1" ng-show="oneThirdShow">
+                    <img src="{{third[0].player1Avatar}}"/>
+                    <span ng-show="category == 1">{{third[0].player1Name}}</span>
+                    <span ng-show="category == 3">{{third[0].playerName}}</span>
+                </div>
+                <div class="rank-third2" ng-show="twoThirdShow">
+                    <div class="third-player">
+                        <img src="{{third[0].player1Avatar}}"/>
+                        <span ng-show="category == 1">{{third[0].player1Name}}</span>
+                        <span ng-show="category == 3">{{third[0].playerName}}</span>
+                    </div>
+                    <div class="third-player">
+                        <img src="{{third[1].player1Avatar}}"/>
+                        <span ng-show="category == 1">{{third[1].player1Name}}</span>
+                        <span ng-show="category == 3">{{third[1].playerName}}</span>
+                    </div>
+                </div>
+            </div>
+            <div  ng-show="doubleShow">
+                <div class="rank-first-double">
+                    <img src="{{second.player1Avatar}}"/>
+                    <img src="{{second.player2Avatar}}"/>
+                    <span>{{second.player1Name}}</span>
+                    <span>{{second.player2Name}}</span>
+                </div>
+                <div class="rank-second-double">
+                    <img src="{{first.player1Avatar}}"/>
+                    <img src="{{first.player2Avatar}}"/>
+                    <span>{{first.player1Name}}</span>
+                    <span>{{first.player2Name}}</span>
+                </div>
+                <div class="rank-third-double1" ng-show="oneThirdShow">
+                    <img src="{{third[0].player1Avatar}}"/>
+                    <img src="{{third[0].player2Avatar}}"/>
+                    <span>{{third[0].player1Name}}</span>
+                    <span>{{third[0].player2Name}}</span>
+                </div>
+                <div class="rank-third-double2" ng-show="twoThirdShow">
+                    <div class="third-player-double">
+                        <img src="{{third[0].player1Avatar}}"/>
+                        <img src="{{third[0].player2Avatar}}"/>
+                        <span>{{third[0].player1Name}}</span>
+                        <span>{{third[0].player2Name}}</span>
+                    </div>
+                    <div class="third-player-double">
+                        <img src="{{third[1].player1Avatar}}"/>
+                        <img src="{{third[1].player2Avatar}}"/>
+                        <span>{{third[1].player1Name}}</span>
+                        <span>{{third[1].player2Name}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="grade-mid" ng-show="secondShow">
+            <img class="rank-mid" src="img/pic-4-8.gif"/>
+            <span class="rank-nine">{{secondTitle}}</span>
+            <ul class="rank-player-four" ng-show="singleShow">
+                <li ng-repeat="secondPlayer in secondPlayers">
+                    <img src="{{secondPlayer.player1Avatar}}"/>
+                    <span ng-show="category == 1">{{secondPlayer.player1Name}}</span>
+                    <span ng-show="category == 3">{{secondPlayer.playerName}}</span>
+                    <span class="rank_1">第{{secondPlayer.rank}}名</span>
+                </li>
+            </ul>
+            <ul class="rank-player-four-double" ng-show="doubleShow">
+                <li ng-repeat="secondPlayer in secondPlayers">
+                    <img src="{{secondPlayer.player1Avatar}}"/>
+                    <img src="{{secondPlayer.player2Avatar}}"/>
+                    <span>{{secondPlayer.player1Name}}</span>
+                    <span>{{secondPlayer.player2Name}}</span>
+                    <span>第{{secondPlayer.rank}}名</span>
+                </li>
+            </ul>
+        </div>
+        <div class="grade-bottom" ng-show="thirdShow">
+            <img class="rank-mid" src="img/pic-9-16.gif"/>
+            <span class="rank-nine">{{thirdTitle}}</span>
+            <ul class="rank-player-nine" ng-show="singleShow">
+                <li ng-repeat="thirdPlayer in thirdPlayers">
+                    <img src="{{thirdPlayer.player1Avatar}}"/>
+                    <span ng-show="category == 1">{{thirdPlayer.player1Name}}</span>
+                    <span ng-show="category == 3">{{thirdPlayer.playerName}}</span>
+                    <span class="rank_1">第{{thirdPlayer.rank}}名</span>
+                </li>
+            </ul>
+            <ul class="rank-player-nine-double" ng-show="doubleShow">
+                <li ng-repeat="thirdPlayer in thirdPlayers">
+                    <img src="{{thirdPlayer.player1Avatar}}"/>
+                    <img src="{{thirdPlayer.player2Avatar}}"/>
+                    <span>{{thirdPlayer.player1Name}}</span>
+                    <span>{{thirdPlayer.player2Name}}</span>
+                    <span>第{{thirdPlayer.rank}}名</span>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

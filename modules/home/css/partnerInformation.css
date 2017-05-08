@@ -1,0 +1,30 @@
+.height-total{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F8;
+}
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F8;
+}
+.select-partner-title{
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+}
+.need-help{
+    width: 100%;
+    height: 46px;
+    padding-right:16px;
+    text-align: right;
+}
+.need-help a{
+    text-decoration: none;
+    line-height: 46px;
+    color: #8DC21F;
+    font-size: 14px;
+}
+.determine-pay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

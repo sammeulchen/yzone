@@ -1,0 +1,179 @@
+.referee-my-info{
+    padding: 0 12px;
+    display: -webkit-flex;
+    -webkit-flex-wrap:wrap;
+    position: relative;
+}
+.referee-my-info li{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D8D9D9;
+}
+.referee-my-info li span:nth-of-type(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    color: #717071;
+}
+.referee-my-info li span:nth-of-type(2){
+    font-size: 14px;
+    color: #000000;
+}
+.referee-my-info .mp-info{
+    height: 93px;
+    position: relative;
+}
+.referee-my-info .mp-info .photo{
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    top: 19px;
+}
+.referee-my-info .mp-info .img1{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+}
+.referee-my-info .mp-info .img2{
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+.referee-my-info .mp-info .name{
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.referee-my-info .mp-info .sex-p img{
+    width: 28px;
+    height: 12px;
+}
+.referee-my-info .mp-info .sex-p i{
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: -20px;
+}
+.referee-my-info .mp-info .level{
+    width: 150px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+.referee-my-info .mp-info .level span {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.sex-pm img{
+    width: 15px;
+}
+.referee-my-info .mp-info .level .wind{
+    background: #2DA7E0;
+}
+.referee-my-info .mp-info .level .forest{
+    background: #009F40;
+}
+.referee-my-info .mp-info .level .fire{
+    background: #D7000F;
+}
+.referee-my-info .mp-info .level .mount{
+    background: #717071;
+}
+.referee-my-info .mp-info .level span img{
+    width: 12px;
+}
+.delete-referee-btn{
+    width:80px;
+    height: 93px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    font-size: 14px;
+    color: #79CAE0;
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+.delete-referee-btn img{
+    width:23px;
+}
+.share-to-referee{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background: #000000;
+    opacity: 0.6;
+    z-index: 10;
+}
+.share-to-referee img{
+    width:120px;
+    height:80px;
+    position: absolute;
+    top:5px;
+    right:10px;
+    z-index: 15;
+}
+.share-to-referee p{
+    width:100%;
+    position: absolute;
+    top:100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    z-index: 15;
+}
+.no-partner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0 20px;
+    /*background: url("../../../img/home/double-partner.png") repeat;
+    background-size: 72px 496px;*/
+}
+.no-partner-title span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.no-partner-title span:nth-of-type(1) img{
+    width: 158px;
+    height: 154px;
+    margin-top: 25px;
+}
+.no-partner-title span:nth-of-type(2) img{
+    width: 202px;
+    height: 18px;
+    margin-top: 10px;
+}
+.no-partner-title span:nth-of-type(2) .img-new-partner{
+    width: 90px;
+    height: 18px;
+    margin-top: 10px;
+}
+.no-friend{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #717071;
+}
+
+

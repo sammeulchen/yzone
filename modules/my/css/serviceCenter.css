@@ -1,0 +1,102 @@
+.service-center{
+    width: 100%;
+    min-height: 100%;
+    background: #F4F3F0;
+    position: absolute;
+}
+.custom-service-mobile{
+    width: 100%;
+    height: 63px;
+    background: #ffffff;
+    border-bottom: 1px solid #82CBCA;
+    padding-top: 13px;
+    padding-left: 20px;
+}
+.custom-service-mobile span{
+    display: inline-block;
+    width: 70%;
+    height: 32px;
+    border-right: 1px solid #E7E6E5;
+    font-size: 16px;
+    line-height: 32px;
+    color:#79CAE0;
+    overflow: hidden;
+}
+.custom-service-mobile img{
+    width: 19px;
+    height: 22px;
+    position: absolute;
+    top: 19px;
+    right: 35px;
+}
+.service-problems{
+    width: 100%;
+}
+.service-problems li{
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    padding-left: 20px;
+    border-bottom: 1px solid #E7E6E5;
+}
+.give-advice{
+    width: 100%;
+}
+.give-advice span{
+    display: block;
+    /*width: 100%;*/
+    height: 52px;
+    font-size: 16px;
+    line-height: 52px;
+    margin-left: 20px;
+}
+.advice-textarea{
+    width: 100%;
+    padding: 0 20px;
+}
+.advice-textarea textarea{
+    width: 100%;
+    height: 150px;
+    font-size: 15px;
+    border: 1px solid #B4AFAD;
+}
+.to-next-pg{
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 10px;
+}
+.to-next-pg span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    background: #79CAE0;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

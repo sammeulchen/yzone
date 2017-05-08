@@ -1,0 +1,29 @@
+<ion-view ng-controller="choiceGradeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>项目名称</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="set-person-count">
+            <span>设置人数</span>
+            <span>
+                <i ng-click="reduceCount()">-</i>
+                <input type="number" ng-model="level.count" value="0">
+                <i ng-click="addCount()">+</i>
+            </span>
+        </div>
+        <div class="kl_4"></div>
+        <div class="set-grade">
+            <span class="set-grade-title">设置级别</span>
+            <ion-list class="set_grade_desc">
+                <ion-radio ng-model="level.classLevel" ng-value="item.id"  ng-repeat="item in devList">
+                    <img src="{{item.imgUrl}}">{{item.text}}
+                </ion-radio>
+            </ion-list>
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="getLevelCount()">确定</div>
+</ion-view>

@@ -1,0 +1,78 @@
+<ion-view ng-controller="singleRankingCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>单打排名</span>
+    </ion-header-bar>
+    <div class="my-rank1">
+        <div class="my-rank-details" ng-style="setBg(userMsg.parentLvel)">
+            <div class="my-rd-top" ng-click="toSingleRanking()">
+                <img src="img/{{userMsg.picUrl}}"/>
+                <span>{{userMsg.parentLvel}}-{{userMsg.subLvel}}</span>
+                {{userMsg.rank}}名
+                <span ng-show="rankUpdownShow">{{userMsg.updown}}名</span>
+            </div>
+            <div class="my-rd-bottom" ng-show="rankshowDetails4">
+                <span>积分:{{userMsg.score}}分</span>
+                <span>(认证后为{{userMsg.parentLvel}}-{{userMsg.subLvel}})</span>
+                <span ng-show="rankShowDetails1" ng-click="toAuthenticationLevel()">认证级别</span>
+                <i ng-show="rankshowDetails2">认证申请已提交</i>
+                <span ng-click="toOwnRanking()" ng-show="rankshowDetails3">修改级别</span>
+            </div>
+            <div class="my-rd-bottom1" ng-show="rankshowDetails5">
+                <span>积分:{{userMsg.score}}分</span>
+                <a ng-click="toYZRank()">查看积分规则</a>
+            </div>
+        </div>
+        <div class="mm" ng-show="rankshowDetails7">
+            <div class="nn"></div>
+        </div>
+        <div class="mm" ng-show="rankshowDetails8">
+            <div class="nn"></div>
+        </div>
+        <div class="tips-msg1" ng-show="rankshowDetails7">
+            {{tipsMsg}}
+            <div>
+                <span ng-click="downRank()">申请降级</span>
+                <span ng-click="agreeRank()">同意该级</span>
+            </div>
+
+        </div>
+        <div class="tips-msg2" ng-show="rankshowDetails8">
+            <p>您在改级总排名的后10%，您可以申请降级来保证自己的线下赛事体验</p>
+            <div>
+                <span ng-click="downRank()">申请降级</span>
+                <span ng-click="notDownRank()">留在该级</span>
+            </div>
+
+        </div>
+        <div class="tips-msg1" ng-show="rankshowDetails9">
+            {{tipsMsg}}
+            <div>
+                <span ng-click="downRank()">申请降级</span>
+                <span ng-click="agreeRank()">同意该级</span>
+            </div>
+
+        </div>
+        <div class="ranking-history">
+            <span>积分记录</span>
+        </div>
+    </div>
+    <ion-nav-view>
+        <ion-content class="all-ranking">
+            <ul class="ranking-history-list">
+                <li ng-repeat="historyList in historyLists">
+                    <div class="ranking-game-name">
+                        <span>{{historyList.title}}</span>
+                        <span>{{historyList.createDate|date:'yyyy-MM-dd'}}</span>
+                    </div>
+                    <div class="ranking-game-grade">{{historyList.inout}}{{historyList.score}}</div>
+                </li>
+            </ul>
+
+        </ion-content>
+    </ion-nav-view>
+
+
+</ion-view>

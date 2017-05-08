@@ -1,0 +1,42 @@
+<ion-view ng-controller="changeUserInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span ng-show="personal.teamName != null">更改队伍名称</span>
+        <span ng-show="personal.coachName != null">更改教练姓名</span>
+        <i ng-show="personal.applyerName != null">更改领队姓名电话</i>
+    </ion-header-bar>
+    <ion-content>
+        <div class="change-content">
+            <div  ng-show="personal.teamName != null">
+                <input type="text" ng-model="personal.teamName" autofocus>
+                <p>请填写您的队伍名称</p>
+            </div>
+            <div ng-show="personal.coachName != null">
+                <input type="text" ng-model="personal.coachName" autofocus>
+                <p>请填写教练姓名</p>
+            </div>
+            <div class="group-infomation-c" ng-show="personal.applyerName != null">
+                <ul class="list">
+                    <li class="item item-thumbnail-left group-name">
+                        <img src="img/icon-name.png"/>
+                        <span>领队姓名</span>
+                        <input type="text"  ng-model="personal.applyerName" autofocus/>
+                    </li>
+                    <li class="item item-avatar leader-tel">
+                        <img src="img/icon-tel.png"/>
+                        <span>领队电话</span>
+                        <span>{{mobile}}</span>
+                        <span>修改手机号码</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </ion-content>
+    <div class="cui-btn" ng-click="submitInfo()">
+        完成
+    </div>
+</ion-view>

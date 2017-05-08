@@ -1,0 +1,83 @@
+<ion-view ng-controller="inviteLeaderCtrl">
+    <ion-content>
+        <div class="invite-bg">
+            <div class="invite-lt-bg">
+                <img class="img1" src="img/home/game-dbg.png">
+                <a href="{{homeUrl}}"><img class="img2" src="img/btn-home.gif"/></a>
+            </div>
+            <div class="invite-mi">
+                <span>
+                    <img src="{{applyerInfo.avatar}}">
+                </span>
+                <span>
+                    {{applyerInfo.realname}}
+                    <img ng-show="applyerInfo.gender == 1 && applyerInfo.age >=0" src="img/icon-boy.png"/>
+                    <img ng-show="applyerInfo.gender == 0 && applyerInfo.age >=0" src="img/icon-boy.png"/>
+                    <i ng-show="applyerInfo.age >=0">23</i>
+                </span>
+                <span class="wind" ng-show="applyerInfo.singleLevel == '风级'">单打<img src="img/wind-white.gif"/></span>
+                <span class="forest" ng-show="applyerInfo.singleLevel == '林级'">单打<img src="img/forest-white.gif"/></span>
+                <span class="fire" ng-show="applyerInfo.singleLevel == '火级'">单打<img src="img/fire-white.gif"/></span>
+                <span class="mount" ng-show="applyerInfo.singleLevel == '山级'">单打<img src="img/mount-white.gif"/></span>
+                <span class="wind" ng-show="applyerInfo.doubleLevel == '风级'">双打<img src="img/wind-white.gif"/></span>
+                <span class="forest" ng-show="applyerInfo.doubleLevel == '林级'">双打<img src="img/forest-white.gif"/></span>
+                <span class="fire" ng-show="applyerInfo.doubleLevel == '火级'">双打<img src="img/fire-white.gif"/></span>
+                <span class="mount" ng-show="applyerInfo.doubleLevel == '山级'">双打<img src="img/mount-white.gif"/></span>
+            </div>
+        </div>
+
+        <div class="invite-tips">
+            <div class="ii">
+                <div class="tt"></div>
+            </div>
+            <span>
+                <img ng-show="orderInfo.projectCategory == 2" src="img/home/invite_double.png">
+                <img ng-show="orderInfo.projectCategory == 3" src="img/home/invite_group.png">
+            </span>
+        </div>
+        <div class="game-lists game-lists-i">
+            <div class="game-list game-list-i" ng-click="toGroupDetails(compInfo.competitionId)">
+                <div class="poster">
+                    <img src="{{compInfo.banner}}"/>
+                </div>
+                <div ng-if = "compInfo.status == 3" class="game-status">
+                    <img src="img/home/game_status3.png"/>
+                    <span>报名中</span>
+                </div>
+                <div ng-if = "compInfo.status == 1" class="game-status">
+                    <img src="img/home/game_status2.png"/>
+                    <span>进行中</span>
+                </div>
+                <div ng-if = "compInfo.status == 5" class="game-status">
+                    <img src="img/home/game_status1.png"/>
+                    <span>已结束</span>
+                </div>
+                <div class="game-desc game-desc-i">
+                    <h3>{{compInfo.title}}</h3>
+                    <p>比赛时间：{{compInfo.beginDate|date:'yyyy.MM.dd'}}-{{compInfo.endDate|date:'MM.dd'}}</p>
+                    <p>比赛项目：{{projectItems}}</p>
+                    <p>比赛地点：{{compInfo.stadium}}</p>
+                    <!--<div ng-if = "compInfo.status == 3" class="game-status-btn">点击报名</div>-->
+                </div>
+                <div class="icon-grade icon-grade-i">
+                    <img src="img/home/icon_grade.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="partner-details-tabs">
+            <div class="partner-details-tab" ng-repeat="tabName in tabNames" ng-click="activeSlide($index)" ng-class="slectIndex==$index ? 'tab-select' : '' ">
+                <span>{{tabName}}</span>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div ng-include="pages[slectIndex]"></div>
+            </li>
+        </ul>
+
+        <div class="kl_3 kl_3-i"></div>
+    </ion-content>
+    <a class="invite-accept" ng-click="toReg()">
+        接受邀请
+    </a>
+</ion-view>

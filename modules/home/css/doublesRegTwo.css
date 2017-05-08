@@ -1,0 +1,258 @@
+.next-step{
+    width: 100%;
+    height:45px;
+    background: #F7F8F8;
+    padding: 0 8px;
+    position: absolute;
+    bottom: 15px;
+}
+.next-page-btn{
+    width: 100%;
+    height:46px;
+    background: #8DC21F;
+    margin-bottom:9px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 46px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.event-title{
+    width: 100%;
+    height: 26px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+ }
+.all-reg-info{
+    width: 100%;
+    /*background: linear-gradient(to right,#7BB0D7,#C2DD8B);*/
+
+}
+.reg-information{
+    width: 100%;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+  /*  background: #F7F8F7;*/
+    padding-bottom: 4px;
+}
+.reg-information li{
+    width: 100%;
+    border-bottom: 1px solid #E1E1E1;
+    background: #F7F8F7;
+
+}
+.reg-information li:nth-of-type(1){
+    height: 82px;
+}
+.partner-title{
+    display: inline-block;
+    width: 42px;
+    height: 82px;
+    padding: 6px 0 8px 14px;
+}
+.partner-title span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 16px;
+    font-size: 16px;
+    color: #727171;
+    border-right: 1px solid #E1E1E1;
+}
+.partner-photo{
+    display: inline-block;
+    width: 60px;
+    height: 82px;
+    margin-left: 10px;
+}
+.partner-photo img{
+    width: 60px;
+    height:60px;
+    border-radius: 100%;
+    position: relative;
+    top: 10px;
+}
+.partner-info{
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    padding-top: 12px;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.partner-info div:nth-of-type(1){
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.partner-info div:nth-of-type(2){
+    font-size: 14px;
+}
+.all-reg-info li:nth-of-type(2){
+    min-height: 159px;
+}
+.all-reg-info li:nth-of-type(3){
+    min-height: 105px;
+}
+.event-details-title{
+    display: block;
+    float: left;
+    width: 42px;
+    height: 159px;
+    padding: 12px 0 12px 14px;
+}
+.event-details-title-none{
+    display: block;
+    float: left;
+    width: 42px;
+    height: 105px;
+    padding: 12px 0 12px 14px;
+}
+
+.event-details-title span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    font-size: 16px;
+    color: #727171;
+    border-right: 1px solid #E1E1E1;
+}
+.event-details-title-none span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 16px;
+    color: #727171;
+    border-right: 1px solid #E1E1E1;
+}
+.event-details-lists{
+    float: left;
+    width: 83%;
+    height: 159px;
+
+}
+.event-details-lists-none{
+    float: left;
+    width: 83%;
+    height: 105px;
+
+}
+.event-details-lists div{
+    width: 100%;
+    height: 52px;
+    border-bottom: 1px solid #E1E1E1;
+    padding-left: 8px;
+    line-height: 52px;
+}
+.event-details-lists div:nth-of-type(3){
+    border: none;
+}
+.event-details-lists div span{
+    font-size: 16px;
+
+}
+.event-details-lists div span:nth-of-type(1){
+    display: inline-block;
+    margin-right:22px;
+    font-size: 16px;
+    color: #727171;
+}
+.club{
+    height: 51px;
+    line-height: 51px;
+    position: relative;
+    padding: 0 12px;
+}
+.club img:nth-of-type(1){
+    width: 22px;
+    position: absolute;
+    top: 14px;
+}
+.club img:nth-of-type(2){
+    width: 8px;
+    height: 18px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+.club span:nth-of-type(1){
+    display: inline-block;
+    margin-left:36px;
+    color: #727171;
+   margin-right: 22px;
+    font-size: 16px;
+}
+.club span:nth-of-type(3){
+    color: #727171;
+    font-size: 14px;
+}
+.has-problems{
+    width: 100%;
+    height: 100px;
+    padding: 8px 9px 0 15px;
+}
+.has-problems span{
+    display: inline-block;
+    width: 100%;
+    height: 26px;
+    border: 1px solid #8DC21F;
+    text-align: center;
+    line-height: 26px;
+    color: #8DC21F;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.groupReg-bottom-partner{
+    background: #F7F8F7;
+    margin-bottom: 30px;
+}
+.statement{
+    margin-top:8px;
+}
+
+.owned-club select{
+    width: 40%;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    background: #F7F8F7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

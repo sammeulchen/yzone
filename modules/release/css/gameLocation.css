@@ -1,0 +1,82 @@
+.show-location{
+    width: 100%;
+    height: 200px;
+}
+.show-location-title{
+    width: 100%;
+    height: 36px;
+    background: #89B929;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+}
+.location-information{
+    width: 100%;
+    height: 98px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding-bottom: 5px;
+}
+.location-information-content{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 32px 46px 0 35px;
+    display: flex;
+}
+.location-information-content select{
+    display: inline-block;
+    width: 20%;
+    height: 32px;
+    border-top: 1px solid #C3C1C1;
+    border-bottom: 1px solid #C3C1C1;
+    text-align: center;
+}
+.location-information-content span{
+    width: 20%;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.all-locations{
+    width: 100%;
+    padding: 30px 56px 0;
+}
+.all-locations li{
+    width: 100%;
+    height: 34px;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 34px;
+    border-bottom: 1px solid #C3C1C1;
+}
+.sure-bottom{
+    width: 100%;
+    height: 77px;
+    padding: 20px 10px 10px;
+}
+.btn-sure{
+    width: 100%;
+    height: 47px;
+    background: #89B929;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

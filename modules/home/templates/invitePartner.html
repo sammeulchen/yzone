@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="../css/invite.css" rel="stylesheet">
+</head>
+<body>
+<div class="invite-bg">
+    <div class="invite-lt-bg">
+        <img class="img1" src="img/home/game-dbg.png">
+        <a href="{{homeUrl}}"><img class="img2" src="img/btn-home.gif"/></a>
+    </div>
+    <div class="invite-mi">
+                <span>
+                    <img src="img/all-mh.gif">
+                </span>
+                <span>
+                    ccc
+                    <img src="img/icon-boy.png"/>
+                    <i>23</i>
+                </span>
+                <span>
+                    单打
+                    <img src="img/wind-white.gif"/>
+                </span>
+                <span>
+                    双打
+                    <img src="img/wind-white.gif"/>
+                </span>
+    </div>
+</div>
+
+<div class="invite-tips">
+    <div class="ii">
+        <div class="tt"></div>
+    </div>
+    <span></span>
+</div>
+<div class="game-lists game-lists-i">
+    <div class="game-list game-list-i" ng-click="toGroupDetails(gameList.competitionId)">
+        <div class="poster">
+            <img src="{{gameList.banner}}"/>
+        </div>
+        <div ng-if = "gameList.status == 3" class="game-status">
+            <img src="img/home/game_status3.png"/>
+            <span>报名中</span>
+        </div>
+        <div ng-if = "gameList.status == 1" class="game-status">
+            <img src="img/home/game_status2.png"/>
+            <span>进行中</span>
+        </div>
+        <div ng-if = "gameList.status == 5" class="game-status">
+            <img src="img/home/game_status1.png"/>
+            <span>已结束</span>
+        </div>
+        <div class="game-desc game-desc-i">
+            <h3>{{gameList.name}}</h3>
+            <p>比赛时间：{{gameList.beginDate|date:'yyyy.MM.dd'}}-{{gameList.endDate|date:'MM.dd'}}</p>
+            <p>比赛项目：{{gameList.projects}}</p>
+            <p>比赛地点：{{gameList.stadium}}</p>
+            <div ng-if = "gameList.status == 3" class="game-status-btn">点击报名</div>
+        </div>
+        <div class="icon-grade icon-grade-i">
+            <img src="img/home/icon_grade.png"/>
+        </div>
+    </div>
+</div>
+<div class="invite-p">
+    <div class="invite-pdt">
+        报名信息
+    </div>
+    <ul class="invite-pd">
+        <li>
+            <i>参赛组别</i>
+            <i>得得</i>
+        </li>
+        <li>
+            <i>参赛级别</i>
+            <i>得得</i>
+        </li>
+        <li>
+            <i>参赛项目</i>
+            <i>得得</i>
+        </li>
+        <li>
+            <i>报名费</i>
+            <i>得得</i>
+        </li>
+    </ul>
+</div>
+<div class="kl_3 kl_3-i"></div>
+<a class="invite-accept" href="#/userReg/62">
+    接受邀请
+</a>
+</body>
+</html>

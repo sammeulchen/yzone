@@ -1,0 +1,185 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+    position: relative;
+}
+.tabs-top > .tabs, .tabs.tabs-top{
+    height: 49px;
+    padding-top:12px;
+    background: #EEEFEF;
+}
+.tabs-top .tabs a{
+    height: 19px;
+    line-height: 19px;
+    border-right: 1px solid #C9C9CA;
+}
+.tabs-top .tabs a:nth-of-type(2){
+    border: none;
+}
+.tabs-top .tab-item .tab-title{
+    font-size: 16px;
+    color: #5D5E5D;
+
+}
+.tabs a span{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+}
+.tabs-top .tab-item  i.icon{
+    width: 0;
+    height: 0;
+}
+.group ~ .tab-title{
+    color: #8DC21F;
+    border-bottom: 3px solid #8DC21F;
+}
+.single ~ .tab-title{
+    color: #8DC21F;
+    border-bottom: 3px solid #8DC21F;
+}
+.grade ~ .tab-title{
+    color: #8DC21F;
+    border-bottom: 3px solid #8DC21F;
+}
+.group-details-title{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+
+}
+.my-game-title{
+    width: 100%;
+    height: 32px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding-left: 12px;
+    color: #ffffff;
+    line-height: 32px;
+    font-size: 16px;
+}
+.my-game-title div{
+    width: 200px;
+    float: right;
+    margin-top:4px;
+    margin-right: 12px;
+}
+.my-game-title .cancle-reg{
+    display: inline-block;
+    width: 93px;
+    height: 24px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    float: right;
+}
+.my-game-title .pay-immed{
+    display: inline-block;
+    width: 93px;
+    height: 24px;
+    background: #EC6845;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 10px;
+    float: right;
+}
+.my-game-details{
+    width: 100%;
+    padding: 0 12px;
+}
+.my-game-details li{
+    min-height: 42px;
+    border-bottom: 1px solid #DDDAD7;
+    line-height: 42px;
+}
+.my-game-details li span:nth-of-type(1){
+    display: inline-block;
+    color: #727171;
+    font-size: 16px;
+    width: 63px;
+    position: relative;
+}
+.my-game-details li span:nth-of-type(2){
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+}
+.my-gameDoub-details li:nth-of-type(1){
+    position: relative;
+    height: 82px;
+}
+.my-gameDoub-details li:nth-of-type(1) div {
+    display: inline-block;
+}
+.my-gameDoub-details li:nth-of-type(1) .partner-titles{
+    height: 82px;
+    line-height: 82px;
+}
+.my-gameDoub-details li:nth-of-type(1) div span:nth-of-type(1){
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 12px;
+    left: 68px;
+}
+.my-gameDoub-details li:nth-of-type(1) div span:nth-of-type(1) img{
+    width: 60px;
+    height: 60px;
+}
+.my-gameDoub-details li:nth-of-type(1) div span:nth-of-type(2){
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 75px;
+    width: 85px;
+    white-space: nowrap;
+    position: absolute;
+    top: 20px;
+}
+.my-gameDoub-details li:nth-of-type(1) div span:nth-of-type(3){
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    border: 1px solid #8DC21F;
+    color: #8DC21F;
+    border-radius: 5px;
+    width: 70px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+}
+.share{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.share img{
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 90px;
+}
+.share p{
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+}

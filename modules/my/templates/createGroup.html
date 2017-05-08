@@ -1,0 +1,23 @@
+<ion-view ng-controller="createGroupCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>团体入驻</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="group-pic">
+            <span class="pic-photo">上传LOGO</span>
+        </div>
+        <ul class="group-desc">
+            <li class="group-name-my">
+                <span>团体名称</span>
+                <input type="text" placeholder="给你的团队起个名字吧">
+            </li>
+            <li class="group-class-my" ng-click="toGroupClass()">
+                <span>团体类别</span>
+                <img src="img/next-page.gif">
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

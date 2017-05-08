@@ -1,0 +1,48 @@
+<ion-view ng-controller="selectedLeaderCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>选择新领队</span>
+       <!-- <span class="add-new-leader" ng-click="addNewLeader(competitionId)">添加新领队</span>-->
+    </ion-header-bar>
+    <ion-content>
+        <div>
+            <ul class="players-list">
+                <li class="players-list-member" ng-repeat="partnerList in partnerLists">
+                    <div class="list-left">
+                        <input name="partner" type="radio" value="{{partnerList.paternerId}}"  ng-model="partnerL.paternerId"/>
+                    </div>
+                    <div class="list">
+                        <div class="item item-avatar perfert-player ">
+                            <img class="head-portrait" src="{{partnerList.avatar}}"/>
+                            <span class="name">{{partnerList.realname}}</span>
+                            <span class="sex-p" ng-show="partnerList.age >= 0">
+                                <img ng-show="partnerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="partnerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{partnerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="partnerList.age < 0">
+                                <img ng-show="partnerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="partnerList.gender == 0" src="img/home/femal.png">
+                            </span>
+
+                            <div class="rank-g">
+                                <span ng-show="partnerList.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                                <span ng-show="partnerList.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                                <span ng-show="partnerList.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="kl_3"></div>
+        </div>
+    </ion-content>
+    <div class="add-p-btn" ng-show="partnerLists.length > 0" ng-click="submitLeader(partnerList.paternerId)">完成</div>
+</ion-view>

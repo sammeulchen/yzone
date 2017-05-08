@@ -1,0 +1,84 @@
+.scroll {
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F8;
+    position: relative;
+}
+.tournament-level-tips{
+    width: 100%;
+    height:28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #ffffff;
+    padding-left: 16px;
+    background: #EAC28A;
+}
+.level-description{
+    width: 100%;
+    padding: 21px 10px 0;
+}
+.level-description li{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #D5D4D4;
+    border-radius: 10px;
+    padding-top: 5px;
+    line-height: 42px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.level-description li img{
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+}
+.level-description li span:nth-of-type(1){
+    display: inline-block;
+    width: 67px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    line-height: 50px;
+    color: #000000;
+    font-size: 16px;
+}
+.level-description li span:nth-of-type(2){
+    display: inline-block;
+    width: 175px;
+    color: #000000;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 115px;
+}
+
+
+
+
+
+
+
+
+
+
+.rules-details-btn{
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    position: absolute;
+    bottom: 15px;
+}
+.rules-details-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    background: #8DC21F;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+
+}

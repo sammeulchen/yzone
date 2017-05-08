@@ -1,0 +1,30 @@
+<ion-modal-view class="location-view">
+    <ion-header-bar>
+        <h1 class="title">证件要求（可多选）</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div class="release-code">
+            <div class="release-code-details">
+                <span ng-class="{changeBg:code.active}" ng-click="code.active = !code.active;getCode(code.id)" ng-repeat="code in codes">{{code.name}}</span>
+
+               <div class="aa" ng-show="showMoreCode">
+                   <div class="bb"></div>
+               </div>
+               <input ng-show="showMoreCode" type="text" placeholder="请填写证件名称">
+
+
+            </div>
+        </div>
+        <div class="is-number">
+            <span ng-repeat="needNum in needNums">
+                <input name="needNumber" type="radio">
+                <i>{{needNum.text}}</i>
+            </span>
+
+        </div>
+        <div style="height: 100px"></div>
+    </ion-content>
+    <div class="release-code-btn">
+        <span>确定</span>
+    </div>
+</ion-modal-view>

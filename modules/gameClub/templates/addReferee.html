@@ -1,0 +1,55 @@
+<ion-view ng-controller="addRefereeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>添加裁判</span>
+        <span class="add-new-friend" ng-click="addNewPartner(competitionId)">添加新裁判</span>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-show="partnerLists.length == 0">
+            <div class="no-partner">
+                <div class="no-partner-title">
+                    <span>
+                      <img src="img/home/partner-title-bg.png"/>
+                    </span>
+                </div>
+                <p class="no-friend">您现在没有球友可添加为裁判</p>
+            </div>
+        </div>
+        <div ng-show="partnerLists.length > 0">
+            <ul class="players-list">
+                <li  ng-repeat="partnerList in partnerLists">
+                    <ion-checkbox id="{{partnerList.userId}}" gender="partnerList.gender" ng-model="isChecked"  ng-click="updateSelection($event,partnerList.userId)">
+                        <span class="header-photo"><img src="{{partnerList.avatar}}"/> </span>
+                        <span class="name-gp">
+                            {{partnerList.nickName}}
+                            <span class="sex-gp" ng-show="partnerList.age >= 0">
+                                <img ng-show="partnerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="partnerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{partnerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="partnerList.age < 0">
+                                <img ng-show="partnerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="partnerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="rank-g players-info1">
+                            <span ng-show="partnerList.singleLevel >= 1 && partnerList.singleLevel <= 3"  class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 4 && partnerList.singleLevel <= 6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 7 && partnerList.singleLevel <= 9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="partnerList.singleLevel >= 10 && partnerList.singleLevel <= 12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 1 && partnerList.doubleLevel <= 3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 4 && partnerList.doubleLevel <= 6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 7 && partnerList.doubleLevel <= 9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="partnerList.doubleLevel >= 10 && partnerList.doubleLevel <= 12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                    </ion-checkbox>
+
+                </li>
+            </ul>
+            <div class="kl_3"></div>
+        </div>
+    </ion-content>
+    <div class="add-p-btn" ng-show="partnerLists.length > 0" ng-click="addPartner(partnerList.userId)">完成</div>
+</ion-view>

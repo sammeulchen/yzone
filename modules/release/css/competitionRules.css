@@ -1,0 +1,39 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F8;
+    position: relative;
+}
+.competition-rules{
+    width: 100%;
+    padding: 16px 14px;
+}
+.competition-rules-details{
+    width: 90%;
+    min-height:80%;
+    font-size: 14px;
+    color: #000000;
+    background: #F7F8F8;
+    position: absolute;
+    border: 1px solid #CECFCF;
+    padding-top: 10px;
+}
+.rules-details-btn{
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    position: absolute;
+    bottom: 15px;
+ }
+.rules-details-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    background: #8DC21F;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 10px;
+
+}

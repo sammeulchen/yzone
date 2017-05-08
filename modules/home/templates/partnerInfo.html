@@ -1,0 +1,71 @@
+<div ng-repeat="partner in partnerInfo">
+    <div class="project-info">
+        <ul>
+            <li class="mp-info">
+                <div class="photo" ng-click="toBallFriend(partner.userId)">
+                    <span class="img1">
+                        <img class="img2" src="{{partner.avatar}}">
+                    </span>
+                </div>
+                <span class="name">
+                    {{partner.realname}}
+                    <span class="sex-p" ng-show="partner.age >= 0">
+                        <img ng-show="partner.gender == 1" src="img/icon-boy.png">
+                        <img ng-show="partner.gender == 0" src="img/icon-girl.png">
+                        <i>{{partner.age}}</i>
+                    </span>
+                    <span class="sex-pm" ng-show="partner.age < 0">
+                        <img ng-show="partner.gender == 1" src="img/home/man.png">
+                        <img ng-show="partner.gender == 0" src="img/home/femal.png">
+                    </span>
+                </span>
+                <div class="level">
+                    <span ng-show="partner.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                    <span ng-show="partner.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                    <span ng-show="partner.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                    <span ng-show="partner.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                    <span ng-show="partner.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                    <span ng-show="partner.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                    <span ng-show="partner.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                    <span ng-show="partner.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+                </div>
+
+            </li>
+            <li ng-show="partner.joinType == 0">
+                <span>证件号码</span>
+                <span>{{partner.cerNumber}}</span>
+            </li>
+            <li ng-show="partner.joinType == 0">
+                <span>手机号码</span>
+                <span>{{partner.mobile}}</span>
+            </li>
+        </ul>
+       <!-- <div class="project-info-btn" ng-if="projectCategory == 2 &&  applyerInfo.applyer"  ng-click="changePartner(partner.joinType,partner.pid)">
+            修改
+            <img src="img/home/edit_btn.png"/>
+        </div>-->
+        <div class="project-info-btn" ng-if="applyerInfo.applyer && !afterUpdateMemberDate">
+            <!--<span ng-click="changePartner(partner.joinType,partner.pid)" ng-show="projectCategory == 2">更换搭档</span>
+            <span ng-click="changePartner(partner.joinType,partner.pid)" ng-show="projectCategory == 3">更换队员</span>
+            <span ng-click="changePartner1(partner.joinType,partner.pid)" ng-show="partner.joinType == 0 && projectCategory == 2">修改搭档</span>
+            <span ng-click="changePartner1(partner.joinType,partner.pid)" ng-show="partner.joinType == 0 && projectCategory == 3">修改队员</span>-->
+            <img ng-show="partner.joinType == 0" ng-click="changePartner(partner.joinType,partner.pid)" src="img/home/edit_btn.png"/>
+            <img ng-show="projectCategory == 3" ng-click="deletePartner(partner.pid,$index)" src="img/home/delete_new.png"/>
+            <img ng-show="projectCategory ==2 && !afterApplyDate" ng-click="deletePartner(partner.pid,$index)" src="img/home/delete_new.png"/>
+        </div>
+    </div>
+
+</div>
+<div class="no-partner-bg" ng-show="partnerInfo.length == 0">
+    <div class="no-partner-title">
+        <span>
+          <img src="img/home/partner-title-bg.png"/>
+        </span>
+        <span>
+           <img ng-show="projectCategory == 2" src="img/home/invite_p.png"/>
+           <img ng-show="projectCategory == 3" src="img/home/no_player.png"/>
+        </span>
+        <img class="invite-d" src="img/home/invite-d.png"/>
+    </div>
+</div>

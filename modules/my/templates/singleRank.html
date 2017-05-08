@@ -1,0 +1,26 @@
+<ion-view ng-controller="singleRank1">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>单打排名</span>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="all-players-rank">
+            <li ng-repeat="singlePlayer in singlePlayers">
+                <i ng-style="setRankBg(singlePlayer.rank)" ng-show="singlePlayer.rank<=3"></i>
+                <i ng-style="setRankBg(singlePlayer.rank)"ng-show="singlePlayer.rank>3">{{singlePlayer.rank}}</i>
+                        <span ng-click="toBallFriend(singlePlayer.current,singlePlayer.userId)">
+                            <img src="{{singlePlayer.avatar}}"/>
+                        </span>
+                <span>
+                    {{singlePlayer.userName}}
+                    <img ng-show="singlePlayer.gender == 1" src="img/home/man.png">
+                    <img ng-show="singlePlayer.gender == 0" src="img/home/femal.png">
+                </span>
+                <span>{{singlePlayer.score}}分</span>
+            </li>
+        </ul>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

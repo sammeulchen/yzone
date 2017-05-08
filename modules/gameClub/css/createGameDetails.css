@@ -1,0 +1,108 @@
+.no-create-game{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0 20px;
+    /*background: url("../../../img/home/double-partner.png") repeat;
+    background-size: 72px 496px;*/
+}
+.no-game-title span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.no-game-title span img{
+    width: 158px;
+    height: 154px;
+    margin-top: 25px;
+}
+.no-create-game .no-friend{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #717071;
+}
+.game-lists-myR{
+    width: 100%;
+    padding: 0 6px 10px;
+    background: #DCDDDD;
+}
+.game-list-myR{
+    width: 100%;
+    padding-top: 6px;
+    position: relative;
+}
+.poster-myR{
+    background: #ffffff;
+}
+.poster-myR img{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.game-status-myR{
+    width: 21px;
+    height: 46px;
+    position: absolute;
+    top: 5px;
+    right: 14px;
+}
+.game-status-myR img{
+    width: 21px;
+    height: 51px;
+}
+.game-status-myR span{
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 40px;
+    line-height: 13px;
+}
+.game-desc-myR{
+    width: 100%;
+    background: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.game-desc-myR h3{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 20px 16px 0;
+    margin: 0;
+    text-align: center;
+}
+.game-desc-myR p{
+    font-size: 12px;
+    color: #717071;
+    margin: 0;
+}
+.project-myR{
+    width: 100%;
+    height:34px;
+    padding:5px 10px 25px 0;
+    background: #ffffff;
+    border-top: 3px dotted #DCDDDD;
+}
+.project-myR-btn{
+    height: 21px;
+    float: right;
+    position: relative;
+}
+.project-myR-btn span{
+    display: inline-block;
+    font-size: 12px;
+    color: #717071;
+    width: 80px;
+    height: 21px;
+    line-height: 21px;
+    text-align: center;
+    border: 1px solid #717071;
+    border-radius: 3px;
+}
+.project-myR-btn span:nth-of-type(1){
+    margin: 0 10px 0 25px
+}

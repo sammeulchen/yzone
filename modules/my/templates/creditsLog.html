@@ -1,0 +1,13 @@
+<ion-view ng-controller="creditsLogCtrl">
+    <ion-content>
+        <ul class="ranking-history-list">
+            <li ng-repeat="historyList in historyLists">
+                <div class="ranking-game-name">
+                    <span>{{historyList.title}}</span>
+                    <span>{{historyList.createDate|date:'yyyy-MM-dd'}}</span>
+                </div>
+                <div class="ranking-game-grade">{{historyList.score}}</div>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

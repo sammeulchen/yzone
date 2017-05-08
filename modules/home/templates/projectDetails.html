@@ -1,0 +1,142 @@
+<ion-view ng-controller="projectDetailsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的项目</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="timeline">
+            <i>
+                <img ng-show="!progressInfo.applySuccess" src="img/home/single-timeline2.png"/>
+                <img ng-show="progressInfo.applySuccess" src="img/home/single-timeline3.png"/>
+                <img ng-show="progressInfo.drawlogStatus == 2" src="img/home/single-timeline4.png"/>
+                <img ng-show="progressInfo.competitionBegin" src="img/home/single-timeline5.png"/>
+            </i>
+        </div>
+        <div class="timeline-desc-single">
+            <span>{{progressInfo.payStatus}}</span>
+            <span>报名成功</span>
+            <span>
+                <i>抽签完成</i>
+            </span>
+            <span>
+                <i>比赛</i>
+            </span>
+        </div>
+        <div class="kl_1"></div>
+        <div class="project-info">
+            <ul>
+                <li class="mp-info">
+                    <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{applyerInfo.avatar}}">
+                        </span>
+                    </div>
+                    <span class="name">
+                        {{applyerInfo.applyerName}}
+                        <span class="sex-p" ng-show="applyerInfo.age >= 0">
+                            <img ng-show="applyerInfo.gender == 1" src="img/icon-boy.png">
+                            <img ng-show="applyerInfo.gender == 0" src="img/icon-girl.png">
+                            <i>{{applyerInfo.age}}</i>
+                        </span>
+                        <span class="sex-pm" ng-show="applyerInfo.age < 0">
+                            <img ng-show="applyerInfo.gender == 1" src="img/home/man.png">
+                            <img ng-show="applyerInfo.gender == 0" src="img/home/femal.png">
+                        </span>
+                    </span>
+                    <div class="level">
+                        <span ng-show="applyerInfo.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                         <span ng-show="applyerInfo.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                         <span ng-show="applyerInfo.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                         <span ng-show="applyerInfo.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="applyerInfo.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+                    </div>
+
+                </li>
+                <li ng-show="applyerInfo.cerNumber != null && applyerInfo.cerNumber != ''">
+                    <span>证件号码</span>
+                    <span>{{applyerInfo.cerNumber}}</span>
+                </li>
+                <li>
+                    <span>手机号码</span>
+                    <span>{{applyerInfo.mobile}}</span>
+                </li>
+            </ul>
+            <div class="project-info-btn" ng-click="toUserReg()" ng-show="!afterApplyDate">
+                修改
+                <img src="img/home/edit_btn.png"/>
+            </div>
+        </div>
+        <div class="kl_2"></div>
+        <div class="project-info">
+            <ul>
+                <li ng-show="projectInfo.groupName != '不分组' && projectInfo.groupName != null && projectInfo.groupName != ''">
+                    <span>参赛组别</span>
+                    <span>{{projectInfo.groupName}}</span>
+                </li>
+                <li ng-show="projectInfo.className != '无级' && projectInfo.className != null && projectInfo.className != ''">
+                    <span>参赛级别</span>
+                    <span>{{projectInfo.className}}</span>
+                </li>
+                <li>
+                    <span>参赛项目</span>
+                    <span>{{projectInfo.name}}</span>
+                </li>
+            </ul>
+            <div class="project-info-btn" ng-click="toSelectedProject()" ng-show="!afterApplyDate">
+                修改
+                <img src="img/home/edit_btn.png"/>
+            </div>
+        </div>
+        <div class="kl_2"></div>
+        <div class="project-info">
+            <ul>
+                <li>
+                    <span>报名费</span>
+                    <span>￥{{applyerInfo.price}}（{{progressInfo.payStatus}}）</span>
+                </li>
+            </ul>
+        </div>
+        <div class="kl_2"></div>
+        <div class="project-info">
+            <ul>
+                <li ng-show="progressInfo.drawlogResult != ''">
+                    <span>抽签结果</span>
+                    <span>{{progressInfo.drawlogResult}}</span>
+                </li>
+            </ul>
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="project-details-btn" ng-show="applyerInfo.enableCancel && applyerInfo.orderStatus != 1">
+        <span class="cancel" ng-click="cancelReg(orderId)">取消报名</span>
+    </div>
+    <div class="project-details-btn" ng-show="progressInfo.drawlogStatus == 1 && !progressInfo.competitionBegin" ng-click="drawImmediately()">
+        <span class="draw">立即抽签</span>
+    </div>
+    <div class="project-details-btn project-details-btn1" ng-show="applyerInfo.applyer && applyerInfo.orderStatus == 1">
+        <span class="cancel2" ng-click="cancelReg()">取消报名</span>
+        <span style="background: #e83133" class="add2" ng-click="toPay()">
+            <div style="height: 25px;line-height: 32px">立即支付</div>
+            <div style="width: 100%;text-align: center;color: #ffffff;font-size: 12px;height: 23px;line-height: 23px">剩余时间：{{paracont*1000|date:'mm分ss秒'}}</div>
+        </span>
+        <!--<div class="project-details-btn-l">
+            <i>参赛名额有限，请尽快支付</i>
+            <i ng-if="paracont">剩余时间：{{paracont*1000|date:'mm分ss秒'}}</i>
+        </div>
+        <div class="project-details-btn-r" ng-click="toPay()">立即支付</div>-->
+    </div>
+    <!--<div class="project-details-btn" ng-show="applyerInfo.orderStatus == 1">
+        <div class="project-details-btn-l">
+            <i>参赛名额有限，请尽快支付</i>
+            <i ng-if="paracont">剩余时间：{{paracont*1000|date:'mm分ss秒'}}</i>
+        </div>
+        <div class="project-details-btn-r" ng-click="toPay()">立即支付</div>
+    </div>-->
+</ion-view>

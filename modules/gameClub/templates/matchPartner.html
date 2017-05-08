@@ -1,0 +1,55 @@
+<ion-view ng-controller="matchPartnerCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>匹配搭档</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="partner-portfolio">
+            <div ng-if="partnerPortfoliosAvatar" class="partner-portfolio-ev" ng-repeat="partnerPortfolioAvatar in partnerPortfoliosAvatar" ng-click="relieve(partnerPortfolioAvatar.order1Id,partnerPortfolioAvatar.order2Id,$index)">
+                <img class="avatar1-img" src="{{partnerPortfolioAvatar.avatar1}}">
+                <img  class="avatar2-img" src="{{partnerPortfolioAvatar.avatar2}}">
+                <img class="close-img" src="img/game_club/delete-x.png">
+            </div>
+        </div>
+        <div class="match-partner-title">
+            匹配搭档
+        </div>
+        <ul class="players-list">
+            <li  ng-repeat="partnerList in partnerLists">
+                <ion-checkbox id="{{partnerList.id}}" gender="partnerList.gender" ng-model="isChecked"  ng-click="updateSelection($event,partnerList.id,$index,partnerList.avatar)">
+                    <span class="header-photo"><img src="{{partnerList.avatar}}"/> </span>
+                        <span class="name-gp">
+                            {{partnerList.nickName}}
+                            <span class="sex-gp" ng-show="partnerList.age >= 0">
+                                <img ng-show="partnerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="partnerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{partnerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="partnerList.age < 0">
+                                <img ng-show="partnerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="partnerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                    <div class="rank-g players-info1">
+                        <span ng-show="partnerList.sLevel >= 1 && partnerList.sLevel <= 3"  class="wind">单打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="partnerList.sLevel >= 4 && partnerList.sLevel <= 6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="partnerList.sLevel >= 7 && partnerList.sLevel <= 9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="partnerList.sLevel >= 10 && partnerList.sLevel <= 12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                        <span ng-show="partnerList.dLevel >= 1 && partnerList.dLevel <= 3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                        <span ng-show="partnerList.dLevel >= 4 && partnerList.dLevel <= 6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                        <span ng-show="partnerList.dLevel >= 7 && partnerList.dLevel <= 9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                        <span ng-show="partnerList.dLevel >= 10 && partnerList.dLevel <= 12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                    </div>
+                </ion-checkbox>
+
+            </li>
+        </ul>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="manage-btn">
+        <span ng-click="autoMatch()">自动匹配</span>
+        <span ng-click="submitPartner()">提交</span>
+    </div>
+</ion-view>

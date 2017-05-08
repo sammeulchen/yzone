@@ -1,0 +1,16 @@
+<ion-modal-view>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="closeModal()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>团体类别</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="group-class">
+            <ion-list>
+                <ion-radio ng-repeat='groupClass in groupClasses' ng-model="choice" ng-value="'groupClass.id'">{{groupClass.name}}</ion-radio>
+                <!--<ion-radio ng-model="choice" ng-value="'B'">Choose B</ion-radio>-->
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-modal-view>

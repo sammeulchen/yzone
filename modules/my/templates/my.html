@@ -1,0 +1,106 @@
+<ion-view ng-controller="myCtrl">
+    <ion-content>
+        <div class="my-info" ng-click="myInfoDetails()">
+
+            <img class="bg-img" src="img/home/game-dbg.png">
+            <img class="my-avatar" src="{{profile.avatar}}">
+            <i class="my-age" ng-show="profile.age >= 0">
+                <img ng-show="profile.gender == 1" src="img/icon-boy.png"/>
+                <img ng-show="profile.gender == 0" src="img/icon-girl.png"/>
+                <b>{{profile.age}}</b>
+            </i>
+            <span class="my-name">{{profile.realname}}</span>
+        </div>
+        <img class="btn-letter" src="img/btn-letter.png"/>
+        <i class="read-message" ng-show="profile.msgCount > 0">{{profile.msgCount}}</i>
+        <div class="user-grade1">
+            <div class="grade-sd">
+                <i class="single-rank-pic1">
+                    <img ng-if="level.singleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                    <img ng-if="level.singleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                    <img ng-if="level.singleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                    <img ng-if="level.singleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                    <img ng-if="level.singleLevel == null || level.singleLevel == ''" src="img/home/w_f_f_m.png"/>
+                </i>
+                <div class="rank-desc1" ng-if="level.singleLevel == null || level.singleLevel == ''" ng-click="toOwnRanking1()">
+                    <span>单打</span>
+                    <span>无级-请定级</span>
+                </div>
+                <div class="rank-desc1" ng-if="level.singleLevel != null && level.singleLevel != ''" ng-click="toRank1()">
+                    <span>单打</span>
+                    <span>{{level.singleLevel}}-第{{level.singleRank}}名</span>
+                </div>
+            </div>
+            <div class="grade-sd">
+                <div class="rank-desc1" ng-if="level.doubleLevel == null || level.doubleLevel == ''" ng-click="toOwnRanking2()">
+                    <span>双打</span>
+                    <span>无级-请定级</span>
+                </div>
+                <div class="rank-desc1" ng-if="level.doubleLevel != null && level.doubleLevel != ''" ng-click="toRank2()">
+                    <span>双打</span>
+                    <span>{{level.doubleLevel}}-第{{level.doubleRank}}名</span>
+                </div>
+                <i class="double-rank-pic1">
+                    <img ng-if="level.doubleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                    <img ng-if="level.doubleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                    <img ng-if="level.doubleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                    <img ng-if="level.doubleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                    <img ng-if="level.doubleLevel == null || level.doubleLevel == ''" src="img/home/w_f_f_m.png"/>
+                </i>
+            </div>
+        </div>
+        <div class="kl_4"></div>
+
+        <div class="my-games" ng-click="toMyGames()">
+            <div class="my-games-s">
+                <img class="img1" src="img/my/my_game.png"/>
+                <span>我的比赛</span>
+                <i class="msg-count" ng-show="competitionShow">{{userInfo.competitonUpdateCount}}</i>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toMyPartner()">
+            <div class="my-games-s">
+                <img class="img2" src="img/my/my_friend.png"/>
+                <span>球友</span>
+                <i class="msg-count" ng-show="friendShow">{{userInfo.friendMsgCount}}</i>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toMyClub()">
+            <div class="my-games-s">
+                <img class="img3" src="img/my/my_group.png"/>
+                <span>所属团体</span>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toChildrenInfo()">
+            <div class="my-games-s">
+                <img class="img5" src="img/my/my_children.png"/>
+                <span>管理儿童信息</span>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toServiceCenter()">
+            <div class="my-games-s">
+                <img class="img7" src="img/my/my_service.png"/>
+                <span>服务中心</span>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toReleaseGame()">
+            <div class="my-games-s">
+                <img class="img7" src="img/my/my_service.png"/>
+                <span>发布比赛</span>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+        <div class="my-games" ng-click="toControlGame()">
+            <div class="my-games-s">
+                <img class="img7" src="img/my/my_service.png"/>
+                <span>管理比赛</span>
+                <img src="img/next-page.gif"/>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

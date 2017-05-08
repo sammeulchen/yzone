@@ -1,0 +1,9 @@
+<div style="width:100%;text-align: center;padding-top:30px;display: none">
+
+</div>
+<div style="width:100%;text-align: center;" ng-repeat="zhibo in zhibos">
+    <div style="width: 100%;height: 26px;line-height: 26px;font-size: 16px;color: #ffffff;padding-left: 12px; text-align: left;background:linear-gradient(to right,#79CAE0,#ffffff);">{{zhibo.name}}</div>
+    <div style="padding: 5px 10px" ng-click="toPlat(zhibo.url)">
+        <img style="width: 100%;" src="img/home/zhibo.png">
+    </div>
+</div>

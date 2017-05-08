@@ -1,0 +1,177 @@
+.height-total{
+    width: 100%;
+    height: 100%;
+    background: #F7F8F8;
+
+}
+.order{
+    width: 100%
+    background: #F7F8F8;
+    padding: 44px 20px 0;
+}
+.order-number{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #E7E8E8;
+    position: relative;
+    margin-left:3px;
+    padding-top: 16px;
+}
+.order-number span {
+    display: block;
+    width: 2px;
+    height: 12px;
+    background: #F8B62D;
+    position: absolute;
+    top: 19px;
+    left: -5px;
+}
+.order-number i{
+    font-size: 16px;
+    color: #595757;
+    margin-right:0;
+}
+.order-number b {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+.order-name{
+    width: 100%;
+    padding-top:10px;
+}
+.order-name p{
+    font-size: 16px;
+    color: #000000;
+ }
+.payment-method{
+    width: 100%;
+    padding-bottom: 5px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+}
+.payment-method-title{
+    width: 100%;
+    height: 23px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 23px;
+ }
+.payment-method-btn{
+    width: 100%;
+   /* height: 103px;*/
+    padding: 0 21px;
+    background: #F7F8F8;
+}
+.wechat{
+    width: 100%;
+    height: 48px;
+    padding-top:15px;
+    position: relative;
+    border-bottom: 1px solid #E7E8E8;
+}
+.wechat img{
+    display: inline-block;
+    width: 32px;
+    height: 25px;
+    margin-right:18px;
+}
+.wechat span{
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+}
+.wechat input{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top:16px;
+    right: 10px;
+}
+.alipay{
+    width: 100%;
+    height: 48px;
+    padding-top:13px;
+    position: relative;
+}
+.alipay img{
+    display: inline-block;
+    width: 35px;
+    height: 26px;
+    margin-right:18px;
+}
+.alipay span{
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+}
+.alipay input{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top:16px;
+    right: 10px;
+}
+.total-price{
+    font-size: 16px;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    color: #595757;
+    padding:0 32px 0 20px;
+}
+.total-price i{
+
+    margin-right: 100px;
+}
+.total-price b{
+    float: right;
+    font-weight: 500;
+    color: #000000;
+}
+.pay-immediately{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    bottom: 8px;
+    padding: 0 8px 0 15px;
+}
+.pay-immediately span{
+    display: block;
+    height: 46px;
+    background: #8DC21F;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

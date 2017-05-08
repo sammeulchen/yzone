@@ -1,0 +1,21 @@
+<ion-view ng-controller="myClubCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div ng-click="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的团体</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-tabs class="tabs-top">
+        <ion-tab title="我加入的" icon-on="joining" href="/myClub/joiningGroup">
+            <ion-nav-view name="myClub-joiningGroup">
+
+            </ion-nav-view>
+        </ion-tab>
+        <ion-tab title="我创建的" icon-on="creating" href="/myClub/creatingGroup">
+            <ion-nav-view name="myClub-creatingGroup">
+
+            </ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

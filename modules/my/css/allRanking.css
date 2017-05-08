@@ -1,0 +1,292 @@
+.my-rank1{
+    width: 100%;
+    background: #F7F8F7;
+    padding: 6px 4px 0;
+    margin-top: 44px;
+}
+.my-rank-details{
+    width: 100%;
+    height: 71px;
+    border-radius: 10px;
+    padding: 0 7px;
+}
+.my-rd-top{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+    position: relative;
+}
+.my-rd-top img{
+    width: 16px;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+}
+.my-rd-top span:nth-of-type(1){
+    display: inline-block;
+    height: 40px;
+    line-height: 54px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 26px;
+}
+.my-rd-top span:nth-of-type(2){
+    display: inline-block;
+    height: 40px;
+    line-height: 54px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.my-rd-bottom{
+    font-size: 12px;
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.my-rd-bottom span:nth-of-type(2){
+    color: #E0C3B4;
+}
+.my-rd-bottom span:nth-of-type(3){
+    display: inline-block;
+    width: 55px;
+    height: 17px;
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 17px;
+    position: absolute;
+    top: 7px;
+    right: 60px;
+}
+.my-rd-bottom span:nth-of-type(4){
+    display: inline-block;
+    width: 55px;
+    height: 17px;
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    text-align: center;
+    line-height: 17px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+.my-rd-bottom1{
+    position: relative;
+}
+.my-rd-bottom1 span{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+}
+.my-rd-bottom1 a{
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: underline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.rank-title{
+    width: 100%;
+    height: 24px;
+    color: #727171;
+    line-height: 24px;
+    padding-left: 16px;
+}
+.mm1{
+    width: 0;
+    height: 0;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-color: transparent transparent #8DC21F transparent;
+    border-style: solid;
+    position: absolute;
+    top: 123px;
+    left: 50%;
+}
+.nn{
+    width: 0;
+    height: 0;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-bottom-width: 8px;
+    border-color: transparent transparent #ffffff transparent;
+    border-style: solid;
+    position: absolute;
+    top: 1px;
+    left: -7px;
+    z-index: 1;
+}
+.tips-msg1{
+    font-size: 12px;
+    width: 100%;
+    color: #8DC21F;
+    background: #ffffff;
+    border: 1px solid #8DC21F;
+    margin-top: 10px;
+    position: relative;
+}
+.tips-msg1 div{
+    height: 35px;
+    margin-top: 5px;
+}
+.tips-msg1 span:nth-of-type(1){
+    display: block;
+    float: left;
+    width: 100px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #8DC21F;
+    border-radius: 5px;
+    margin-left: 20px;
+    /* position: absolute;
+     top: 6px;
+     right: 55px;*/
+}
+.tips-msg1 span:nth-of-type(2){
+    display: block;
+    float: right;
+    width: 100px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    background: #8DC21F;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 20px;
+    /*position: absolute;
+    top: 6px;
+    right: 2px;*/
+}
+.tips-msg2{
+    font-size: 12px;
+    width: 100%;
+    color: #8DC21F;
+    background: #ffffff;
+    border: 1px solid #8DC21F;
+    margin-top: 10px;
+    position: relative;
+}
+/*.tips-msg2 p{
+    width: 69%;
+    margin: 0;
+}*/
+.tips-msg2 div{
+    height: 35px;
+    margin-top: 5px;
+}
+.tips-msg2 span:nth-of-type(1){
+    display: block;
+    float: left;
+    width: 100px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #8DC21F;
+    border-radius: 5px;
+    margin-left: 20px;
+    /*position: absolute;
+    top: 11px;
+    right: 55px;*/
+}
+.tips-msg2 span:nth-of-type(2){
+    display: block;
+    float: right;
+    width: 100px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    background: #8DC21F;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 20px;
+    /*position: absolute;
+    top: 11px;
+    right: 2px;*/
+}
+.ranking-history{
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #727171;
+    font-size: 16px;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+.ranking-history span{
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #727171;
+    font-size: 16px;
+    border-bottom: 1px solid #D3D3D4;
+}
+
+.all-ranking{
+    top: 0;
+}
+
+.ranking-history-list{
+    width: 100%;
+    background: #ffffff;
+    padding: 0 12px;
+}
+.ranking-history-list li{
+    width: 100%;
+    border-bottom: 1px solid #D3D3D4;
+    padding-top: 5px;
+    position: relative;
+}
+.ranking-game-name{
+    display: inline-block;
+    width: 60%;
+    overflow: hidden;
+}
+.ranking-game-name span{
+    display: block;
+    font-size: 14px;
+    color: #231714;
+ }
+
+.ranking-game-grade{
+    font-size: 14px;
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

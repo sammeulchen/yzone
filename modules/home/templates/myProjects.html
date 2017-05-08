@@ -1,0 +1,74 @@
+<ion-view ng-controller="myProjectsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div  on-tap="toDetails()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的项目</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-repeat="project in projects">
+            <div class="line-k"></div>
+            <div class="project-title" ng-show="project.projectCategory == 1 && project.paystatus != 1">
+                <span>项目{{$index+1}}</span>
+            </div>
+            <div class="project-title" ng-show="project.projectCategory == 2 && project.paystatus != 1 && !project.enableDrawlog && !project.allowAdd">
+                <span>项目{{$index+1}}</span>
+            </div>
+            <div class="project-title" ng-show="project.projectCategory == 3 && project.paystatus != 1 && !project.enableDrawlog  && !memberCountLess">
+                <span>项目{{$index+1}}</span>
+            </div>
+            <div class="project-title1" ng-show="project.isApplyer && project.paystatus == 1">
+                <span>报名费未支付</span>
+            </div>
+            <div class="project-title1" ng-show="project.isApplyer && project.enableDrawlog">
+                <span>抽签中</span>
+            </div>
+            <div class="project-title1" ng-show=" project.projectCategory == 2 && project.isApplyer && project.paystatus != 1 && project.allowAdd">
+                <span>搭档未确认</span>
+            </div>
+            <div class="project-title1" ng-show=" project.projectCategory == 3 && project.isApplyer && project.paystatus != 1 && memberCountLess">
+                <span>队员数量不足</span>
+            </div>
+            <div class="project-desc">
+                <ul>
+                    <li ng-show="project.groupName != '不分组' && project.groupName != '' && project.groupName != null">
+                        <i>参赛组别</i>
+                        <i>{{project.groupName}}</i>
+                    </li>
+                    <li ng-show="project.className != '无级' && project.className != '' && project.className != null">
+                        <i>参赛级别</i>
+                        <i id="wind" ng-show="project.className == '风级'">{{project.className}}<img src="img/wind.gif"/> </i>
+                        <i id="forest" ng-show="project.className == '林级'">{{project.className}}<img src="img/forest.gif"/> </i>
+                        <i id="fire" ng-show="project.className == '火级'">{{project.className}}<img src="img/fire.gif"/> </i>
+                        <i id="mount" ng-show="project.className == '山级'">{{project.className}}<img src="img/mount.gif"/> </i>
+                    </li>
+                    <li>
+                        <i>参赛项目</i>
+                        <i>{{project.projectName}}</i>
+                    </li>
+                </ul>
+                <div class="project-desc-details" ng-click="toProjectDetails(project.orderId,project.projectCategory)">
+                    查看报名详情
+                    <img src="img/home/unfold.png"/>
+                </div>
+            </div>
+            <div class="project-btn" ng-show="project.isApplyer && project.paystatus == 1">
+                <div class="project-btn-left">
+                    <i>参赛名额有限，请尽快支付</i>
+                    <i>剩余时间：{{paracont*1000|date:'mm分ss秒'}}</i>
+                </div>
+                <div class="project-btn-right" ng-click="toPay(competitionId,project.orderId)">立即支付</div>
+            </div>
+            <div class="project-btn1" ng-show="project.isApplyer && project.enableDrawlog" ng-click="drawImmediately(project.orderId,project.projectId)">
+                <span>立即抽签</span>
+            </div>
+            <div class="project-btn1">
+                <span ng-show="project.projectCategory == 2 && project.paystatus != 1 && project.isApplyer && project.allowAdd" ng-click="addPartner(competitionId,project.orderId,project.projectCategory)">添加搭档</span>
+                <span ng-show="project.projectCategory == 3 && project.paystatus != 1 &&  project.isApplyer && project.allowAdd" ng-click="addPartner(competitionId,project.orderId,project.projectCategory)">添加队员</span>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

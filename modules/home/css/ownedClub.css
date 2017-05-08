@@ -1,0 +1,82 @@
+
+.bodyHeight{
+    background: #F7F8F8;
+}
+.scroll{
+    width: 100%;
+    height: 100%;
+ }
+.header{
+    width: 100%;
+    height: 36px;
+}
+.header .bar{
+    height: 36px;
+    background-color: #8DC21F;
+}
+.header .title{
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+}
+.search{
+    width: 100%;
+    height: 80px;
+    padding-top:20px;
+}
+.search .list .item{
+    background: #F7F8F8;
+    border-color: #aaaaaa;
+}
+.search .list-inset{
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-part{
+    width: 100%;
+    height: 116px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 8px;
+}
+.btn-part .bottom-btn-a{
+    display: block;
+    width: 100%;
+    height: 46px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 46px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+}
+.btn-part .new-club{
+    background: #B5B5B6;
+    margin-bottom:13px;
+}
+.btn-part .sure{
+    background: #8DC21F;
+}
+
+
+
+
+
+
+
+
+
+

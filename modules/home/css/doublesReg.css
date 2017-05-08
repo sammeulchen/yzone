@@ -1,0 +1,78 @@
+.change-information{
+    width: 100%;
+    height: 42px;
+    background: #F7F8F8;
+    line-height: 42px;
+    padding-left: 14px;
+}
+.change-information span{
+    display: inline-block;
+    width: 23px;
+    height:23px;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 19px;
+    background: #F8CA6A;
+    font-weight: 900;
+    text-align: right;
+    line-height: 23px;
+}
+.change-information b{
+    font-weight: 500;
+    margin-left: 12px;
+}
+.next-page{
+    width: 100%;
+    height: 65px;
+    padding: 0 8px 18px;
+    background: #F7F8F8;
+}
+.next-page a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 47px;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    color: #ffffff;
+    background: #8DC21F;
+    border-radius: 10px;
+}
+.select-groups{
+    width: 100%;
+    padding: 0 12px 0 16px;
+    background: #F7F8F8;
+    border-bottom: 1px solid #D8D9D9;
+}
+.select-groups h3{
+    width: 100%;
+    height: 39px;
+    padding-top:17px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.select-groups ul{
+    height: 104px;
+}
+.select-groups ul li{
+    float: left;
+    width: 40%;
+    height: 38px;
+    background: #B5B5B6;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 14px;
+    padding-top: 9px;
+}
+.select-groups ul li:nth-child(2){
+    float: right;
+    margin-right: 20px;
+}
+.select-groups ul .selectEvent{
+    background: #8DC21F;
+}
+
+

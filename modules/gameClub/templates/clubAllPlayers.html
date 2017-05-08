@@ -1,0 +1,157 @@
+<ion-view ng-controller="clubAllPlayersCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>已报名</span>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-show="category == 1">
+            <div ng-repeat="playerList in playerLists">
+                <ul class="club-my-info">
+                    <li class="mp-info">
+                        <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{playerList.avatar}}">
+                        </span>
+                        </div>
+                        <span class="name">
+                            {{playerList.nickname}}
+                            <span class="sex-p" ng-show="playerList.age >= 0">
+                                <img ng-show="playerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="playerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{playerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="playerList.age < 0">
+                                <img ng-show="playerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="playerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="level">
+                            <span ng-show="playerList.slevel >=1 && playerList.slevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=4 && playerList.slevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=7 && playerList.slevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=10 && playerList.slevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=1 && playerList.dlevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=4 && playerList.dlevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=7 && playerList.dlevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=10 && playerList.dlevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="kl_4"></div>
+                <div class="kl_4"></div>
+            </div>
+        </div>
+
+        <div ng-show="category == 2">
+            <div ng-repeat="playerList in playerLists" ng-show="playerList.paterner == null">
+                <ul class="club-my-info">
+                    <li class="mp-info">
+                        <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{playerList.avatar}}">
+                        </span>
+                        </div>
+                        <span class="name">
+                            {{playerList.nickname}}
+                            <span class="sex-p" ng-show="playerList.age >= 0">
+                                <img ng-show="playerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="playerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{playerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="playerList.age < 0">
+                                <img ng-show="playerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="playerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="level">
+                            <span ng-show="playerList.slevel >=1 && playerList.slevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=4 && playerList.slevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=7 && playerList.slevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=10 && playerList.slevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=1 && playerList.dlevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=4 && playerList.dlevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=7 && playerList.dlevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=10 && playerList.dlevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                        <div class="select-partner-btn" ng-click="toBePartner(playerList.id,playerList.projectId)">
+                            选择为搭档
+                        </div>
+                    </li>
+                </ul>
+                <div class="kl_4"></div>
+                <div class="kl_4"></div>
+            </div>
+            <div ng-repeat="playerList in playerLists" ng-show="playerList.paterner != null">
+                <ul class="club-my-info">
+                    <li class="mp-info">
+                        <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{playerList.avatar}}">
+                        </span>
+                        </div>
+                        <span class="name">
+                            {{playerList.nickname}}
+                            <span class="sex-p" ng-show="playerList.age >= 0">
+                                <img ng-show="playerList.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="playerList.gender == 0" src="img/icon-girl.png">
+                                <i>{{playerList.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="playerList.age < 0">
+                                <img ng-show="playerList.gender == 1" src="img/home/man.png">
+                                <img ng-show="playerList.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="level">
+                            <span ng-show="playerList.slevel >=1 && playerList.slevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=4 && playerList.slevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=7 && playerList.slevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.slevel >=10 && playerList.slevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=1 && playerList.dlevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=4 && playerList.dlevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=7 && playerList.dlevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.dlevel >=10 && playerList.dlevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                    </li>
+                    <li class="mp-info">
+                        <div class="photo">
+                        <span class="img1">
+                            <img class="img2" src="{{playerList.paterner.avatar}}">
+                        </span>
+                        </div>
+                        <span class="name">
+                            {{playerList.paterner.nickname}}
+                            <span class="sex-p" ng-show="playerList.paterner.age >= 0">
+                                <img ng-show="playerList.paterner.gender == 1" src="img/icon-boy.png">
+                                <img ng-show="playerList.paterner.gender == 0" src="img/icon-girl.png">
+                                <i>{{playerList.paterner.age}}</i>
+                            </span>
+                            <span class="sex-pm" ng-show="playerList.paterner.age < 0">
+                                <img ng-show="playerList.paterner.gender == 1" src="img/home/man.png">
+                                <img ng-show="playerList.paterner.gender == 0" src="img/home/femal.png">
+                            </span>
+                        </span>
+                        <div class="level">
+                            <span ng-show="playerList.paterner.slevel >=1 && playerList.paterner.slevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.paterner.slevel >=4 && playerList.paterner.slevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.paterner.slevel >=7 && playerList.paterner.slevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.paterner.slevel >=10 && playerList.paterner.slevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+                            <span ng-show="playerList.paterner.dlevel >=1 && playerList.paterner.dlevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+                            <span ng-show="playerList.paterner.dlevel >=4 && playerList.paterner.dlevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+                            <span ng-show="playerList.paterner.dlevel >=7 && playerList.paterner.dlevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+                            <span ng-show="playerList.paterner.dlevel >=10 && playerList.paterner.dlevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+                        </div>
+                    </li>
+                    <div class="partner-tip">
+                        <img src="img/game_club/been_partner.png">
+                    </div>
+                </ul>
+                <div class="kl_4"></div>
+                <div class="kl_4"></div>
+            </div>
+
+        </div>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

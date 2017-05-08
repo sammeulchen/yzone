@@ -1,0 +1,41 @@
+<div class="kl_4"></div>
+<ul class="club-my-info" ng-show="paternerInfo != null">
+    <li class="mp-info">
+        <div class="photo">
+                <span class="img1">
+                    <img class="img2" src="{{paternerInfo.avatar}}">
+                </span>
+        </div>
+            <span class="name">
+                {{paternerInfo.nickname}}
+                <span class="sex-p" ng-show="paternerInfo.age >= 0">
+                    <img ng-show="paternerInfo.gender == 1" src="img/icon-boy.png">
+                    <img ng-show="paternerInfo.gender == 0" src="img/icon-girl.png">
+                    <i>{{paternerInfo.age}}</i>
+                </span>
+                <span class="sex-pm" ng-show="paternerInfo.age < 0">
+                    <img ng-show="paternerInfo.gender == 1" src="img/home/man.png">
+                    <img ng-show="paternerInfo.gender == 0" src="img/home/femal.png">
+                </span>
+            </span>
+        <div class="level">
+            <span ng-show="paternerInfo.sLevel >=1 && paternerInfo.sLevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+            <span ng-show="paternerInfo.sLevel >=4 && paternerInfo.sLevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+            <span ng-show="paternerInfo.sLevel >=7 && paternerInfo.sLevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+            <span ng-show="paternerInfo.sLevel >=10 && paternerInfo.sLevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+            <span ng-show="paternerInfo.dLevel >=1 && paternerInfo.dLevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+            <span ng-show="paternerInfo.dLevel >=4 && paternerInfo.dLevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+            <span ng-show="paternerInfo.dLevel >=7 && paternerInfo.dLevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+            <span ng-show="paternerInfo.dLevel >=10 && paternerInfo.dLevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+        </div>
+    </li>
+    <div class="project-info-btn-club" ng-click="deletePartner(id)">
+        删除
+        <img src="img/home/delete_new.png"/>
+    </div>
+</ul>
+<div class="no-club-partner" ng-show="paternerInfo == null">
+    <img src="img/game_club/no-club-bg.png">
+</div>
+<div class="kl_4"></div>

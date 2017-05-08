@@ -1,0 +1,81 @@
+<ion-view ng-controller="writeGameInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>创建比赛</span>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="game-basic">
+            <li>
+                <span>比赛名称</span>
+                <input ng-model="gameInfo.name" type="text" placeholder="请填写比赛名称">
+            </li>
+            <li>
+                <span>比赛开始时间</span>
+                <input id="date-selector-input1" class="time-pick" type="text" readonly/>
+                <img src="img/next-page.gif">
+            </li>
+            <li>
+                <span>比赛结束时间</span>
+                <input id="date-selector-input2" class="time-pick" type="text" readonly/>
+                <img src="img/next-page.gif">
+            </li>
+            <li>
+                <span>退出截止时间</span>
+                <input id="date-selector-input3" class="time-pick" type="text" readonly/>
+                <img src="img/next-page.gif">
+            </li>
+            <li ng-click="toLocationList()">
+                <span>比赛地点</span>
+                <span>{{projectDetails.stadium}}</span>
+                <img src="img/next-page.gif">
+            </li>
+            <li>
+                <span>场地号码</span>
+                <input  ng-model="gameInfo.siteNumbers" type="text" placeholder="请填写场地号码">
+            </li>
+            <li>
+                <span>报名费用</span>
+                <input class="reg-fee" type="number" ng-model="gameInfo.fee">
+                <i>元/人</i>
+            </li>
+        </ul>
+        <div class="bg_2"></div>
+        <div class="release-list">
+            <span>
+                兼项权限
+            </span>
+            <i ng-repeat="alow in alowDoubles" ng-class="{changeBg:$index==bgNum}" ng-click="isAlowed($index)">{{alow.text}}</i>
+            <div ng-show="allowShow">
+                <textarea class="allow-details" placeholder="请填写兼项描述" ng-model="gameInfo.doubleDesc"></textarea>
+            </div>
+        </div>
+        <div class="release-list">
+            <span>
+                是否公开报名
+            </span>
+            <i ng-repeat="alow in offLinePays" ng-class="{changeBg1:$index==offLinePayMethod}" ng-click="isOffLinePay($index)">{{alow.text}}</i>
+            <p>公开报名可展示在平台赛事列表中，所有人可见</p>
+        </div>
+        <div class="release-list release-list1" ng-click="toGameOtherInfo()">
+            <span>
+                比赛其他信息（选填）
+                <b>竞赛规程、注意事项等</b>
+            </span>
+            <img src="img/next-page.gif">
+        </div>
+
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="create-game-btn">
+        <span>
+             <i class="appear-{{isDisabled}}" ng-click="changeStates()"><img src="img/home/box.png"/></i>
+             <b ng-click="toDisclaimer()">我同意羽众的免责声明</b>
+        </span>
+        <span ng-click="toCreateSuccess()">创建比赛</span>
+    </div>
+    <div id="targetContainer1"></div>
+    <div id="targetContainer2"></div>
+    <div id="targetContainer3"></div>
+</ion-view>

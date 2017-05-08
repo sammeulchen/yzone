@@ -1,0 +1,283 @@
+
+.my-info{
+    width: 100%;
+    height: 139px;
+    background-size: 100% 139px;
+    position: relative;
+}
+.my-info .bg-img{
+    width: 100%;
+    height: 139px;
+}
+.my-back{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 8px;
+    left: 12px;
+}
+.my-back img{
+    width: 12px;
+    height: 21px;
+}
+.to-home{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.to-home img{
+    width: 22px;
+}
+.my-id{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 59px;
+}
+.my-photo1{
+    display: inline-block;
+    width: 66px;
+    height: 33px;
+    position: absolute;
+    top: -2px;
+    left: 13px;
+    z-index: 99;
+}
+.my-photo2{
+    display: inline-block;
+    width: 66px;
+    height: 33px;
+    position: absolute;
+    top: 31px;
+    left: 13px;
+    z-index: 99;
+}
+.my-avatar{
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    position: absolute;
+    top: 1;
+    left: 15px;
+}
+
+
+.my-idi1{
+    display: inline-block;
+    width: 70%;
+    height: 80px;
+    margin-left: 100px;
+    padding-top: 14px;
+    overflow: hidden;
+    position: relative;
+}
+.my-idi1 span:nth-of-type(1){
+    display: block;
+    font-size: 16px;
+    color:#ffffff;
+}
+.my-idi1 span:nth-of-type(2){
+    display: block;
+    font-size: 16px;
+    color:#ffffff;
+    margin-top: 10px;
+}
+.my-idi1 .user-level{
+    display: inline-block;
+    width: 66px;
+    height: 24px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 5px;
+    border-radius: 24px;
+    padding-left: 6px;
+    position: relative;
+}
+.my-idi1 .user-level img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+.my-id .my-next-page{
+    -webkit-transform:rotate(180deg);
+    width: 12px;
+    height: 21px;
+    position: absolute;
+    top: 27px;
+    right: 16px;
+}
+.my-age{
+    display: inline-block;
+    width: 31px;
+    height: 17px;
+    position: relative;
+}
+.my-age img{
+    width: 31px;
+}
+.my-age b{
+    display: inline-block;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 13px;
+    width: 20px;
+    height: 17px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.personal-info{
+    width: 100%;
+    padding: 0 10px;
+    background: #ffffff;
+}
+.personal-info li{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #DCDBDA;
+}
+.personal-info li span:nth-of-type(1){
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #727171;
+    margin-left: 8px;
+    overflow: hidden;
+}
+.personal-info li span:nth-of-type(2){
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #000000;
+    overflow: hidden;
+}
+.privacy-title{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 18px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+}
+.my-verify-card{
+    width: 100%;
+}
+.my-verify-card .list{
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    background: #ffffff;
+    position: relative;
+}
+.my-verify-card .list .item{
+    height: 57px;
+    border-left: 0;
+    border-top: 0;
+    padding: 0;
+}
+.my-verify-card .list .item img{
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
+.my-verify-card .list .card-number img{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 22px;
+    left: 0;
+}
+.my-verify-card .list .item i{
+    display: inline-block;
+    height: 57px;
+    line-height: 57px;
+    margin-left: 26px;
+    font-size: 16px;
+    color: #727171;
+    overflow: hidden;
+}
+.my-verify-card .list .item span{
+    display: inline-block;
+    height: 57px;
+    line-height: 57px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.my-verify-card .list .item .card-front{
+    width: 115px;
+    height: 57px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.my-verify-card .list .item .card-front img{
+    display: block;
+    width: 115px;
+    height: 57px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+}
+.button-span{
+    width: 100%;
+    height: 46px;
+    padding: 0 10px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 15px;
+}
+.button-span span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    border: none;
+    background: #8DC21F;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 46px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+<ion-view ng-controller="locationListCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>场馆列表</span>
+        <span ng-click="toAddLocation()">添加场馆</span>
+
+    </ion-header-bar>
+    <ion-content>
+        <div class="location-list">
+            <ion-list>
+                <div class="location-list1" ng-repeat="locationList in locationLists">
+                    <ion-radio ng-model="stadium.stadiumId" ng-value="locationList">
+                        {{locationList.name}}
+                        <p>{{locationList.stadiumAddress}}</p>
+                    </ion-radio>
+                    <div class="location-list-del" ng-click="deleteLocation(locationList.id,$index)">
+                        <img src="img/home/delete_new.png">
+                    </div>
+                </div>
+
+            </ion-list>
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="getStadiumId()">确定</div>
+</ion-view>

@@ -1,0 +1,93 @@
+<ion-view ng-controller="entryScoreCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>录入比分</span>
+    </ion-header-bar>
+    <ion-content>
+        <!--<div class="player-join-title">
+            <span class="player-join player-join-pre" ng-show="category ==1">
+                <i>{{position1}}:</i>
+                <span>{{name1}}</span>
+            </span>
+            <span class="player-join player-join-pre" ng-show="category ==2">
+                <i>{{position1}}:</i>
+                <i class="player-name">{{player1}}</i>
+                <i>/</i>
+                <i class="player-name">{{player2}}</i>
+            </span>
+            <span class="vs">
+                <span>VS</span>
+            </span>
+            <span class="player-join player-join-last" ng-show="category ==2">
+                <i>{{position2}}:</i>
+                <i class="player-name">{{player11}}</i>
+                <i>/</i>
+                <i class="player-name">{{player22}}</i>
+            </span>
+             <span class="player-join player-join-pre" ng-show="category ==1">
+                <i>{{position2}}:</i>
+                <span>{{name2}}</span>
+            </span>
+        </div>-->
+        <div class="player-join-title">
+            <span class="player-join player-join-pre" ng-show="gradeDetail.category ==1">
+                <i>{{gradeDetail.player1.position}}:</i>
+                <span>{{gradeDetail.player1.playerName}}</span>
+            </span>
+            <span class="player-join player-join-pre" ng-show="gradeDetail.category ==2">
+                <i>{{gradeDetail.player1.position}}:</i>
+                <i class="player-name">{{player1}}</i>
+                <i>/</i>
+                <i class="player-name">{{player2}}</i>
+            </span>
+            <span class="vs">
+                <span>VS</span>
+            </span>
+            <span class="player-join player-join-last" ng-show="gradeDetail.category ==2">
+                <i>{{gradeDetail.player2.position}}:</i>
+                <i class="player-name">{{player11}}</i>
+                <i>/</i>
+                <i class="player-name">{{player22}}</i>
+            </span>
+             <span class="player-join player-join-pre" ng-show="gradeDetail.category ==1">
+                <i>{{gradeDetail.player2.position}}:</i>
+                <span>{{gradeDetail.player2.playerName}}</span>
+            </span>
+        </div>
+        <div class="entry-score">
+            <div class="entry-score-part">
+                <div class="entry-score-l">
+                    <input type="number" ng-model="entryScore1.score1"  placeholder="输入比分">
+                    <input type="number" ng-model="entryScore2.score11" placeholder="输入比分">
+                    <input type="number" ng-model="entryScore3.score111" placeholder="输入比分">
+                </div>
+                <div class="entry-score-c">
+                    <span>第一局</span>
+                    <span>第二局</span>
+                    <span>第三局</span>
+                </div>
+                <div class="entry-score-r">
+                    <input type="number" ng-model="entryScore1.score2"   placeholder="输入比分">
+                    <input type="number" ng-model="entryScore2.score22" placeholder="输入比分">
+                    <input type="number" ng-model="entryScore3.score222" placeholder="输入比分">
+                </div>
+            </div>
+        </div>
+        <div class="entry-total-score">
+            <div class="entry-score-part">
+                <div class="entry-score-l">
+                    <input type="number" ng-model="total.player1Score"  placeholder="输入比分">
+                </div>
+                <div class="entry-total-score-c">
+                    <span>总比分</span>
+                </div>
+                <div class="entry-score-r">
+                    <input type="number" ng-model="total.player2Score"  placeholder="输入比分">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="getScore()">确定</div>
+</ion-view>

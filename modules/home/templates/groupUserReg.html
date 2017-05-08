@@ -1,0 +1,112 @@
+<ion-view ng-controller="groupUserRegCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>领队报名</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-if="userInfo.singleLevel != -1 && userInfo.doubleLevel != -1">
+            <div class="group-infomation">
+                <ul class="list">
+                    <li class="item item-thumbnail-left group-name">
+                        <img src="img/icon-name.png"/>
+                        <span >团体名称</span>
+                        <input type="text" placeholder="请输入团体名称" ng-model="userInf.name"/>
+
+                    </li>
+                    <!--用户为新用户是显示的信息-->
+                    <li class="item item-thumbnail-left group-name">
+                        <img src="img/icon-name.png"/>
+                        <span>姓名</span>
+                        <input type="text" placeholder="请输入领队真实姓名" ng-model="userInfo.realname" required/>
+                    </li>
+                    <li class="item item-avatar leader-tel" ng-show="userInfo.mobile == null || userInfo.mobile == ''">
+                        <img src="img/icon-tel.png"/>
+                        <span>电话</span>
+                        <input type="text" placeholder="请输入领队电话" ng-model="userInf.mobile"/>
+                        <button ng-click="sendCode(reg_phone)" ng-class="paraclass" ng-bind="paracont" ng-disabled = "getCode">获取验证码</button>
+                    </li>
+                    <li class="item item-thumbnail-left code" ng-show="userInfo.mobile == null || userInfo.mobile == ''">
+                        <img src="img/icon-captcha.png"/>
+                        <span>验证码</span>
+                        <input type="text" placeholder="请输入验证码" ng-model="userInf.indCode"/>
+                    </li>
+                    <!--用户为老用户时显示的信息-->
+
+                    <li class="item item-avatar leader-tel" ng-show="userInfo.mobile != null && userInfo.mobile != ''">
+                        <img src="img/icon-tel.png"/>
+                        <span>电话</span>
+                        <span>{{userInfo.mobile}}</span>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="appear-in-game">
+                <div class="list">
+                    <div class="item item-thumbnail-left sex">
+                        <img src="img/icon-sex.png"/>
+                        <i>性别</i>
+                        <select ng-model="selectSex.sex" ng-options="sex.text for sex in sexs" ng-change = changeSex()>
+                        </select>
+                    </div>
+                </div>
+                <div class="personal-information verify-card1" ng-show="userInfo.credentialReuire != '' && userInfo.credentialReuire != null">
+                    <div class="list">
+                        <div class="item item-thumbnail-left">
+                            <img src="img/icon-card.png"/>
+                            <i>证件类型</i>
+                            <select ng-model="selectCode.code"ng-options="code.TypeName for code in codes" ng-change = changeCode()>
+                            </select>
+                            <input type="file" id="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                            <div id="fileSelect" class="card-front" ng-show="needPhotoNumber == 2">
+                                <img class="obj" ng-show="userCredentialInfo.pictureUrl != null && !picUPLoad" ng-src="{{userCredentialInfo.pictureUrl}}"/>
+                                <span ng-show="picUPLoad" style="display:inline-block;width: 100%;height: 55px;line-height: 55px;color: #ffffff;font-size: 12px;">照片上传较慢，请耐心等待</span>
+                                <div ng-show="userCredentialInfo.pictureUrl == null && !picUPLoad">
+                                    <img id="img1" src="img/front-card.png"/>
+                                    <p>上传证件正面照片</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="item item-thumbnail-left card-number">
+                            <img src="img/icon-card-number.png"/>
+                            <i>证件号码</i>
+                            <input class="setBorder-{{isNumber}}" type="text" ng-model="userCredentialInfo.number" placeholder="请如实填写证件信息">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="kl_4"></div>
+            <div class="group-infomation">
+                <ul class="list">
+                    <li class="item item-thumbnail-left leader-name">
+                        <img src="img/icon-leader-name.png"/>
+                        <span >随队教练</span>
+                        <input type="text" placeholder="填写教练姓名（选填）" ng-model="userInf.coach"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="kl_4"></div>
+        </div>
+
+        <div style="padding: 30px 10px" ng-show="userInfo.singleLevel == -1 || userInfo.doubleLevel == -1">
+
+            <button class="button button-block button-positive" ng-click="toOwnRanking1()" ng-show="userInfo.singleLevel == -1">
+                设置单打等级
+            </button>
+            <button class="button button-block button-positive"  ng-click="toOwnRanking2()" ng-show="userInfo.doubleLevel == -1">
+                设置双打等级
+            </button>
+        </div>
+        <div class="kl_3"></div>
+    </ion-content>
+    <div class="groupUserReg-btn" ng-click="toRegNext(competitionId,needPhotoNumber,userInfo.mobile,userInfo.singleLevel,userInfo.doubleLevel)" ng-if="userInfo.singleLevel != -1 && userInfo.doubleLevel != -1">
+        下一步
+    </div>
+</ion-view>

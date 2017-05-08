@@ -1,0 +1,67 @@
+<ion-view ng-controller = 'playersListCtrl' >
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>{{title}}</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div>
+            <ul class="players-lists" ng-show="singleShow">
+                <li ng-repeat="playersList in playersLists">
+                <span ng-click="toBallFriend(playersList.userId)">
+                    <img src="{{playersList.avatar}}"/>
+                </span>
+                    <span>{{playersList.realname}}</span>
+
+                </li>
+            </ul>
+            <ul class="players-lists" ng-show="doublesShow">
+                <li ng-repeat="playersList in playersLists">
+                    <div>
+                    <span ng-click="toBallFriend(playersList.userInfo.userId)">
+                        <img src="{{playersList.userInfo.avatar}}"/>
+                    </span>
+                        <span>{{playersList.userInfo.realname}}</span>
+                    </div>
+                    <div>
+                   <span ng-click="toBallFriend(playersList.paternerInfo.userid)">
+                        <img src="{{playersList.paternerInfo.avatar}}"/>
+                    </span>
+                        <span>{{playersList.paternerInfo.realname}}</span>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+       <ul class="players-lists1" ng-show="groupShow">
+            <li class="players-list1" ng-repeat="playersList in playersLists">
+                <ul class="my-gg-details" >
+                    <li>
+                       <span ng-click="toBallFriend(playersList.userId)">
+                            <img src="{{playersList.avatar}}"/>
+                        </span>
+                        <span>
+                            <i>领&nbsp;&nbsp;&nbsp;&nbsp;队：<b>{{playersList.realname}}</b></i>
+                            <i>手机号：{{playersList.mobile}}</i>
+                        </span>
+                    </li>
+                    <li class="team-name" ng-click="toTeamAllPlayers(playersList.teamId)">
+                        <span>团队名称</span>
+                        <span>{{playersList.teamName}}</span>
+                        <img src="img/next-page.gif"/>
+                    </li>
+                    <!--<li class="team-name">
+                          <span>所属俱乐部</span>
+                          <span>{{playersList.clubName}}</span>
+                      </li>-->
+
+                </ul>
+
+            </li>
+        </ul>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view ng-controller="authenticationLevelCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>等级认证方式</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="authen-level-bg1">
+            <div class="rank-intro1">
+                <p>（1）建议级别：即球员根据羽众级别的文字描述、或羽众平台上的特定级别测试进行自我评估而获得的羽众级别，称为“自定义级别”。建议级别均默认为某羽众一级级别中的“丙级”。</p>
+                <img src="img/rank1.png"/>
+                <p>（2）认证级别：球员通过以下两种方式被羽众认证后获得的羽众级别。</p>
+                <p>方式一：现场确认，即由羽众定级专员通过现场测试或组织羽众定级赛的方法，确认球员的级别。该方式用户将获得羽众一级级别中的丙级（如风丙级）。</p>
+                <p>（注：对现场评级结果无异议的球员，其建议级别当场在羽众平台上变更为认证级别；如球员对现场定级结果有异议，可有且仅有一次机会在羽众平台上申请降为低一级别甲级，并最终确定认证级别。）</p>
+                <p>方式二：参加羽众分级赛确认。获得成绩后，可选择自己的认证级别。</p>
+                <img src="img/rank2.png"/>
+                <p>b.球员在获得认证级别之后，将按照《羽众级别及积分对照表》实现个人级别的升降。</p>
+                <img src="img/rank3.png"/>
+                <p>c.每年均有部分球员可获得自行选择是否降级的机会，具体如下：</p>
+                <img src="img/rank4.png"/>
+            </div>
+
+        </div>
+    </ion-content>
+    <div class="authen-level-btn">
+        <span ng-click="toRankingOnline()">申请在线认证</span>
+    </div>
+</ion-view>

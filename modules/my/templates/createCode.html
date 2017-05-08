@@ -1,0 +1,38 @@
+<ion-view ng-controller="createCodeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>添加证件</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="my-verify-card1">
+            <div class="list">
+                <div class="item">
+                    <img src="img/icon-card.png"/>
+                    <i>证件类型</i>
+
+                    <select ng-model="selectCode.code" ng-options="allCode.typeName for allCode in allCodes">
+                    </select>
+                    <input type="file" id="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                    <div id="fileSelect" class="card-front">
+                        <img class="img1" src="img/front.gif"/>
+                        <p>上传证件照片</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="list">
+                <div class="item card-number">
+                    <img src="img/icon-card-number.png"/>
+                    <i>证件号码</i>
+                    <input type="text" ng-model="selectCode.number" placeholder="请填写您的真实证件">
+                </div>
+            </div>
+        </div>
+        <div class="create-code-btn" ng-click="createCode()">
+            <span>保存</span>
+        </div>
+    </ion-content>
+</ion-view>

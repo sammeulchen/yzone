@@ -1,0 +1,29 @@
+<ion-view ng-controller="whoAddMeCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>添加我的人</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="my-partner1">
+            <li ng-repeat="myPartner in myPartners">
+                <span>
+                    <img src="{{myPartner.avatar}}"/>
+                </span>
+                <span>
+                    <i>{{myPartner.realname}}</i>
+                    <i><b>手机号：</b>{{myPartner.mobile}}</i>
+                </span>
+                <span ng-show="myPartner.waitShow">
+                    <i ng-click="ignoreFriend(myPartner.paternerId)">忽略</i>
+                    <i ng-click="addFriend(myPartner.paternerId)">添加</i>
+                </span>
+                <span ng-show="myPartner.ignoreShow">已忽略</span>
+                <span ng-show="myPartner.addShow">已添加</span>
+
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

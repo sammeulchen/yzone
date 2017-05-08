@@ -1,0 +1,43 @@
+<div class="kl_4"></div>
+<ul class="club-my-info">
+    <li class="mp-info">
+        <div class="photo">
+                <span class="img1">
+                    <img class="img2" src="{{applyerInfo.avatar}}">
+                </span>
+        </div>
+            <span class="name">
+                {{applyerInfo.nickname}}
+                <span class="sex-p" ng-show="applyerInfo.age >= 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/icon-boy.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/icon-girl.png">
+                    <i>{{applyerInfo.age}}</i>
+                </span>
+                <span class="sex-pm" ng-show="applyerInfo.age < 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/home/man.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/home/femal.png">
+                </span>
+            </span>
+        <div class="level">
+            <span ng-show="applyerInfo.sLevel >=1 && applyerInfo.sLevel <=3" class="wind">单打<img src="img/wind-white.gif"/></span>
+            <span ng-show="applyerInfo.sLevel >=4 && applyerInfo.sLevel <=6" class="forest">单打<img src="img/forest-white.gif"/></span>
+            <span ng-show="applyerInfo.sLevel >=7 && applyerInfo.sLevel <=9" class="fire">单打<img src="img/fire-white.gif"/></span>
+            <span ng-show="applyerInfo.sLevel >=10 && applyerInfo.sLevel <=12" class="mount">单打<img src="img/mount-white.gif"/></span>
+            <span ng-show="applyerInfo.dLevel >=1 && applyerInfo.dLevel <=3" class="wind">双打<img src="img/wind-white.gif"/></span>
+            <span ng-show="applyerInfo.dLevel >=4 && applyerInfo.dLevel <=6" class="forest">双打<img src="img/forest-white.gif"/></span>
+            <span ng-show="applyerInfo.dLevel >=7 && applyerInfo.dLevel <=9" class="fire">双打<img src="img/fire-white.gif"/></span>
+            <span ng-show="applyerInfo.dLevel >=10 && applyerInfo.dLevel <=12" class="mount">双打<img src="img/mount-white.gif"/></span>
+        </div>
+    </li>
+</ul>
+<div class="kl_4"></div>
+<div class="club-my-info">
+    <span class="add-p">参与项目</span>
+    <span class="add-d">{{project}}</span>
+</div>
+<div class="kl_4"></div>
+<div class="club-my-info" ng-show="position !=''">
+    <span class="add-p">分组结果</span>
+    <span class="add-d">{{position}}</span>
+</div>
+<div class="kl_4" ng-show="position !=''"></div>

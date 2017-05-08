@@ -1,0 +1,185 @@
+<div class="game-details-announcements">
+    <div class="game-details-slide">
+        <ion-slide-box class="announcements-slider" ng-if="tips" does-continue="true" slide-interval="2000">
+            <ion-slide ng-repeat = "tip in tips" ng-click="goToTips(tip.hrefLink)">
+                <div>
+                    <div class="game-tips-title">
+                        <img src="{{tip.icon}}"/>
+                        <h3>{{tip.title}}</h3>
+                        <span>点击查看</span>
+                    </div>
+                    <p class="game-tips-content">{{tip.content}}</p>
+                </div>
+            </ion-slide>
+
+
+        </ion-slide-box>
+    </div>
+</div>
+<ul class="game-details-desc">
+    <li>
+        <span>时间</span>
+        <span>{{competitions.beginDate|date:'yyyy.MM.dd'}}-{{competitions.endDate|date:'MM.dd'}}</span>
+    </li>
+    <li ng-click="toLocation()">
+        <span>地点</span>
+        <span>{{stadium.name}}</span>
+        <img class="location" src="img/home/location.png"/>
+    </li>
+    <li ng-if="competitions.type == 2 && competitions.projects.indexOf('单') > 0 && competitions.projects.indexOf('双') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price > 0">单打￥{{competitions.price}}</span>
+        <span ng-if="competitions.price2 > 0">双打￥{{competitions.price2}}</span>
+        <span ng-if="competitions.price == 0">单打：免费</span>
+        <span ng-if="competitions.price2 == 0">双打：免费</span>
+    </li>
+    <li ng-if="competitions.type == 2 && competitions.projects.indexOf('单') == -1 && competitions.projects.indexOf('双') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price2 == 0">免费</span>
+        <span ng-if="competitions.price2 > 0">双打￥{{competitions.price2}}</span>
+    </li>
+    <li ng-if="competitions.type == 2 && competitions.projects.indexOf('双') == -1 && competitions.projects.indexOf('单') > 0">
+        <span>报名费</span>
+        <span ng-if="competitions.price == 0 ">免费</span>
+        <span ng-if="competitions.price > 0">单打￥{{competitions.price}}</span>
+    </li>
+    <li ng-if="competitions.type == 1">
+        <span>报名费</span>
+        <span ng-if="competitions.price == 0">免费</span>
+        <span ng-if="competitions.price > 0">￥{{competitions.price}}</span>
+    </li>
+</ul>
+<div class="game-d-events" ng-if="applyEnd == false">
+    <div class="game-d-event">
+        <div class="game-ge-title">
+            <span>比赛项目</span>
+            <span class="pack-up" ng-show="packUpShow" ng-click="packUp()">
+                <i>收起</i>
+                <i><img src="img/home/pack_up.png"/></i>
+            </span>
+            <span class="unfold" ng-show="unfoldShow" ng-click="unfold()">
+                <i>展开</i>
+                <i><img src="img/home/unfold.png"/></i>
+            </span>
+        </div>
+        <div ng-repeat="event in events" class="event-aa" ng-show="eventsShow">
+            <div class="game-ge-group" ng-if="event.gorupName != '不分组' && event.gorupName != '' && event.gorupName != null">
+                <div class="aa"></div>
+                {{event.gorupName}}
+            </div>
+            <div class="game-ge-cp">
+                <div class="game-ge-c" ng-if=" event.className == '风级'">
+                <span>
+                    <i>{{event.className}}</i>
+                    <img src="img/home/wind.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c" ng-if=" event.className == '林级'">
+                <span>
+                    <i>{{event.className}}</i>
+                    <img src="img/home/forest.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c" ng-if=" event.className == '火级'">
+                <span>
+                    <i>{{event.className}}</i>
+                    <img src="img/home/fire.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c" ng-if=" event.className == '山级'">
+                <span>
+                    <i>{{event.className}}</i>
+                    <img src="img/home/mount.png"/>
+                </span>
+                </div>
+                <ul class="game-ge-p">
+                    <li ng-repeat="project in event.applyList">
+                        <span>{{project.name}}</span>
+                        <span style="color: #C4171F" ng-if="project.remainCount <=5 && project.remainCount >0">剩{{project.remainCount}}个名额</span>
+                        <span style="color: #717071" ng-if="project.remainCount ==0">已报满</span>
+                        <span style="color:#000000" ng-if="project.remainCount >5">报名中...</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="game-d-events_last" ng-if="applyEnd == true">
+    <div class="game-d-event">
+        <div class="game-ge-title">
+            <span>比赛项目</span>
+            <b>（点击下方项目查看参赛选手）</b>
+            <span class="pack-up" ng-show="packUpShow" ng-click="packUp()">
+                <i>收起</i>
+                <i><img src="img/home/pack_up.png"/></i>
+            </span>
+            <span class="unfold" ng-show="unfoldShow" ng-click="unfold()">
+                <i>展开</i>
+                <i><img src="img/home/unfold.png"/></i>
+            </span>
+        </div>
+        <div ng-repeat="event in events" class="event-aa" ng-show="eventsShow">
+            <div class="game-ge-group" ng-if="event.gorupName != '不分组' && event.gorupName != '' && event.gorupName != null">
+                <div class="aa"></div>
+                {{event.gorupName}}
+            </div>
+            <div class="game-ge-cp_last">
+                <div class="game-ge-c_last" ng-if=" event.className == '风级'">
+                <span>
+                    <img src="img/home/wind_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '林级'">
+                <span>
+                    <img src="img/home/forest_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '火级'">
+                <span>
+                    <img src="img/home/fire_last.png"/>
+                </span>
+                </div>
+                <div class="game-ge-c_last" ng-if=" event.className == '山级'">
+                <span>
+                    <img src="img/home/mount_last.png"/>
+                </span>
+                </div>
+                <ul class="game-ge-p_last">
+                    <li ng-repeat="project in event.applyList" ng-click="toPlayerslist(project.projectId)">
+                        <span>{{project.name}}</span>
+                        <span>{{project.applyCount}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="game-details-desc">
+    <li>
+        <span>联系人</span>
+        <span>{{competitions.contactUser}}</span>
+        <a href="tel:{{competitions.contactPhone}}">
+            <img src="img/home/contact.png"/>
+        </a>
+    </li>
+    <li class="apply-time">
+        <span>报名截止时间</span>
+        <span>{{competitions.applyEnddate|date:'yyyy.MM.dd HH:mm'}}</span>
+    </li>
+</ul>
+<div class="game-apply" ng-click="toUerReg(competitionId,competitions.type)" ng-if=" applyCount == 0 && allowSignup && competitions.type != 1">
+    立即报名
+</div>
+<div class="game-apply" ng-click="toUerReg(competitionId,competitions.type)" ng-if=" applyCount == 0 && allowSignup && competitions.type == 1">
+    领队报名
+</div>
+<div class="game-apply-s" ng-if=" (applyCount > 0 && allowSignup) || (applyCount > 0 && competitions.type == 1 && allowSignup)">
+    <span ng-click="toUerProject(competitionId,competitions.type)">我的项目</span>
+    <span ng-click="toUerReg(competitionId,competitions.type)">继续报名</span>
+</div>
+<div class="game-apply" ng-click="toUerProject(competitionId,competitions.type)" ng-if="applyCount > 0 && competitions.type != 1">
+    我的项目
+</div>
+<div class="game-apply" ng-click="toUerProject(competitionId,competitions.type)" ng-if="applyCount > 0 && competitions.type == 1 && !allowSignup">
+    我的项目
+</div>

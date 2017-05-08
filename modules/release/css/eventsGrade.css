@@ -1,0 +1,141 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+    padding: 0 6px;
+}
+.scale{
+    width: 100%;
+    padding: 8px 0;
+    background: #F7F8F7;
+    border-bottom: 1px solid #E7E6E5;
+}
+
+.scale-title{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.scale-title i{
+    display: inline-block;
+    width: 3px;
+    height: 14px;
+}
+.scale-title span{
+    font-size:16px;
+    margin: 0 5px;
+}
+.scale-title b{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+}
+.scale:nth-of-type(1) .scale-title i{
+    background: #00A0E2;
+}
+.scale:nth-of-type(1) .scale-title span{
+    color: #00A0E2;
+}
+.scale:nth-of-type(1) .scale-title b{
+    background: url("../../../img/wind.gif") no-repeat;
+    background-size: 16px 16px;
+}
+.scale:nth-of-type(2) .scale-title i{
+    background: #009F40;
+}
+.scale:nth-of-type(2) .scale-title span{
+    color: #009F40;
+}
+.scale:nth-of-type(2) .scale-title b{
+    background: url("../../../img/forest.gif") no-repeat;
+    background-size: 16px 16px;
+}
+.scale:nth-of-type(3) .scale-title i{
+    background: #D6000F;
+}
+.scale:nth-of-type(3) .scale-title span{
+    color: #D6000F;
+}
+.scale:nth-of-type(3) .scale-title b{
+    background: url("../../../img/fire.gif") no-repeat;
+    background-size: 16px 16px;
+}
+.scale:nth-of-type(4) .scale-title i{
+    background: #614C3F;
+}
+.scale:nth-of-type(4) .scale-title span{
+    color: #614C3F;
+}
+.scale:nth-of-type(4) .scale-title b{
+    background: url("../../../img/mount.gif") no-repeat;
+    background-size: 16px 16px;
+}
+.scale:nth-of-type(5) .scale-title i{
+    background: #000000;
+}
+.scale:nth-of-type(5) .scale-title span{
+    color: #000000;
+}
+.scale:nth-of-type(5){
+    border: none;
+    padding-bottom: 60px;
+}
+.scale-events{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scale-events .list{
+    width: 50%;
+    height: 25px;
+    margin-bottom: 12px;
+}
+.scale-events .list .item{
+    background: #F7F8F7;
+    border: none;
+}
+.scale-events .list .item-checkbox{
+    padding: 0;
+    padding-left:33px;
+    margin: 0;
+}
+.checkbox input, .checkbox-icon{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.item-checkbox .checkbox{
+    margin-top: -11px;
+    height: 23px;
+    padding: 0;
+}
+.disable-pointer-events{
+    width: 30%;
+}
+.scale-events .list input{
+    display: inline-block;
+    width: 50%;
+    height: 20px;
+    background: #F7F8F7;
+    border: 1px solid #E7E6E5;
+    position: absolute;
+    top: 2px;
+    left: 70px;
+    z-index: 5;
+}
+.btn-sure{
+    width: 90%;
+    height: 47px;
+    background: #89B929;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;
+    text-align: center;
+    line-height: 47px;
+}

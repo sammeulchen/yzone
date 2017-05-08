@@ -1,0 +1,97 @@
+<ion-view ng-controller="payCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div  ng-click="toMyProjects(order.id,order.projectCategory)">
+            <img src="img/back.gif"/>
+        </div>
+        <span>确认并支付</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="pay-group">
+            <i></i>
+            <div class="pay-gt">
+                {{order.competitionTitle}}
+            </div>
+            <div class="pay-ge">
+                <ul>
+                    <li ng-show="order.groupName != '不分组' && order.groupName != '' && order.groupName != ' ' && order.groupName != null">
+                        <span>参赛组别</span>
+                        <span>{{order.groupName}}</span>
+                    </li>
+                    <li ng-show="order.className != '无级' && order.className != '' && order.className != ' ' && order.className != null">
+                        <span>参赛级别</span>
+                        <span>{{order.className}}</span>
+                    </li>
+                    <li>
+                        <span>参赛项目</span>
+                        <span>{{order.projectName}}</span>
+                    </li>
+                </ul>
+                <div class="pay-ge-btn"  ng-show="order.projectCategory !=3" ng-click="toSelectedProject(competitionId)">
+                    修改
+                    <img src="img/home/edit_btn.png"/>
+                </div>
+            </div>
+        </div>
+        <div class="jiange"></div>
+        <div class="pay-ge pay-info">
+            <ul>
+                <li>
+                    <span>姓名</span>
+                    <span>{{order.realname}}</span>
+                </li>
+                <li ng-show="order.cerNumber != ''">
+                    <span>证件号码</span>
+                    <span>{{order.cerNumber}}</span>
+                </li>
+                <li>
+                    <span>手机号码</span>
+                    <span>{{order.applyUsermobile}}</span>
+                </li>
+            </ul>
+            <div class="pay-ge-btn" ng-show="order.projectCategory !=3" ng-click="toUserReg(competitionId)">
+                修改
+                <img src="img/home/edit_btn.png"/>
+            </div>
+        </div>
+        <div class="pay-methods-title" ng-show="order.amount != 0">
+            <span>支付方式</span>
+        </div>
+        <ul class="payment-method-btn" ng-if="order.amount != 0 && order.allowOfflinePay == 0">
+            <li class="wechat">
+                <img src="img/icon-wechat.gif"/>
+                <span>微信支付</span>
+                <input name="payment" value="2" type="radio" ng-checked="true" ng-model="payment.method">
+            </li>
+            <li class="alipay">
+                <img src="img/home/alipay.png"/>
+                <span>线下支付</span>
+                <input name="payment" value="3" type="radio" ng-model="payment.method">
+            </li>
+        </ul>
+        <ul class="payment-method-btn" ng-if="order.amount != 0 && order.allowOfflinePay == 1">
+            <li class="wechat">
+                <img src="img/icon-wechat.gif"/>
+                <span>微信支付</span>
+                <input name="payment" value="2" type="radio" ng-checked="true" ng-model="payment.method">
+            </li>
+        </ul>
+        <ul class="payment-method-btn" ng-if="order.amount != 0 && order.allowOfflinePay == 2">
+            <li class="alipay">
+                <img src="img/home/alipay.png"/>
+                <span>线下支付</span>
+                <input name="payment" value="3" type="radio" ng-model="payment.method">
+            </li>
+        </ul>
+    </ion-content>
+    <div class="determine-pay" ng-show="order.amount != 0">
+        <div class="pay">
+            <div class="statement1 statement-total">
+                <b>总金额：￥{{order.amount}}</b>
+            </div>
+        </div>
+        <div class="pay-btn" ng-click="toPay(order.id,order.projectCategory)">立即支付</div>
+    </div>
+    <div class="determine-pay0" ng-show="order.amount == 0" ng-click="toPay(order.id,order.projectCategory)">
+        确认报名
+    </div>
+</ion-view>

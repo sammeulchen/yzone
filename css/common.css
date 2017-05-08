@@ -1,0 +1,410 @@
+
+
+.bar.bar-positive{
+    background-color: #79CAE0;
+    background-image: none;
+}
+.bar.bar-positive div{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+.bar.bar-positive div img{
+    width: 12px;
+}
+.bar.bar-positive span{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+    overflow: hidden;
+}
+.bar.bar-positive a{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+}
+.bar.bar-positive a img:nth-child(1){
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+}
+
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+.loading-container .loading{
+    padding: 10px;
+    background: #000000;
+    opacity: 0.2;
+    color: #ffffff;
+}
+.tabs{
+    height: 58px;
+    background: #ffffff;
+    border-top: 1px solid #DCDDDD !important;
+}
+.tab-item{
+    opacity: 1;
+}
+.tab-item  i.icon {
+    margin-top: 1px;
+    height: 36px;
+}
+.tab-item .tab-title{
+    font-size: 12px;
+    color: #727171;
+}
+.bar-home-on{
+    background: url("../img/home_click.png") no-repeat center 5px;
+    background-size: 29px 27px;
+}
+.bar-home-off{
+    background: url("../img/home.gif") no-repeat center 5px;
+    background-size: 29px 27px;
+}
+
+.bar-shop-on{
+    background: url("../img/shop-click.gif") no-repeat center 5px;
+    background-size: 29px 27px;
+}
+.bar-shop-off{
+    background: url("../img/shop.gif") no-repeat center 5px;
+    background-size: 29px 27px;
+}
+.bar-release-on{
+    height: 39px;
+    background: url("../img/release-click.gif") no-repeat center top;
+    background-size: 35px 35px;
+}
+.bar-release-off{
+
+    background: url("../img/release.gif") no-repeat center top;
+    background-size: 35px 35px;
+}
+.bar-find-on{
+    background: url("../img/find-click.gif") no-repeat center 5px;
+    background-size: 27px 27px;
+}
+.bar-find-off{
+    background: url("../img/find.gif") no-repeat center 5px;
+    background-size: 27px 27px;
+}.bar-my-on{
+     background: url("../img/my_click.png") no-repeat center 5px;
+     background-size: 27px 25px;
+ }
+.bar-my-off{
+    background: url("../img/my.gif") no-repeat center 5px;
+    background-size: 27px 25px;
+}
+.bar-home-on ~ .tab-title{
+    color: #79CAE0;
+}
+.bar-shop-on ~ .tab-title{
+    color: #79CAE0;
+}
+.bar-release-on ~ .tab-title{
+    color: #79CAE0;
+}
+.bar-find-on ~ .tab-title{
+    color: #79CAE0;
+}
+.bar-my-on ~ .tab-title{
+    color: #79CAE0;
+}
+/*风林火山选取部分css*/
+/*.select-group ul{
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+
+   *//* height: 104px;*//*
+}
+.select-group ul li{
+    float: left;
+    width: 49%;
+    height: 24px;
+    background: #B5B5B6;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+*//*点击组别后的颜色*//*
+.select-group ul .changeGroupBg{
+    background: #8DC21F;
+}
+*//*点击级别后的颜色*//*
+.select-group ul .changeClassBg{
+    background: #8DC21F;
+}
+*//*点击项目后的颜色*//*
+.select-group ul .changeEventBg{
+    background: #8DC21F;
+}*/
+/*.select-group ul li i{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+.select-group ul li:nth-child(1){
+    float: left;
+    color: #00A0E1;
+}
+.select-group ul li:nth-child(1) i{
+    background: url("../img/wind.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul li:nth-child(2){
+    float: right;
+    color: #009E41;
+    margin-right: 20px;
+}
+.select-group ul li:nth-child(2) i{
+    background: url("../img/forest.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul li:nth-child(3){
+    float: left;
+    color: #E83828;
+}
+.select-group ul li:nth-child(3) i{
+    background: url("../img/fire.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul li:nth-child(4){
+    float: right;
+    color: #433F3F;
+    margin-right: 20px;
+}
+.select-group ul li:nth-child(4) i{
+    background: url("../img/mount.gif") no-repeat;
+    background-size: 17px 17px;
+}
+
+.select-group ul .changeBg span{
+    color: #ffffff;
+}
+.select-group ul .changeBg:nth-child(1){
+    background: #00A0E1;
+}
+.select-group ul .changeBg:nth-child(2){
+    background: #009E41;
+}
+.select-group ul .changeBg:nth-child(3){
+    background: #E83828;
+}
+.select-group ul .changeBg:nth-child(4){
+    background: #433F3F;
+}
+.select-group ul .changeBg:nth-child(1) i{
+    background: url("../img/wind-white.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul .changeBg:nth-child(2) i{
+    background: url("../img/forest-white.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul .changeBg:nth-child(3) i{
+    background: url("../img/fire-white.gif") no-repeat;
+    background-size: 17px 17px;
+}
+.select-group ul .changeBg:nth-child(4) i{
+    background: url("../img/mount-white.gif") no-repeat;
+    background-size: 17px 17px;
+}
+*/
+.personal-information .list .sex .selectEvent {
+    background: #79CAE0;
+}
+.asPlayer .selectEvent {
+    background: #79CAE0;
+}
+.statement .appear-true{
+    background: url("../img/home/select.png") no-repeat;
+    background-size: 13px 13px;
+}
+.statement .appear-false{
+    background: #DCDDDD;
+}
+.selectGroup{
+    width: 100%;
+    height: 44px;
+    padding-right:18px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #000000;
+
+
+}
+.selectGroup i{
+    display: inline-block;
+    float: right;
+    height: 37px;
+    font-size: 14px;
+}
+.selectGroup i img{
+    width: 9px;
+    height: 16px;
+    margin-left:5px;
+}
+/*.owned-club{
+    width: 100%;
+    height: 140px;
+    padding:0 12px;
+    background: #F7F8F8;
+    position: relative;
+}
+.owned-club-content{
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background: #F7F8F8;
+    border-top: 1px solid #D8D9D9;
+}
+.owned-club .img1{
+    width: 23px;
+    height: 19px;
+}
+.owned-club span:nth-of-type(1) {
+    display: inline-block;
+    font-size: 16px;
+    height: 19px;
+    *//*margin-left: 11px;*//*
+    color: #000000;;
+    overflow: hidden;
+    line-height: 19px;
+}
+.owned-club input{
+    display: inline-block;
+    width: 48%;
+    position: absolute;
+    top: 3px;
+    background: #F7F8F7;
+    border: 1px solid #605D5D;
+ }
+ .owned-club .img2{
+    display: block;
+    float: right;
+    width: 9px;
+    height: 16px;
+    margin-right: 0;
+}
+.owned-club p{
+  *//*  padding-left:40px;*//*
+    font-size: 12px;
+    color: #F8B62D;
+}*/
+
+.button.button-positive{
+    background: #79CAE0;
+    /*border-radius: 10px;*/
+   /* margin-bottom: 28px;*/
+}
+.button.button-default{
+    background: #79CAE0;
+    /*border-radius: 10px;*/
+    color: #ffffff;
+   /* margin-bottom: 28px;*/
+
+}
+.button.button-default.activated{
+    background: #387ef5;
+}
+
+.personal-information-title{
+    width: 100%;
+    height: 39px;
+    background: linear-gradient(to right,#7BB0D7,#C2DD8B);
+    padding: 0 13px 0 12px;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+.personal-information-title div{
+    height: 39px;
+    position: relative;
+}
+.personal-information-title div:nth-of-type(1){
+    width: 40%;
+}
+.personal-information-title div:nth-of-type(2){
+    width: 30%;
+}
+.personal-information-title div:nth-of-type(3){
+    width: 27%;
+}
+.personal-information-title div:nth-of-type(1) img{
+    width: 105px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.personal-information-title div:nth-of-type(2) img{
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.personal-information-title div:nth-of-type(3) img{
+    width: 85px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+
+.kl_3{
+    width: 100%;
+    height: 80px;
+}
+.kl_4{
+    width: 100%;
+    height: 4px;
+    background: #DCDDDD;
+ }
+.windBg{
+    background: #00A0E1;
+}
+.forestBg{
+    background: #009E41;
+}
+.fireBg{
+    background: #E83828;
+}
+.mountBg{
+    background: #433F3F;
+}
+.noneBg{
+    background: #79CAE0;
+}
+.choice-project-btn{
+    font-size: 19px;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    background: #79CAE0;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+
+
+

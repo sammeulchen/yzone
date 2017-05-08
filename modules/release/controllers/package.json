@@ -1,0 +1,8 @@
+{"result":0,
+    "message":
+    [
+        {"id":1,"name":"l1","description":"dd","remark":"dd","level":1,"createDate":1471313232000,"updateDate":1471313234000},
+        {"id":2,"name":"L2","description":"dd","remark":"dd","level":2,"createDate":1471313263000,"updateDate":1471313265000}
+    ],
+    "page":null
+}

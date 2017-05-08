@@ -1,0 +1,214 @@
+.item.activated{
+    background-color: #ffffff;
+}
+.item-select{
+    display: inline-block;
+    width: 60%;
+    height: 38px;
+    border: none;
+    padding-left: 0;
+    position: absolute;
+    top: 10px;
+}
+.user-info{
+    padding: 0 12px;
+    margin: 0;
+}
+.user-info li{
+    width: 100%;
+    height: 53px;
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    position: relative;
+}
+.user-info .code{
+    border-bottom: 3px solid #D8D9D9;
+}
+.user-info li img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 19px;
+}
+.user-info li i{
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    height: 53px;
+    line-height: 53px;
+    margin-left: 25px;
+}
+.user-info li input{
+    width: 60%;
+    display: inline-block;
+}
+.user-info li select{
+    width: 60%;
+    height: 35px;
+    border: 1px solid #ffffff;
+    padding-left: 0;
+    direction: ltr;
+    left: 5px;
+}
+.verify-card{
+    margin: 0;
+    padding: 0 12px;
+    height: 56px;
+}
+.verify-card .item{
+    padding: 0;
+    height: 56px;
+    border-left: none;
+    border-right: none;
+}
+
+.verify-card .item img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+.verify-card .item  i{
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    height: 56px;
+    line-height: 56px;
+    margin-left: 25px;
+}
+.verify-card .item  input{
+    width: 60%;
+    display: inline-block;
+}
+.verify-card .item select{
+    width:30%;
+    height: 35px;
+    border: 1px solid #ffffff;
+}
+.user-info .telephone input{
+    width: 35%;
+    display: inline-block;
+}
+.user-info li .send-code{
+    display: inline-block;
+    width: 30%;
+    height: 26px;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    border: 1px solid #78CBE0;
+    color: #78CBE0;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.user-info li .send-code-click{
+    background: #B5B5B6;
+    width: 110px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 27px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    border: 0;
+}
+.card-front{
+    display: inline-block;
+    width: 115px;
+    height: 54px;
+    background: #B1B1B2;
+    padding-top: 32px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.card-front img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-front #img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 48px;
+}
+.card-front #img1{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 48px;
+}
+.card-front #img3{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 48px;
+}
+.card-front p{
+    font-size: 13px;
+    color: #ffffff;
+}
+.verify-card .item .obj{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.child-reg{
+    height: 32px;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+.child-reg span{
+    display: block;
+    width: 100%;
+    height: 29px;
+    border: 1px solid #78CBE0;
+    color: #78CBE0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.next-page-btn{
+    width: 100%;
+    height: 46px;
+    background: #78CBE0;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

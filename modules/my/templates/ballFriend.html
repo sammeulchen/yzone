@@ -1,0 +1,93 @@
+<ion-view ng-controller="ballFriendCtrl">
+    <ion-content>
+        <div class="my-info">
+            <img class="btn-back" on-tap="goBack()" src="img/back.gif"/>
+            <img class="bg-img" src="img/home/game-dbg.png">
+            <img ng-click="myInfoDetails()" class="my-avatar" src="{{friendInfo.avatar}}">
+            <i class="my-age" ng-show="friendInfo.age >= 0">
+                <img ng-show="friendInfo.gender == 1" src="img/icon-boy.png"/>
+                <img ng-show="friendInfo.gender == 0" src="img/icon-girl.png"/>
+                <b>{{friendInfo.age}}</b>
+            </i>
+            <span class="my-name">{{friendInfo.realname}}</span>
+        </div>
+        <div class="user-grade1">
+            <div class="grade-sd">
+                <i class="single-rank-pic1">
+                    <img ng-if="friendInfo.singleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                    <img ng-if="friendInfo.singleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                    <img ng-if="friendInfo.singleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                    <img ng-if="friendInfo.singleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                    <img ng-if="friendInfo.singleLevel == null || friendInfo.singleLevel == ''" src="img/home/w_f_f_m.png"/>
+                </i>
+                <div class="rank-desc1">
+                    <span>单打</span>
+                    <span ng-if="friendInfo.singleLevel != null && friendInfo.singleLevel != ''">{{friendInfo.singleLevel}}-第{{friendInfo.singleRank}}名</span>
+                    <span ng-if="friendInfo.singleLevel == null || friendInfo.singleLevel == ''">无级-请定级</span>
+                </div>
+            </div>
+            <div class="grade-sd">
+                <div class="rank-desc1">
+                    <span>双打</span>
+                    <span ng-if="friendInfo.doubleLevel != null && friendInfo.doubleLevel != ''">{{friendInfo.doubleLevel}}-第{{friendInfo.doubleRank}}名</span>
+                    <span ng-if="friendInfo.doubleLevel == null || friendInfo.doubleLevel == ''">无级-请定级</span>
+                </div>
+                <i class="double-rank-pic1">
+                    <img ng-if="friendInfo.doubleLevel == '风级'" src="img/home/wind_last_home.png"/>
+                    <img ng-if="friendInfo.doubleLevel == '林级'" src="img/home/forest_last_home.png"/>
+                    <img ng-if="friendInfo.doubleLevel == '火级'" src="img/home/fire_last_home.png"/>
+                    <img ng-if="friendInfo.doubleLevel == '山级'" src="img/home/mount_last_home.png"/>
+                    <img ng-if="friendInfo.doubleLevel == null || friendInfo.doubleLevel == ''" src="img/home/w_f_f_m.png"/>
+                </i>
+            </div>
+        </div>
+            <ul class="friend-id">
+                <li>
+                    <span>公司</span>
+                    <span ng-style="setClor(friendInfo.company)">{{friendInfo.company}}</span>
+                </li>
+                <li>
+                    <span>学校</span>
+                    <span ng-style="setClor(friendInfo.school)">{{friendInfo.school}}</span>
+                </li>
+                <li>
+                    <span>擅长项目</span>
+                    <span ng-style="setClor(friendInfo.goodAtProjects)">{{friendInfo.goodAtProjects}}</span>
+                </li>
+                <li>
+                    <span>活跃球馆</span>
+                    <span ng-style="setClor(friendInfo.stadium)">{{friendInfo.stadium}}</span>
+                </li>
+                <li>
+                    <span>Ta的球拍</span>
+                    <span ng-style="setClor(friendInfo.racket)">{{friendInfo.racket}}</span>
+                </li>
+            </ul>
+            <div class="friend-games-title">参赛历史</div>
+            <div class="friend-gt">
+                <span>比赛名称</span>
+                <span>项目</span>
+                <span>时间</span>
+            </div>
+            <ul class="friend-games">
+                <li ng-repeat="gameList in friendGameLists">
+                    <span>{{gameList.name}}</span>
+                    <span>{{gameList.project}}</span>
+                    <span>{{gameList.time|date:'yyyy-MM-dd'}}</span>
+                </li>
+               <!-- <li ng-repeat="gameList in friendGameLists">
+                    <span>比赛名称比赛名称比赛名称比赛名称比赛名称</span>
+                    <span>{{gameList.project}}</span>
+                    <span>{{gameList.time|date:'yyyy-MM-dd'}}</span>
+                </li>-->
+
+                <div class="get-more-games">
+                    <span ng-click="loadMore()">
+                        查看全部参赛历史
+                       <!-- <img src="img/btn-unfold.png"/>-->
+                    </span>
+                </div>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

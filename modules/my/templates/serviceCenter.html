@@ -1,0 +1,32 @@
+<ion-view ng-controller="serviceCenterCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>服务中心</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="service-center">
+            <div class="custom-service-mobile">
+                <span>客服热线：18001397216</span>
+                <a href="tel:18001397216"><img src="img/my/tel_my.png"/></a>
+            </div>
+            <ul class="service-problems">
+                <li ng-click="toYZRank()">羽众分级及积分体系</li>
+                <li>常见问题</li>
+                <li ng-click="toDisclaimer()">免责条款</li>
+            </ul>
+            <div class="give-advice">
+                <span>期待您的宝贵的意见</span>
+                <div class="advice-textarea">
+                    <textarea ng-model="yourAdvice.advice" placeholder="快把意见和建议留在这里吧！我们一定积极改正，么么哒！"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+    <div class="to-next-pg" ng-click="submitAdvice()">
+        <span>提交</span>
+    </div>
+</ion-view>

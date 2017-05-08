@@ -1,0 +1,2523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/modules/release/css/groupSetting.css" line="195" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/modules/home/templates/tab01.html" line="169" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/js/app.js" line="1134" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="126bb571-9c1b-4ee3-965b-8d29f27b4a9f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/alipay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/all-mh.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/auth_code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/back.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/banner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bianji.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/box.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-addchild.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-edit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-home.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-letter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/btn-unfold.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/button-square.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/button-yes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/classDetails.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/classTitles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/code_number.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/code_type.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/collection_click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/collection_n.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/d-timeline6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/delete.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/details-rules.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/draw.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/edit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/edit_btn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/end.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/enens-before.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/enens-finish.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/enens-ing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/femal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/find-click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/find.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire-btm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire-rank-click.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire-rank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/fire.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/fire.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/fire_last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/fire_last_home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/fire_status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest-btm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest-rank-click.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest-rank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/forest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/forest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/forest_last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/forest_last_home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/forest_status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/front-card.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/front.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/game-loca.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/game_status1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/game_status2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/game_status3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gou.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/group-name.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home-click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-addfriend.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-badminton.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-boy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-captcha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-card-number.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-card.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-card1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-children.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-club.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-collect.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-ddl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-game.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-girl.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-house.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-jianxiang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-leader-name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-levelfive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-levelfour.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-levelone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-levelthree.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-leveltwo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-light-left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-light-mid.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-light-right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-money.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-name1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-number.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-offline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-partner.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-pay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-people.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-phone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-poster.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-reddelete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-safe.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-server.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-sex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-tel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-type.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-wechat.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icon-word.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/icon_grade.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/identity-card.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/jx.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/kuang.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linshi1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linshi2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linshi3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linshi4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/linshi5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/loca.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/location-before.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/location-finish.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/location-ing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/location.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/location1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/man.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/match-name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount-btm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount-rank-click.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount-rank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/mount.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/mount.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/mount_last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/mount_last_home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/mount_status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/my-click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/my.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/next-page.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/next-page2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/none-btm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/none-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/pack_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/partner_01.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/partner_02.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/partner_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/partner_04.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/paySuccessBg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-4-8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-9-16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-one-c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-one-c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-one-n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-one-n1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-point.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-prize.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-three-c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-three-c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-three-n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-three-n1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-two-c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-two-c1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-two-n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/pic-two-n1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/position.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/game_club/radio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/game_club/radio_checked.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank-one.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank-three.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank-two.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/rank7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/regSuccess1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/regSuccess2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/release-click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/release.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/select.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sex.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/sex.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/shop-click.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/shop.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/single-timeline1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/single-timeline2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/single-timeline3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/single-timeline4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/single-timeline5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/team_pic.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tel-per.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tel.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/telephone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/times-before.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/times-finish.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/times-ing.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/tips.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/tournament-level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/unfold.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/up-bg.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/weirenzheng.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wffm.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind-btm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind-rank-click.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind-rank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind-top.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind-white.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/wind.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/wind.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/wind_last.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/wind_last_home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/home/wind_status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/xm-settings.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ybm.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/treant/css/Treant.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/treant/js/Treant.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/YZRank.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/YZRank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/YZRankCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_action-sheet.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_animations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_backdrop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_badge.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_button-bar.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_checkbox.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_grid.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-font.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_items.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_loading.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_menu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_modal.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_platform.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_popover.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_popup.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_progress.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_radio.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_range.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_refresher.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_scaffolding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_select.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_slide-box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_slides.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_spinner.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_tabs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_toggle.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_transitions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_type.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_util.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/allRank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/allRankCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/allRanking.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-animate.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-cookies.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-resource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-resource.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-sanitize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular-ui/angular-ui-router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/asdfs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/authenticationLevel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/authenticationLevel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/authenticationLevelCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/ballFriend.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/ballFriend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/ballFriendCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/changeMyInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/changeMyInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/changeMyInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/changeSingleInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/changeSingleInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/changeSingleInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/childCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/childCodeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/childrenInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/childrenInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/childrenInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/cicle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/cityList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/classIntroduction.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/classIntroduction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/codeView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/competitionRules.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/competitionRules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/competitionRulesCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/createChildCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/createChildCodeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/createChildInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/createChildInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/createChildInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/createCode.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/createCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/createCodeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/dPDetailsCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/directive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/disclaimer.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/disclaimer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/disclaimerCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/doubleRank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/doubleRank1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/doubleRank1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/doubleRankCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/doubleRanking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/doubleRankingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/editChildInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/editChildInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/editChildInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/editCode.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/editCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/editCodeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/eventsDetailsGroupMan.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/eventsDetailsGroupMan.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/eventsDetailsGroupManCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/eventsDetailsSetting.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/eventsDetailsSetting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/eventsDetailsSettingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/eventsGrade.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/eventsGrade.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/eventsGradeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/eventsGradeGroup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/eventsGradeGroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/eventsGradeGroupCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/find/templates/find.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/gameLocation.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/gameLocation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/gameLocation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/gameLocationCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/gameTime.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/gameTime.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/gameTimeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/goodAtProjects.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/goodAtProjectsCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/gradeRules.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/gradeRules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/gradeRulesCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/groupGrade.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/groupGradeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/groupMatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/groupPerDetails.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/groupPerDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/groupPerDetailsCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/groupSetting.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/groupSetting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/groupSettingGroup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/groupSettingGroupCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/groupsettingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/homeV2Ctrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/home_v2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/home_v2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/improveInfo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/improveInfo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/improveInfoCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic-angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/image-lazy-load/ionic-image-lazy-load.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.bundle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/css/ionic.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/css/ionic.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/ionic.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionic.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/scss/ionicons/ionicons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/isEndCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/isPlayingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/isRegingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/knockout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/knockoutCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/linshilainjie2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/loginPassword.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/loginPassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/loginPasswordCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lslj.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/my.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/myClub.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/myClub.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myClubCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/myCode.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/myCode.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myCodeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/myGames.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/myGames.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myGamesCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/myInfoDetails.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/myInfoDetails.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myInfoDetailsCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/myPartner.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/myPartner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/myPartnerCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/oclazyload/dist/ocLazyLoad.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/oclazyload/dist/ocLazyLoad.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/js/onezone-datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/organization.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/ownRanking.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/ownRanking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/ownRankingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/ownedClub.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/ownedClub.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/ownedClubCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/payCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/services/payment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/playersList.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/playersList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/playersListCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/playersListGroupCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/projectSetting.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/services/projectSetting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/rank.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/rankCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingIntro6.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/rankingOnline.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/rankingOnline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/rankingOnlineCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/treant/js/raphael.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/release.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/release.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/router/release.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/releaseCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/releaseGroupGame.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/releaseGroupGame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/releaseGroupGameCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/releaseSingleGame.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/releaseSingleGame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/releaseSingleGameCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/security.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/security.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/securityCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/selectedProject.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/selectedProject.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/selectedProjectCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/serviceCenter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/serviceCenter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/serviceCenterCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/shop/templates/shop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/showLocationNum.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/singleRank.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/singleRank1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/singleRank1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/singleRankCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/singleRanking.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/singleRankingCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tabSlideBox/tabSlideBox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/templates/tabs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/templates/tabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/timepicer/timePicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/timepicer/timePicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/css/tournamentLevel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/templates/tournamentLevel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/release/controllers/tournamentLevelCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/upload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/verifyIdentity.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/verifyIdentity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/verifyIdentityCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ionic/version.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/css/viewPacket.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/templates/viewPacket.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/home/controllers/viewPacketCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/css/whoAddMe.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/templates/whoAddMe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/my/controllers/whoAddMeCtrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/yuZone.iml" />
+    </list>
+    <ignored path="yuZone.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="F:\" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="F:\yuZone\exportToHTML" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="yuZone" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="27852" max-vertical-offset="29220">
+              <caret line="1435" column="68" selection-start-line="1435" selection-start-column="68" selection-end-line="1435" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clubAllPlayersCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/clubAllPlayersCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.64788735" vertical-offset="312" max-vertical-offset="1160">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#54#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="choiceGradeCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/choiceGradeCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1340">
+              <caret line="47" column="19" selection-start-line="42" selection-start-column="12" selection-end-line="47" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clubAllPlayers.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubAllPlayers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.586207" vertical-offset="1320" max-vertical-offset="3240">
+              <caret line="77" column="107" selection-start-line="77" selection-start-column="107" selection-end-line="77" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/locationList.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/locationListCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/services/newJs.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/services/releaseGame.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/createSuccess.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/createSuccessCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/choiceProjectCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/home/controllers/dPDetailsCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/home/templates/dPDetails.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/choiceProject.html" />
+        <option value="$PROJECT_DIR$/modules/my/controllers/doubleRank1.js" />
+        <option value="$PROJECT_DIR$/modules/my/controllers/doubleRankCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/my/controllers/singleRank1.js" />
+        <option value="$PROJECT_DIR$/modules/my/controllers/singleRankCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/my/controllers/ballFriendCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/home/templates/partnerInfo.html" />
+        <option value="$PROJECT_DIR$/modules/home/templates/selectedProject.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/writeGameInfoCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/createGame.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/createGame.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/choiceProject.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/addLocation.html" />
+        <option value="$PROJECT_DIR$/test/ditu.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/writeGameInfo.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/writeGameInfo.css" />
+        <option value="$PROJECT_DIR$/modules/my/templates/myGames.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/createGameDetails.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubGameAction.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/createGameDetails.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/createGameDetailsCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/home/css/groupPerDetails.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/setLevel.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/clubUserReg.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubUserReg.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/setLevel.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/clubUserRegCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/clubMyProjectCtrl.js" />
+        <option value="$PROJECT_DIR$/test/qingxie.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubMyProject.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubPartnerPage.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/setLevelCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubMyProjectPage.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/clubMyProject.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/clubAllPlayers.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubGameDetails.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/clubGameDetailsCtrl.js" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubGameDesc.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/css/clubGameDetails.css" />
+        <option value="$PROJECT_DIR$/modules/gameClub/templates/clubAllPlayers.html" />
+        <option value="$PROJECT_DIR$/modules/gameClub/controllers/clubAllPlayersCtrl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="true" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType ProjectPane="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yzone" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="yuZone">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="last_opened_file_path" value="F:/test0316" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="Settings.JavaScript" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\yzone\img\game_club" />
+      <recent name="F:\yzone\lib\ionic\css" />
+      <recent name="F:\yzone\lib\ionic\js" />
+      <recent name="F:\yzone\modules\home\controllers" />
+      <recent name="F:\yzone\modules\home\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\yzone\modules\gameClub\css" />
+      <recent name="F:\yzone\modules\gameClub\controllers" />
+      <recent name="F:\yzone\modules\gameClub\templates" />
+      <recent name="F:\yzone\test" />
+      <recent name="F:\yzone" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.helloworld.js">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/yuZone/index.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/js">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/modules/templates">
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="helloworld.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/Program Files/nodejs/node" path-to-js-file="helloworld.js" working-dir="D:/node_project">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.helloworld.js" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.helloworld.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <changelist date="1482396899285">
+      <option name="PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\yzone_patch.patch" />
+      <option name="DESCRIPTION" value="yzone.patch" />
+    </changelist>
+    <changelist date="1482397001251">
+      <option name="PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\unnamed.patch" />
+      <option name="DESCRIPTION" value="" />
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank3.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank3.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest-white.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest-white.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-children.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-children.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-girl.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-girl.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-lock.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-lock.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-number.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-number.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home-click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\home-click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount-white.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount-white.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-two-n1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-two-n1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-phone.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-phone.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-edit.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-edit.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-captcha.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-captcha.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\paySuccessBg.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\paySuccessBg.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wffm.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wffm.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire-white.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire-white.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\times-finish.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\times-finish.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\linshi5.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\linshi5.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\home.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\details-rules.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\details-rules.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fee.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fee.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\jx.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\jx.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\game_status3.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\game_status3.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-address.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-address.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\enens-ing.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\enens-ing.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-two-c.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-two-c.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\linshi2.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\linshi2.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-two-n.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-two-n.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\delete.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\delete.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\my-click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\my-click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-safe.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-safe.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest-rank-click.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest-rank-click.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-levelthree.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-levelthree.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-card-number.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-card-number.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pay.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pay.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\xm-settings.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\xm-settings.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-levelone.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-levelone.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank5.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank5.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-server.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-server.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-card1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-card1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-offline.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-offline.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank-one.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank-one.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-share.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-share.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-boy.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-boy.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind-top.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind-top.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-unfold.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-unfold.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-one-c.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-one-c.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\enens-finish.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\enens-finish.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-level.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-level.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-4-8.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-4-8.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\collection_n.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\collection_n.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire-rank.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire-rank.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-house.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-house.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-reddelete.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-reddelete.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\regSuccess1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\regSuccess1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-light-mid.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-light-mid.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\linshi4.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\linshi4.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\team_pic.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\team_pic.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-leveltwo.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-leveltwo.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-add.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-add.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\times-before.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\times-before.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\my.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\my.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-collect.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-collect.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\game_status2.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\game_status2.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-name1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-name1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-three-c.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-three-c.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-card.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-card.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="lib\ionic\fonts\ionicons.eot" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\ionicons.eot" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\release.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\release.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-ddl.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-ddl.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\front-card.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\front-card.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\loca.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\loca.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-point.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-point.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank2.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank2.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\game-loca.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\game-loca.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\game_Status1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\game_Status1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\search.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\search.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\group-name.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\group-name.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\find-click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\find-click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-game.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-game.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\all-mh.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\all-mh.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount-top.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount-top.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\bg.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\bg.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\linshi3.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\linshi3.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire-rank-click.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire-rank-click.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-people.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-people.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-time.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-time.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\location-ing.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\location-ing.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank4.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank4.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\shop.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\shop.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\linshi1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\linshi1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank-two.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank-two.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire-btm.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire-btm.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-leader-name.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-leader-name.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\button-yes.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\button-yes.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind-white.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind-white.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank6.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank6.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\location-finish.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\location-finish.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\weirenzheng.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\weirenzheng.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\back.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\back.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind-rank.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind-rank.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\gou.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\gou.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-money.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-money.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\classDetails.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\classDetails.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\identity-card.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\identity-card.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\location.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\location.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\none-top.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\none-top.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-badminton.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-badminton.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-levelfive.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-levelfive.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="lib\ionic\fonts\ionicons.ttf" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\ionicons.ttf" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-three-n1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-three-n1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount-rank-click.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount-rank-click.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-light-left.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-light-left.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-addchild.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-addchild.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount-rank.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount-rank.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-club.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-club.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\button-square.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\button-square.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\banner.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\banner.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\match-name.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\match-name.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-one-n1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-one-n1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest-btm.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest-btm.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind-rank-click.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind-rank-click.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\regSuccess2.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\regSuccess2.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-partner.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-partner.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\location-before.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\location-before.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\position.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\position.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-pay.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-pay.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\up-bg.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\up-bg.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-poster.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-poster.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-9-16.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-9-16.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-jianxiang.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-jianxiang.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\edit.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\edit.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-addfriend.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-addfriend.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="lib\ionic\fonts\ionicons.woff" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\ionicons.woff" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\fire-top.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\fire-top.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\find.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\find.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\tournament-level.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\tournament-level.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-sex.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-sex.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-two-c1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-two-c1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\end.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\end.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\enens-before.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\enens-before.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-type.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-type.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\next-page.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\next-page.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-one-c1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-one-c1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\tel.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\tel.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-tel.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-tel.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\tel-per.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\tel-per.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\ing.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\ing.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\kuang.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\kuang.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\classTitles.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\classTitles.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest-top.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest-top.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-letter.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-letter.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\shop-click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\shop-click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-wechat.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-wechat.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-three-n.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-three-n.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\mount-btm.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\mount-btm.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-prize.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-prize.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind-btm.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind-btm.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\btn-home.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\btn-home.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\draw.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\draw.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank7.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank7.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-word.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-word.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\rank-three.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\rank-three.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\none-btm.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\none-btm.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-three-c1.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-three-c1.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\next-page2.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\next-page2.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\bianji.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\bianji.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\times-ing.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\times-ing.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\wind.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\wind.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-name.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-name.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\collection_click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\collection_click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-light-right.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-light-right.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\ybm.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\ybm.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\sex.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\sex.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\home\icon_grade.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon_grade.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\icon-levelfour.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\icon-levelfour.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\front.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\front.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\release-click.gif" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\release-click.gif" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\forest-rank.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\forest-rank.png" />
+      </binary>
+      <binary>
+        <option name="BEFORE_PATH" />
+        <option name="AFTER_PATH" value="img\pic-one-n.png" />
+        <option name="SHELVED_PATH" value="C:\Users\Administrator\.WebStorm8\config\shelf\pic-one-n.png" />
+      </binary>
+    </changelist>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="126bb571-9c1b-4ee3-965b-8d29f27b4a9f" name="Default" comment="" />
+      <created>1469433365114</created>
+      <updated>1469433365114</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1482396801431</created>
+      <updated>1482396801431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5139116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3256579" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981412" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21522693" sideWeight="0.49918166" order="0" side_tool="false" content_ui="combo" x="486" y="78" width="298" height="611" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39802632" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22156134" sideWeight="0.5008183" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32649574" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.69168025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/allPictures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6576402" vertical-offset="0" max-vertical-offset="2180">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/photoDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="1920">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/controllers/photoDetailsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5760" max-vertical-offset="6920">
+          <caret line="295" column="24" selection-start-line="295" selection-start-column="24" selection-end-line="295" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/css/groupPerDetails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62271065" vertical-offset="660" max-vertical-offset="10800">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/createSuccess.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/choiceProject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22263451" vertical-offset="0" max-vertical-offset="960">
+          <caret line="6" column="21" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/css/userReg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4500">
+          <caret line="9" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/game_club/sun.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/addLocation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.206897" vertical-offset="0" max-vertical-offset="360">
+          <caret line="9" column="133" selection-start-line="9" selection-start-column="133" selection-end-line="9" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/writeGameInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75862" vertical-offset="1361" max-vertical-offset="1900">
+          <caret line="88" column="10" selection-start-line="82" selection-start-column="4" selection-end-line="88" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/writeGameInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2580" max-vertical-offset="4280">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="187" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/userReg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.931034" vertical-offset="1361" max-vertical-offset="1900">
+          <caret line="81" column="64" selection-start-line="81" selection-start-column="64" selection-end-line="81" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.827586" vertical-offset="180" max-vertical-offset="1020">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/controllers/userRegCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8792" max-vertical-offset="9800">
+          <caret line="455" column="36" selection-start-line="455" selection-start-column="36" selection-end-line="455" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/setLevel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1859" max-vertical-offset="2520">
+          <caret line="120" column="1" selection-start-line="74" selection-start-column="0" selection-end-line="120" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/writeGameInfoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6703297" vertical-offset="2774" max-vertical-offset="3800">
+          <caret line="157" column="9" selection-start-line="150" selection-start-column="8" selection-end-line="157" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/clubUserReg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2421" max-vertical-offset="3080">
+          <caret line="147" column="1" selection-start-line="147" selection-start-column="1" selection-end-line="147" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/setLevel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.068966" vertical-offset="601" max-vertical-offset="1140">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/clubUserRegCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43661973" vertical-offset="4432" max-vertical-offset="6740">
+          <caret line="236" column="44" selection-start-line="236" selection-start-column="44" selection-end-line="236" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/controllers/dPDetailsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1501832" vertical-offset="1980" max-vertical-offset="6500">
+          <caret line="13" column="98" selection-start-line="8" selection-start-column="6" selection-end-line="13" selection-end-column="98" />
+          <folding>
+            <marker date="1490149012282" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1490149012282" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/regInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.655172" vertical-offset="1920" max-vertical-offset="2680">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/partnerInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.586207" vertical-offset="720" max-vertical-offset="1540">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/dPDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.413793" vertical-offset="923" max-vertical-offset="1860">
+          <caret line="54" column="10" selection-start-line="52" selection-start-column="3" selection-end-line="54" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/game_club/no-club-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubPartnerPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.379311" vertical-offset="343" max-vertical-offset="920">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/clubMyProjectCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24647887" vertical-offset="0" max-vertical-offset="568">
+          <caret line="9" column="113" selection-start-line="9" selection-start-column="113" selection-end-line="9" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/qingxie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32608697" vertical-offset="0" max-vertical-offset="560">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubMyProject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.296846" vertical-offset="0" max-vertical-offset="1580">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/setLevelCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03521127" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="3" column="105" selection-start-line="3" selection-start-column="105" selection-end-line="3" selection-end-column="105" />
+          <folding>
+            <element signature="e#0#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubUserReg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137931" vertical-offset="0" max-vertical-offset="1180">
+          <caret line="6" column="21" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/regPlayers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubMyProjectPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57833654" vertical-offset="261" max-vertical-offset="960">
+          <caret line="28" column="115" selection-start-line="28" selection-start-column="115" selection-end-line="28" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/css/groupUserReg.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17889088" vertical-offset="0" max-vertical-offset="7860">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/css/dPDetails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5683453" vertical-offset="8464" max-vertical-offset="9020">
+          <caret line="439" column="17" selection-start-line="439" selection-start-column="17" selection-end-line="439" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/game_club/been_partner.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/clubAllPlayers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2039" max-vertical-offset="2680">
+          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/clubMyProject.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="4380">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/createGameDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8923934" vertical-offset="0" max-vertical-offset="1160">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubGameDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74025977" vertical-offset="181" max-vertical-offset="740">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/templates/tab01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.586207" vertical-offset="3280" max-vertical-offset="3820">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="181" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/home/css/groupDetails_v1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.24" vertical-offset="7084" max-vertical-offset="12160">
+          <caret line="377" column="1" selection-start-line="359" selection-start-column="0" selection-end-line="377" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/css/clubGameDetails.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3179" max-vertical-offset="13320">
+          <caret line="165" column="14" selection-start-line="165" selection-start-column="14" selection-end-line="165" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubGameDesc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18367347" vertical-offset="1861" max-vertical-offset="2400">
+          <caret line="98" column="27" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/clubGameDetailsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.964789" vertical-offset="0" max-vertical-offset="3020">
+          <caret line="141" column="33" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/addLocationCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5704225" vertical-offset="892" max-vertical-offset="1460">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/changeGameInfoCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27852" max-vertical-offset="29220">
+          <caret line="1435" column="68" selection-start-line="1435" selection-start-column="68" selection-end-line="1435" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/templates/clubAllPlayers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.586207" vertical-offset="1320" max-vertical-offset="3240">
+          <caret line="77" column="107" selection-start-line="77" selection-start-column="107" selection-end-line="77" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/choiceProjectCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/choiceGradeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1340">
+          <caret line="47" column="19" selection-start-line="42" selection-start-column="12" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/gameClub/controllers/clubAllPlayersCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64788735" vertical-offset="312" max-vertical-offset="1160">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

@@ -1,0 +1,26 @@
+<ion-view ng-controller="seedCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>设置种子</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="seed-list" ng-repeat="seed in seeds">
+            <div class="ev-seed-list">
+                <span>{{seed.number}}号种子</span>
+                <span>{{seed.name}}</span>
+                <span>
+                    <i ng-show="seeds.length-1 == $index" ng-click="deleteSeed($index)">删除</i>
+                    <i ng-click="replaceSeed($index)">替换</i>
+                </span>
+
+            </div>
+            <div class="kl_4"></div>
+        </div>
+    </ion-content>
+    <div class="add-seed-btn">
+        <span ng-click="addSeed()">增加种子</span>
+        <span ng-click="submitSeed()">完成</span>
+    </div>
+</ion-view>

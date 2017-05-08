@@ -1,0 +1,30 @@
+<ion-modal-view class="location-view">
+    <ion-header-bar>
+        <h1 class="title">场地号码</h1>
+    </ion-header-bar>
+        <form role="form" name="form" class="form add-site-number" ng-submit="submit()">
+            <span>
+                <input type="text" required ng-model="siteNumberData.text">
+                <i>号</i>
+            </span>
+            <input class="btn" type="submit" value="提交">
+
+        </form>
+        <ul class="site-number">
+            <li ng-repeat="siteNumber in siteNumbers" ng-show="isShow">
+                <span>
+                   {{siteNumber.text}}
+                </span>
+                <span ng-click="removeSiteNumber()">
+                    <img src="img/delete-white.png"/>
+                </span>
+            </li>
+
+        </ul>
+        <div class="ensure-bottom">
+            <button class="btn-ensure" ng-click="closeSiteNumber()">
+                确定
+            </button>
+        </div>
+
+</ion-modal-view>

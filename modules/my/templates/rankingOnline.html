@@ -1,0 +1,32 @@
+<ion-view ng-controller="rankingOnlineCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>在线认证</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="ranking-online-bg">
+            <div class="your-reason">
+                <textarea ng-model="userReason.content" placeholder="请您在此填写自己满足该级别的理由。例如：比赛成绩，运动员等级证书等"></textarea>
+            </div>
+            <div class="ranking-img">
+                <input type="file" id="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                <div id="preview" class="ranking-img-one11">
+
+                </div>
+                <div  id="fileSelect" class="ranking-img-one">
+                    <p>点击</p>
+                    <p>上传证明材料</p>
+                </div>
+            </div>
+            <div class="ranking-online-tips">
+                *有证明材料才更容易通过哦~
+            </div>
+        </div>
+
+    </ion-content>
+    <div class="ranking-online-btn">
+        <span ng-click="upLoad()">提交</span>
+    </div>
+</ion-view>

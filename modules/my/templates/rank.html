@@ -1,0 +1,201 @@
+<ion-view ng-controller="rankCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="backToPre()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>我的排名</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+
+    <ion-tabs class="tabs-top">
+
+        <!--<ion-tab title="总排名" icon-on="isReg" class="tab-title">
+            <div class="my-rank">
+                <div class="my-rank-details">
+                    <div class="my-rd-top" ng-click="toSingleRanking()">
+                        <img src="img/{{userMsg.picUrl}}"/>
+                        <span>{{userMsg.parentLvel}}-{{userMsg.subLvel}}</span>
+                        {{userMsg.rank}}名
+                        <span>{{userMsg.updown}}名</span>
+                    </div>
+                    <div class="my-rd-bottom" ng-show="rankshowDetails1">
+                        <span>积分:{{userMsg.score}}分</span>
+                        <span>(认证后为{{userMsg.parentLvel}}-{{userMsg.subLvel}})</span>
+                        <span ng-click="toAuthenticationLevel()">认证级别</span>
+                        <span ng-click="toOwnRanking()">修改级别</span>
+                    </div>
+                    <div class="my-rd-bottom" ng-show="rankshowDetails3">
+                        <span>积分:{{userMsg.score}}分</span>
+                        <span>(认证后为{{userMsg.parentLvel}}-{{userMsg.subLvel}})</span>
+                        <i>审核中</i>
+                        <span ng-click="toOwnRanking()">修改级别</span>
+                    </div>
+                    <div class="my-rd-bottom1" ng-show="rankshowDetails2">
+                        <span>积分:{{userMsg.score}}分</span>
+
+                    </div>
+                </div>
+                <div class="mm" ng-show="rankshowDetails6">
+                    <div class="nn"></div>
+                </div>
+                <div class="tips-msg1" ng-show="rankshowDetails6">
+                    您的级别已经通过羽众认证，请您确认
+                    <span>申请降级</span>
+                    <span>同意该级</span>
+                </div>
+                <div class="tips-msg2" ng-show="rankshowDetails7">
+                    <p>您在改级总排名的后10%，您可以申请降级来保证自己的线下赛事体验</p>
+                    <span>申请降级</span>
+                    <span>留在该级</span>
+                </div>
+            </div>
+            <div class="rank-title">
+                排行榜
+                <select ng-options="rankingGrade.name for rankingGrade in rankingGrades" ng-model="selectRank.rank" ng-change="getChangedClass()"></select>
+            </div>
+            <div ng-controller="allRankCtrl">
+                <ul class="all-players-rank">
+                    <li ng-repeat="singlePlayer in singlePlayers">
+                        <i>{{$index+1}}</i>
+                        <span>
+                            <img src="{{singlePlayer.avatar}}"/>
+                        </span>
+                        <span>{{singlePlayer.userName}}</span>
+                        <span>{{singlePlayer.score}}分</span>
+                    </li>
+                </ul>
+                <div class="look-more" ng-click="lookMore()">查看更多...</div>
+            </div>
+        </ion-tab>-->
+        <ion-tab title="单打排名" icon-on="isPlaying" href="#/rank/singleRank1">
+            <ion-nav-view name="rank-singleRank1">
+
+            </ion-nav-view>
+            <!--<div ng-controller="singleRankCtrl">
+                <div class="my-rank">
+                    <div class="my-rank-details" ng-style="setBg(userMsg.parentLvel)">
+                        <div class="my-rd-top" ng-click="toSingleRanking()">
+                            <img src="img/{{userMsg.picUrl}}"/>
+                            <span>{{userMsg.parentLvel}}-{{userMsg.subLvel}}</span>
+                            第{{userMsg.rank}}名
+                            <span ng-show="rankUpdownShow">{{userMsg.updown}}名</span>
+                        </div>
+                        <div class="my-rd-bottom" ng-show="rankshowDetails4">
+                            <span>积分:{{userMsg.score}}分</span>
+                            <span>(认证后为{{userMsg.parentLvel}}-{{userMsg.subLvel}})</span>
+                            <span ng-show="rankShowDetails1" ng-click="toAuthenticationLevel()">认证级别</span>
+                            <i ng-show="rankshowDetails2">认证申请已提交</i>
+                            <span ng-click="toOwnRanking()" ng-show="rankshowDetails3">修改级别</span>
+                        </div>
+                        <div class="my-rd-bottom1" ng-show="rankshowDetails5">
+                            <span>积分:{{userMsg.score}}分</span>
+                            <a ng-click="toYZRank()">查看积分规则</a>
+                        </div>
+                    </div>
+                    <div class="mm" ng-show="rankshowDetails7">
+                        <div class="nn"></div>
+                    </div>
+                    <div class="mm" ng-show="rankshowDetails8">
+                        <div class="nn"></div>
+                    </div>
+                    <div class="tips-msg1" ng-show="rankshowDetails7">
+                        您的级别已经通过羽众认证，请您确认
+                        <span ng-click="downRank()">申请降级</span>
+                        <span ng-click="agreeRank()">同意该级</span>
+                    </div>
+                    <div class="tips-msg2" ng-show="rankshowDetails8">
+                        <p>您在改级总排名的后10%，您可以申请降级来保证自己的线下赛事体验</p>
+                        <span ng-click="downRank()">申请降级</span>
+                        <span ng-click="notDownRank()">留在该级</span>
+                    </div>
+                </div>
+                <div class="rank-title">
+                    排行榜
+                    <div>
+                        <span ng-repeat="rankingGrade in rankingGrades"  ng-style="changeBg(rankingGrade.id)"  ng-click="changeLevel($index)">
+                            <img src="img/{{rankingGrade.picUrl}}"/>
+                            {{rankingGrade.name}}
+                        </span>
+                    </div>
+                </div>
+
+                <ul class="all-players-rank">
+                    <li ng-repeat="singlePlayer in singlePlayers">
+                        <i>{{$index+1}}</i>
+                        <span ng-click="toBallFriend(singlePlayer.userId)">
+                            <img src="{{singlePlayer.avatar}}"/>
+                        </span>
+                        <span>{{singlePlayer.userName}}</span>
+                        <span>{{singlePlayer.score}}分</span>
+                    </li>
+                </ul>
+                <div class="look-more" ng-click="lookMore()">查看更多...</div>
+            </div>-->
+        </ion-tab>
+        <ion-tab title="双打排名" icon-on="isEnd" href="#/rank/doubleRank1">
+            <ion-nav-view name="rank-doubleRank1">
+
+            </ion-nav-view>
+            <!--<div ng-controller="doubleRankCtrl">
+                <div class="my-rank">
+                    <div class="my-rank-details" ng-style="setBg(userMsg.parentLvel)">
+                        <div class="my-rd-top" ng-click="toDoubleRanking()">
+                            <img src="img/{{userMsg.picUrl}}"/>
+                            <span>{{userMsg.parentLvel}}-{{userMsg.subLvel}}</span>
+                            第{{userMsg.rank}}名
+                            <span ng-show="rankUpdownShow">{{userMsg.updown}}名</span>
+                        </div>
+                        <div class="my-rd-bottom" ng-show="rankshowDetails4">
+                            <span>积分:{{userMsg.score}}分</span>
+                            <span>(认证后为{{userMsg.parentLvel}}-{{userMsg.subLvel}})</span>
+                            <span ng-show="rankShowDetails1" ng-click="toAuthenticationLevel()">认证级别</span>
+                            <i ng-show="rankshowDetails2">认证申请已提交</i>
+                            <span ng-click="toOwnRanking()" ng-show="rankshowDetails3">修改级别</span>
+                        </div>
+                        <div class="my-rd-bottom1" ng-show="rankshowDetails5">
+                            <span>积分:{{userMsg.score}}分</span>
+                            <a ng-click="toYZRank()">查看积分规则</a>
+                        </div>
+                    </div>
+                    <div class="mm" ng-show="rankshowDetails7">
+                        <div class="nn"></div>
+                    </div>
+                    <div class="mm" ng-show="rankshowDetails8">
+                        <div class="nn"></div>
+                    </div>
+                    <div class="tips-msg1" ng-show="rankshowDetails7">
+                        您的级别已经通过羽众认证，请您确认
+                        <span ng-click="downRank()">申请降级</span>
+                        <span ng-click="agreeRank()">同意该级</span>
+                    </div>
+                    <div class="tips-msg2" ng-show="rankshowDetails8">
+                        <p>您在改级总排名的后10%，您可以申请降级来保证自己的线下赛事体验</p>
+                        <span ng-click="downRank()">申请降级</span>
+                        <span ng-click="notDownRank()">留在该级</span>
+                    </div>
+                </div>
+                <div class="rank-title">
+                    排行榜
+                    <div>
+                        <span ng-repeat="rankingGrade in rankingGrades"  ng-style="changeBg(rankingGrade.id)"  ng-click="changeLevel($index)">
+                            <img src="img/{{rankingGrade.picUrl}}"/>
+                            {{rankingGrade.name}}
+                        </span>
+                    </div>
+                </div>
+
+                <ul class="all-players-rank">
+                    <li ng-repeat="singlePlayer in singlePlayers">
+                        <i  ng-style="setBg($index+1)">{{$index+1}}</i>
+                        <span ng-click="toBallFriend(singlePlayer.userId)">
+                            <img src="{{singlePlayer.avatar}}"/>
+                        </span>
+                        <span>{{singlePlayer.userName}}</span>
+                        <span>{{singlePlayer.score}}分</span>
+                    </li>
+                </ul>
+                <div class="look-more" ng-click="lookMore()">查看更多...</div>
+            </div>-->
+        </ion-tab>
+    </ion-tabs>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-view class="bodyHeight" ng-controller="ownedClubCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>选择俱乐部</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+
+        <div class="search">
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="搜索">
+                </label>
+            </div>
+        </div>
+        <div class="club-name">
+
+        </div>
+        <div class="btn-part">
+            <a class="bottom-btn-a new-club" href="javascript:;">新建俱乐部</a>
+            <a class="bottom-btn-a sure" href="javascript:;" on-tap="goBack()">确定</a>
+        </div>
+
+
+    </ion-content>
+</ion-view>

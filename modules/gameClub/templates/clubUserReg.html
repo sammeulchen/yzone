@@ -1,0 +1,54 @@
+<ion-view ng-controller="clubUserRegCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>填写报名信息</span>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="list user-info1">
+            <li class="item item-icon-left name">
+                <img src="img/home/name.png"/>
+                <i>姓名</i>
+                <input type="text" placeholder="请输入真实姓名" ng-model = 'members.nickName'>
+            </li>
+            <li class="item item-icon-left sex" data-tap-disabled="true">
+                <img src="img/home/sex.png"/>
+                <i>性别</i>
+                <select ng-model="selectSex.sex" ng-options="sex.text for sex in sexs" ng-change = changeSex()>
+                </select>
+
+            </li>
+        </ul>
+        <ul class="list user-info1" ng-show="members.mobile == null || members.mobile == ''">
+            <li class="item item-icon-left telephone">
+                <img src="img/home/telephone.png"/>
+                <i>联系电话</i>
+                <input type="text" placeholder="请输入手机号码" ng-model = 'userInf.mobile'>
+                <button ng-click="sendCode(reg_phone)" ng-class="paraclass" ng-bind="paracont" ng-disabled = "getCode">发送验证码</button>
+            </li>
+            <li class="item item-icon-left code">
+                <img src="img/home/auth_code.png"/>
+                <i>验证码</i>
+                <input type="text" placeholder="请输入验证码" ng-model = 'members.indCode'/>
+            </li>
+        </ul>
+        <ul class="list user-info1" ng-show="members.mobile != null && members.mobile != ''">
+            <li class="item item-icon-left telephone">
+                <img src="img/home/telephone.png"/>
+                <i>联系电话</i>
+                <span>{{members.mobile}}</span>
+                <button ng-click="changeMobile()" class="send-code">更换号码</button>
+            </li>
+        </ul>
+    </ion-content>
+
+    <div ng-show=" members.singleLevel == -1 || members.doubleLevel == -1" class="next-page-btn" ng-click="toSetLevel(members.mobile)">下一步</div>
+    <div class="create-game-btn" ng-show=" members.singleLevel != -1 && members.doubleLevel != -1">
+        <span>
+             <i class="appear-{{isDisabled}}" ng-click="changeStates()"><img src="img/home/box.png"/></i>
+             <b ng-click="toDisclaimer()">我同意羽众的免责声明</b>
+        </span>
+        <span  ng-click="toRegNext(members.mobile)">完成报名</span>
+    </div>
+</ion-view>

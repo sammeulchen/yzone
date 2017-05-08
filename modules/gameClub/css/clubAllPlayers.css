@@ -1,0 +1,186 @@
+.bar.bar-positive span:nth-of-type(2){
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+}
+.club-my-info{
+    padding: 0 18px;
+    display: -webkit-flex;
+    -webkit-flex-wrap:wrap;
+    position: relative;
+}
+.club-my-info li{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D8D9D9;
+}
+.club-my-info li:last-of-type{
+    border: none;
+}
+.club-my-info li span:nth-of-type(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 70px;
+    color: #717071;
+}
+.club-my-info li span:nth-of-type(2){
+    font-size: 14px;
+    color: #000000;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    /*margin-left: 5px;*/
+}
+.club-my-info .mp-info{
+    height: 93px;
+    position: relative;
+}
+.club-my-info .mp-info .photo{
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    position: absolute;
+    top: 19px;
+}
+.club-my-info .mp-info .img1{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+}
+.club-my-info .mp-info .img2{
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+.club-my-info .mp-info .name{
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 60%;
+    line-height: 39px;
+    display: -webkit-flex;
+}
+
+.club-my-info .mp-info .sex-p img{
+    width: 28px;
+    height: 12px;
+}
+.club-my-info .mp-info .sex-p i{
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: -20px;
+}
+.club-my-info .mp-info .level{
+    width: 150px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: -13px;
+}
+.club-my-info .mp-info .level span {
+    display: inline-block;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.sex-pm img{
+    width: 15px;
+}
+.club-my-info .mp-info .level .wind{
+    background: #2DA7E0;
+}
+.club-my-info .mp-info .level .forest{
+    background: #009F40;
+}
+.club-my-info .mp-info .level .fire{
+    background: #D7000F;
+}
+.club-my-info .mp-info .level .mount{
+    background: #717071;
+}
+.club-my-info .mp-info .level span img{
+    width: 12px;
+}
+.partner-tip{
+    width: 70px;
+    height: 186px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.partner-tip1{
+    width: 100px;
+    height: 186px;
+    display: -webkit-flex;
+    /*-webkit-align-items: center;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: #ffffff;
+}
+.partner-tip img{
+    width: 59px;
+}
+.partner-tip1 span{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #79CAE0;
+    color: #79CAE0;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: 83px;
+}
+.select-partner-btn{
+    width: 80px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+    border: 1px solid #79CAE0;
+    color: #79CAE0;
+    border-radius: 3px;
+    position: absolute;
+    top: 33px;
+    right: -5px;
+}
+
+.delete-player-btn{
+    width: 80px;
+    height: 93px;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #79CAE0;
+    font-size: 14px;
+}
+.delete-player-btn img{
+    width: 16px;
+    margin-left: 5px;
+}

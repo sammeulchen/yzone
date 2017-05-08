@@ -1,0 +1,116 @@
+.line-k{
+    width: 100%;
+    background: #DCDDDD;
+    height: 3px;
+}
+.project-title{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    background: linear-gradient(to right,#78CBE0,#ffffff);
+}
+.project-title1{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    background: linear-gradient(to right,#F08F7A,#ffffff);
+}
+.project-title span,.project-title1 span{
+    margin-left: 21px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.project-desc{
+    padding: 0 12px 0 21px;
+    display: -webkit-flex;
+    border-bottom: 1px solid #D8D9D9;
+}
+.project-desc ul{
+    width: 60%;
+}
+.project-desc ul li{
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D8D9D9;
+	overflow:hidden;
+ }
+.project-desc ul li:last-of-type{
+    border: none;
+}
+.project-desc ul li i:nth-of-type(1){
+    display: inline-block;
+    width: 70px;
+    font-size: 14px;
+    color: #717071;
+}
+.project-desc ul li i:nth-of-type(2){
+    font-size: 14px;
+    color: #000000;
+}
+.project-desc ul li i img{
+    width: 13px;
+    margin-left: 5px;
+}
+.project-desc ul li #wind{
+    color: #2DA7E0;
+}
+.project-desc ul li #forest{
+    color: #009F40;
+}
+.project-desc ul li #fire{
+    color: #D7000F;
+}
+.project-desc ul li #mount{
+    color: #717071;
+}
+.project-desc-details{
+    width: 40%;
+    font-size: 14px;
+    color: #78CBE0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+.project-desc-details img{
+    width: 8px;
+    height: 16px;
+    margin-left: 3px;
+}
+.project-btn,.project-btn1{
+    padding: 0 12px 3px 11px;
+    /* height: 41px; */
+    margin-top: 5px;
+    display: -webkit-flex;
+}
+.project-btn .project-btn-left{
+    width: 60%;
+    background: #DCDDDD;
+}
+.project-btn .project-btn-right{
+    width: 40%;
+    background: #E83228;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    color: #ffffff;
+}
+.project-btn .project-btn-left i{
+    display: block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 10px;
+}
+.project-btn .project-btn-left i:nth-of-type(2){
+    color: #E83228;
+}
+.project-btn1 span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #78CBE0;
+}

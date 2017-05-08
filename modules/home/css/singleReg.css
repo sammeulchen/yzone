@@ -1,0 +1,101 @@
+
+.view-grading-standards{
+    width: 100%;
+    height: 53px;
+    background: #F7F8F8;
+    padding: 0 10px;
+}
+.view-grading-standards .list .item{
+    border-left: 0;
+    border-right: 0;
+    height:53px;
+    background: #F7F8F8;
+    padding: 0;
+    padding-top:16px;
+}
+.view-grading-standards .list .item span{
+    display: block;
+    width: 100%;
+    height: 26px;
+    font-size: 14px;
+    color: #8DC21F;
+    border: 1px solid #8DC21F;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 26px;
+}
+.personal-information .list .item input{
+    display: inline-block;
+    width: 50%;
+    background: #F7F8F8;
+ }
+.registration-children{
+    width: 100%;
+    height: 38px;
+    padding: 7px 100px;
+ }
+.registration-children span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8DC21F;
+    text-align: center;
+    line-height: 23px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #8DC21F;
+}
+.statement{
+    width: 100%;
+    height: 47px;
+    background: #F7F8F8;
+    padding:15px 0 0 13px;
+}
+.statement span{
+    display:block;
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin-right:16px;
+    background: url("../../../img/gou.gif") no-repeat;
+    background-size: 19px 19px;
+}
+.statement span img {
+    width: 19px;
+    height: 19px;
+}
+.statement b{
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    width: 141px;
+    height: 19px;
+    line-height: 19px;
+    border-bottom:1px solid #8DC21F;
+}
+.pay{
+    width: 100%;
+    height: 56px;
+    background: #DCDDDD;
+}
+.pay .cost{
+    padding-top:10px;
+    padding-left:32px;
+    background: #DCDDDD;
+    float: left;
+}
+.pay .cost i,.pay .cost b{
+    font-weight: 500;
+}
+.pay .pay-btn{
+    width: 124px;
+    height: 56px;
+    background: #8DC21F;
+    text-align: center;
+    line-height: 56px;
+    font-size: 16px;
+    color: #ffffff;
+    float: right;
+}
+

@@ -1,0 +1,65 @@
+<ion-view ng-controller="clubGroupMatchCtrl">
+    <ion-content>
+        <div class="rounds-numbers">
+            <div class="rounds-number" ng-class="{changeBg:$index==roundNum}" ng-repeat="round in rounds" ng-click="getRound($index)">{{round.round}}</div>
+        </div>
+        <div class="round-grades">
+            <div class="round-grade" ng-repeat="gradeDetail in gradeDetails">
+                <div class="group-name">
+                    {{gradeDetail.parent}}
+                </div>
+                <div class="round-player1">
+                    <div class="round-single" ng-if="gradeDetail.category == 1">
+                        <img ng-if="gradeDetail.category == 1" ng-src="{{gradeDetail.player1.avatar}}">
+                        <span>{{gradeDetail.player1.playerName}}</span>
+                    </div>
+                    <div class="round-double"  ng-if="gradeDetail.category == 2">
+                        <span>
+                            <img ng-src="{{gradeDetail.player1.avatar1}}">
+                            <i>{{gradeDetail.player1.playerName1}}</i>
+                        </span>
+                        <span>
+                            <img ng-src="{{gradeDetail.player1.avatar2}}">
+                            <i>{{gradeDetail.player1.playerName2}}</i>
+                        </span>
+                    </div>
+                    <div class="round-player-group">
+                        {{gradeDetail.player1.position}}
+                    </div>
+                </div>
+                <div class="round-g1"  ng-show="gradeDetail.score.length > 0"  ng-click="toEntryScore(gradeDetail)">
+                    <div class="round-grade1">
+                        <p ng-repeat="score in gradeDetail.score">{{score.score}}</p>
+
+                    </div>
+                    <div class="total-grade">
+                        {{gradeDetail.totalScore}}
+                    </div>
+                </div>
+                <div class="round-g2" ng-show="gradeDetail.score.length == 0" ng-click="toEntryScore(gradeDetail)">
+                    点击录入比分
+                </div>
+                <div class="round-player1">
+                    <div class="round-single" ng-if="gradeDetail.category == 1">
+                        <img  ng-if="gradeDetail.category == 1" ng-src="{{gradeDetail.player2.avatar}}">
+                        <span>{{gradeDetail.player2.playerName}}</span>
+                    </div>
+                    <div class="round-double"  ng-if="gradeDetail.category == 2">
+                        <span>
+                            <img ng-src="{{gradeDetail.player2.avatar1}}">
+                            <i>{{gradeDetail.player2.playerName1}}</i>
+                        </span>
+                        <span>
+                            <img ng-src="{{gradeDetail.player2.avatar2}}">
+                            <i>{{gradeDetail.player2.playerName2}}</i>
+                        </span>
+                    </div>
+                    <div class="round-player-group">
+                        {{gradeDetail.player2.position}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="getRank1()">完成比分录入</div>
+</ion-view>

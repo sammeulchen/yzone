@@ -1,0 +1,30 @@
+<ion-view ng-controller="createGameCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <!--<div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>-->
+        <span>创建比赛</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="all-format">
+            <div class="single-format" ng-repeat="formatList in formatLists">
+                <div class="es-format" ng-click="toChoiceProject(formatList.id,formatList.descLink,formatList.name)">
+                    <div class="single-format-title">
+                        <h3>{{formatList.name}}</h3>
+                        <span class="know-format" ng-click="toFormat(formatList.descLink)">
+                            <img src="./img/game_club/format_game.png">
+                            <a>了解赛制</a>
+                        </span>
+                    </div>
+                    <div class="single-format-desc">
+                        {{formatList.description}}
+                    </div>
+                    <div class="format-next-page">
+                        <img src="./img/next-page.gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

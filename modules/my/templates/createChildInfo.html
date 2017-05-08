@@ -1,0 +1,68 @@
+<ion-view ng-controller="createChildInfoCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>新建儿童信息</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <ul class="change-child-info">
+            <li>
+                <span>头像</span>
+                <input type="file" id="fileElem" class="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                <div id="fileSelect" class="fileSelect">
+                    <img src="http://img.tianqutiyu.com/user_default_avatar.png"/>
+                </div>
+
+
+
+                <img src="img/next-page.gif"/>
+            </li>
+            <li>
+                <span>姓名</span>
+                <input type="text" ng-model="childInfo.realname" placeholder="请填写孩子的真实姓名">
+            </li>
+            <li>
+                <span>性别</span>
+                <span class="select-sex">
+                    <select ng-options="mySex.text for mySex in mySexs" ng-model="selectSex.sex" ng-change="changeSex()">
+                    </select>
+                </span>
+
+                <img src="img/next-page.gif"/>
+            </li>
+            <li class="birth">
+                <span class="birth1">生日</span>
+                <input id="date-selector-input" type="text" readonly/>
+                <img src="img/next-page.gif"/>
+            </li>
+            <div class="my-verify-card-nc">
+                <div class="list">
+                    <div class="item">
+                        <i>证件类型</i>
+                        <select ng-model="selectCode.code" ng-options="allCode.typeName for allCode in allCodes">
+                        </select>
+
+                        <input type="file" id="fileElem1" class="fileElem1" multiple style="display:none" onchange="angular.element(this).scope().handleFiles1(this.files)">
+                        <div id="fileSelect1" class="card-front">
+                            <img class="img1" src="img/front.gif"/>
+                            <p>上传证件照片</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item card-number">
+                        <i>证件号码</i>
+                        <input type="text" ng-model="selectCode.number" placeholder="请填写您孩子的真实证件">
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+    </ion-content>
+    <div class="create-cp-btn" ng-click="saveChildInfo()">
+        <span>保存</span>
+    </div>
+    <div id="targetContainer"></div>
+</ion-view>

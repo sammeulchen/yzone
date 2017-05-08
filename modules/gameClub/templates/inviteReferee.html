@@ -1,0 +1,74 @@
+<ion-view ng-controller="inviteRefereeCtrl">
+    <ion-content>
+        <div style="width: 100%;height:100%;position: absolute;background: #EFEFEF">
+            <div class="invite-bg">
+                <div class="invite-lt-bg">
+                    <img class="img1" src="img/home/game-dbg.png">
+                    <a href="{{homeUrl}}"><img class="img2" src="img/btn-home.gif"/></a>
+                </div>
+                <div class="invite-mi">
+                    <span>
+                        <img src="{{applyerInfo.avatar}}">
+                    </span>
+                    <span>
+                        {{applyerInfo.nickName}}
+                        <img ng-show="applyerInfo.gender == 1 && applyerInfo.age >=0" src="img/icon-boy.png"/>
+                        <img ng-show="applyerInfo.gender == 0 && applyerInfo.age >=0" src="img/icon-boy.png"/>
+                        <i ng-show="applyerInfo.age >=0">23</i>
+                    </span>
+                    <span class="wind" ng-show="applyerInfo.sLevel >= 1 && applyerInfo.sLevel <= 3">单打<img src="img/wind-white.gif"/></span>
+                    <span class="forest" ng-show="applyerInfo.sLevel >= 4 && applyerInfo.sLevel <= 6">单打<img src="img/forest-white.gif"/></span>
+                    <span class="fire" ng-show="applyerInfo.sLevel >= 7 && applyerInfo.sLevel <= 9">单打<img src="img/fire-white.gif"/></span>
+                    <span class="mount" ng-show="applyerInfo.sLevel >= 10 && applyerInfo.sLevel <= 12">单打<img src="img/mount-white.gif"/></span>
+                    <span class="wind" ng-show="applyerInfo.dLevel >= 1 && applyerInfo.dLevel <= 3">双打<img src="img/wind-white.gif"/></span>
+                    <span class="forest" ng-show="applyerInfo.dLevel >= 4 && applyerInfo.dLevel <= 6">双打<img src="img/forest-white.gif"/></span>
+                    <span class="fire" ng-show="applyerInfo.dLevel >= 7 && applyerInfo.dLevel <= 9">双打<img src="img/fire-white.gif"/></span>
+                    <span class="mount" ng-show="applyerInfo.dLevel >= 10 && applyerInfo.dLevel <= 12">双打<img src="img/mount-white.gif"/></span>
+                </div>
+            </div>
+
+            <div class="invite-tips1">
+                <div class="ii">
+                    <div class="tt"></div>
+                </div>
+            <span>
+                <img src="img/game_club/invite_referee.png">
+            </span>
+            </div>
+            <div class="game-lists game-lists-i">
+                <div class="game-list game-list-i" ng-click="toGroupDetails(compInfo.competitionId)">
+                    <div class="poster">
+                        <img src="{{compInfo.banner}}"/>
+                    </div>
+                    <div ng-if = "compInfo.status == 3" class="game-status">
+                        <img src="img/home/game_status3.png"/>
+                        <span>报名中</span>
+                    </div>
+                    <div ng-if = "compInfo.status == 1" class="game-status">
+                        <img src="img/home/game_status2.png"/>
+                        <span>进行中</span>
+                    </div>
+                    <div ng-if = "compInfo.status == 5" class="game-status">
+                        <img src="img/home/game_status1.png"/>
+                        <span>已结束</span>
+                    </div>
+                    <div class="game-desc game-desc-i">
+                        <h3>{{compInfo.title}}</h3>
+                        <p>比赛时间：{{compInfo.beginDate|date:'yyyy.MM.dd'}}-{{compInfo.endDate|date:'MM.dd'}}</p>
+                        <p>比赛项目：{{compInfo.projects}}</p>
+                        <p>比赛地点：{{applyerInfo.address}}</p>
+                        <!--<div ng-if = "compInfo.status == 3" class="game-status-btn">点击报名</div>-->
+                    </div>
+                    <div class="icon-grade icon-grade-i">
+                        <img src="img/home/icon_grade.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="kl_3 kl_3-i" style="height: 200px"></div>
+        </div>
+
+    </ion-content>
+    <a class="invite-accept" ng-click="toReg()">
+        接受邀请
+    </a>
+</ion-view>

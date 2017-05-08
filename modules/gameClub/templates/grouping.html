@@ -1,0 +1,32 @@
+<ion-view ng-controller="groupingCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>分组</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="grouping-list">
+            <span>报名数</span>
+            <span class="grouping-list-s">{{applyCount}}</span>
+        </div>
+        <div class="kl_4"></div>
+        <div class="grouping-list">
+            <span>计划组数</span>
+            <span class="grouping-list-s">
+                <i ng-click="reduceCount()">-</i>
+                <input type="number" ng-model="promotion.count" value="0">
+                <i ng-click="addCount()">+</i>
+            </span>
+        </div>
+        <div class="kl_4"></div>
+        <div class="grouping-list">
+            <span>每组晋级数</span>
+            <span class="grouping-list-s">
+                <b ng-repeat="count in counts" ng-class="{changeBg1:$index==countNum}" ng-click="getCount($index)">{{count.text}}</b>
+            </span>
+        </div>
+        <div class="kl_4"></div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="submitGroupCount()">下一步</div>
+</ion-view>

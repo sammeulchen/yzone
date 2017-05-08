@@ -1,0 +1,201 @@
+.game-basic{
+    width: 100%;
+}
+input[readonly]:not(.cloned-text-input){
+    background:#FFFFFF;
+}
+.game-basic li {
+    padding: 10px 12px 10px 16px;
+    height: 42px;
+    border-bottom: 1px solid #E2E2E1;
+    font-size: 15px;
+    position: relative;
+}
+.game-basic li:last-of-type{
+    border: none;
+}
+.game-basic li span:nth-of-type(1){
+    display: block;
+    float: left;
+    width: 100px;
+    height: 22px;
+    border-right: 1px solid #E2E2E1;
+    font-size: 15px;
+    color: #717071;
+    margin-right: 10px;
+}
+.game-basic li input{
+    display: inline-block;
+    width: 60%;
+    font-size: 15px;
+    height: 22px;
+    color: #000000;
+}
+.game-basic li .reg-fee{
+    width: 52px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+.game-basic li span:nth-of-type(2){
+    display: inline-block;
+    color: #000000;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.game-basic li img{
+    width:9px;
+    height:16px;
+    position: absolute;
+    top:12px;
+    right:10px;
+}
+.bg_2{
+    width: 100%;
+    height: 3px;
+    background: #79CAE0;
+}
+.release-list{
+    width: 100%;
+    padding: 10px 12px 10px 16px;
+    border-bottom: 1px solid #E2E2E1;
+    font-size: 15px;
+    position: relative;
+}
+.release-list span:nth-of-type(1){
+    display: block;
+    width: 100px;
+    height: 22px;
+    font-size: 15px;
+    color: #717071;
+}
+.release-list i{
+    font-weight: 500;
+    display: inline-block;
+    width: 75px;
+    height: 22px;
+    color: #ffffff;
+    background: #B5B6B6;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    position: absolute;
+    top: 8px;
+}
+.release-list i:nth-of-type(1){
+    right: 89px;
+}
+.release-list i:nth-of-type(2){
+    right: 14px;
+}
+.release-list .changeBg{
+    background: #79CAE0;
+}
+.release-list .changeBg1{
+    background: #79CAE0;
+}
+.release-list .allow-details{
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+    border: 1px solid #7C7C7C;
+    resize: none;
+    font-size: 14px;
+    padding: 5px;
+}
+.release-list p{
+    margin: 0;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #79CAE0;
+}
+.release-list1 span:nth-of-type(1){
+    width:100%;
+}
+.release-list1 span:nth-of-type(1) b{
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #b5b6b6;
+}
+.release-list1 img{
+    width:9px;
+    height:16px;
+    position: absolute;
+    top:12px;
+    right:10px;
+}
+.game-basic li .item{
+    width:150px;
+    padding: 0;
+    border:none;
+    color: #000000;
+}
+.game-basic li .list{
+    margin-bottom: 0;
+}
+.game-basic li .item span{
+    border:none;
+
+}
+#beginTime,#endTime,#applyEndTime{
+    color: #000000;
+}
+.project-detais-desc{
+    width:100%;
+    height:43px;
+    padding:9px 0 9px 18px;
+    position: relative;
+}
+.project-detais-desc span:nth-of-type(1){
+    display: block;
+    height:25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #717071;
+    border-right:1px solid #E2E2E1;
+    padding-right: 3px;
+    margin-right: 5px;
+    float: left;
+}
+.project-detais-desc span:nth-of-type(2){
+    display: block;
+    height:25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #000000;
+    margin-right: 8px;
+    float: left;
+}
+.project-detais-desc span:nth-of-type(3){
+    display: block;
+    height:25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #000000;
+    float: left;
+}
+.project-detais-desc img{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/*************比赛其他信息css***********/
+.other-info{
+    padding:10px 12px 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.other-info textarea{
+    width:100%;
+    height:90%;
+    border:1px solid #000000;
+    padding:8px;
+    resize: none;
+    overflow-y:visible;
+}

@@ -1,0 +1,90 @@
+<ion-view ng-controller="userRegCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>填写报名信息</span>
+        <a href="{{homeUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div ng-if="members.singleLevel != -1 && members.doubleLevel != -1">
+            <ul class="list user-info">
+                <li class="item item-icon-left name">
+                    <img src="img/home/name.png"/>
+                    <i>姓名</i>
+                    <input type="text" placeholder="请输入真实姓名" ng-model = 'members.realname'>
+                </li>
+                <li class="item item-icon-left sex">
+                    <img src="img/home/sex.png"/>
+                    <i>性别</i>
+                    <select ng-model="selectSex.sex" ng-options="sex.text for sex in sexs" ng-change = changeSex()>
+                    </select>
+
+                </li>
+            </ul>
+            <div class="list verify-card" ng-show="members.credentialReuire != ''">
+                <div class="item item-icon-left code-type">
+                    <img src="img/home/code_type.png"/>
+                    <i>证件类型</i>
+                    <select ng-model="selectCode.code" ng-options="code.TypeName for code in codes" ng-change = changeCode()>
+                    </select>
+                    <input type="file" id="fileElem" multiple style="display:none" onchange="angular.element(this).scope().handleFiles(this.files)">
+                    <div id="fileSelect" class="card-front" ng-show="needPhotoNumber == 2">
+                        <img class="obj" ng-show="userCredentialInfo.pictureUrl != null" ng-src="{{userCredentialInfo.pictureUrl}}"/>
+                        <span ng-show="picUPLoad" style="display:inline-block;width: 100%;height: 55px;line-height: 55px;color: #ffffff;font-size: 12px;">照片上传较慢，请耐心等待</span>
+                        <div ng-show="userCredentialInfo.pictureUrl == null">
+                            <img id="img" src="img/front-card.png"/>
+                            <p>上传证件正面照片</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="list verify-card" ng-show="members.credentialReuire != ''">
+                <div class="item item-icon-left card-number">
+                    <img src="img/home/code_number.png"/>
+                    <i>证件号码</i>
+                    <input type="text" ng-model="userCredentialInfo.number" placeholder="请如实填写证件信息">
+                </div>
+            </div>
+            <ul class="list user-info" ng-show="members.mobile == null || members.mobile == ''">
+                <li class="item item-icon-left telephone">
+                    <img src="img/home/telephone.png"/>
+                    <i>联系电话</i>
+                    <input type="text" placeholder="请输入手机号码" ng-model = 'user.mobile'>
+                    <button ng-click="sendCode(reg_phone)" ng-class="paraclass" ng-bind="paracont" ng-disabled = "getCode">发送验证码</button>
+                </li>
+                <li class="item item-icon-left code">
+                    <img src="img/home/auth_code.png"/>
+                    <i>验证码</i>
+                    <input type="text" placeholder="请输入验证码" ng-model = 'members.indCode'/>
+                </li>
+            </ul>
+            <ul class="list user-info" ng-show="members.mobile != null && members.mobile != ''">
+                <li class="item item-icon-left telephone">
+                    <img src="img/home/telephone.png"/>
+                    <i>联系电话</i>
+                    <span>{{members.mobile}}</span>
+                    <button ng-click="changeMobile()" class="send-code">更换号码</button>
+                </li>
+            </ul>
+
+
+           <!-- <div class="kl_4"></div>-->
+            <!--<div class="child-reg">
+                <span>给儿童报名</span>
+            </div>-->
+        </div>
+        <div style="padding: 30px 10px " ng-if="members.singleLevel == -1 || members.doubleLevel == -1">
+            <button class="button button-block button-positive" ng-click="toOwnRanking1()" ng-show="members.singleLevel == -1">
+                设置单打等级
+            </button>
+            <button class="button button-block button-positive"  ng-click="toOwnRanking2()" ng-show="members.doubleLevel == -1">
+                设置双打等级
+            </button>
+        </div>
+
+    </ion-content>
+    <div ng-show="order == null && members.singleLevel != -1 && members.doubleLevel != -1" class="next-page-btn" ng-click="toRegNext(competitionId,needPhotoNumber,members.mobile,members.singleLevel,members.doubleLevel)">下一步</div>
+    <div ng-show="order != null && members.singleLevel != -1 && members.doubleLevel != -1" class="next-page-btn" ng-click="toRegNext(competitionId,needPhotoNumber,members.mobile,members.singleLevel,members.doubleLevel)">完成</div>
+</ion-view>

@@ -1,0 +1,125 @@
+
+.tabs-top > .tabs, .tabs.tabs-top{
+    height: 49px;
+    padding-top:12px;
+    background: #EEEFEF;
+}
+.tabs-top .tabs a{
+    height: 19px;
+    line-height: 19px;
+    border-right: 1px solid #C9C9CA;
+}
+.tabs-top .tabs a:last-of-type{
+    border: none;
+}
+.tabs-top .tab-item .tab-title{
+    font-size: 16px;
+    /*color: #5D5E5D;*/
+
+}
+.tabs-top .tabs a span{
+    display: inline-block;
+    /*width: 70px;*/
+    height: 25px;
+}
+.tabs-top .tab-item  i.icon{
+    width: 0;
+    height: 0;
+}
+.isReg ~ .tab-title{
+    color: #79CAE0;
+    border-bottom: 3px solid #79CAE0;
+}
+.isPlaying ~ .tab-title{
+    color: #79CAE0;
+    border-bottom: 3px solid #79CAE0;
+}
+.isEnd ~ .tab-title{
+    color: #79CAE0;
+    border-bottom: 3px solid #79CAE0;
+}
+
+.game-lists-my{
+    width: 100%;
+    padding: 0 4px 10px;
+    background: #DCDDDD;
+}
+.game-list-my{
+    width: 100%;
+    padding-top: 9px;
+    position: relative;
+}
+.poster-my img{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.game-status-my{
+    width: 21px;
+    height: 46px;
+    position: absolute;
+    top: 7px;
+    right: 14px;
+}
+.game-status-my img{
+    width: 21px;
+    height: 51px;
+}
+.game-status-my span{
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 40px;
+    line-height: 13px;
+}
+.game-desc-my{
+    width: 100%;
+    background: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.game-desc-my h3{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 20px 16px 0;
+    margin: 0;
+    text-align: center;
+}
+.game-desc-my p{
+    font-size: 12px;
+    color: #717071;
+    margin: 0;
+}
+.game-status-btn-my{
+    font-size: 14px;
+    color: #ffffff;
+    width: 105px;
+    height: 18px;
+    background: #78CBE0;
+    position: absolute;
+    bottom: 30px;
+    right: 12px;
+    text-align: center;
+    line-height: 18px;
+}
+.project-my{
+    width: 100%;
+    padding:5px 20px;
+    background: #ffffff;
+    border-top: 3px dotted #DCDDDD;
+}
+.project-my p{
+    margin: 0;
+    font-size: 12px;
+    color: #79CAE0;
+}
+.no-game{
+    width: 100%;
+    font-size: 18px;
+    color: #727171;
+    padding-top: 30px;
+    text-align: center;
+}

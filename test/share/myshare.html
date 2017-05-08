@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>你能打赢我吗？</title>
+    <script src="../../lib/ionic/js/angular/angular.min.js"></script>
+    <script src="myShareCtrl.js"></script>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .poster{
+            width: 100%;
+            height: 120px;
+        }
+        .title{
+           /* height: 80px;*/
+            padding: 0 20px;
+            position: relative;
+        }
+        .title img{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .title h3{
+            font-size: 26px;
+            height: 80px;
+            line-height: 80px;
+            margin: 0;
+            margin-left: 80px;
+            overflow: hidden;
+        }
+        .selected-btn{
+            width: 100%;
+            height: 60px;
+            padding-top: 10px;
+            display: -webkit-flex;
+            -webkit-justify-content: space-between;
+        }
+        .selected-btn span{
+            display: inline-block;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            border: 1px solid #999999;
+            border-radius: 5px;
+        }
+        .count{
+            font-size: 16px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .rank-desc{
+            padding: 20px 20px 30px;
+        }
+
+        .my-rank{
+            height: 60px;
+            padding: 0 20px;
+            position: relative;
+        }
+        .my-rank i{
+            font-style: normal;
+            font-size: 16px;
+            display: inline-block;
+            width: 30px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .my-rank img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+        .friend-rank{
+            margin: 0;
+            padding: 0;
+        }
+        .friend-rank li{
+            list-style: none;
+            height: 60px;
+            padding: 0 20px;
+            border-bottom: 1px solid #D8D9D9;
+            position: relative;
+        }
+        .friend-rank li i{
+            font-style: normal;
+            font-size: 16px;
+            display: inline-block;
+            width: 30px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .friend-rank li img{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+    </style>
+
+</head>
+<body ng-app="share" ng-controller="shareCtrl">
+    <div class="poster"></div>
+    <div ng-show="currentShow">
+        <div class="title">
+            <img src="../../img/all-mh.gif"/>
+            <h3>你能打赢我吗？</h3>
+            <div class="selected-btn">
+                <span ng-show="btnShow" ng-repeat="item in status" ng-click="getRank(item.id)">{{item.text}}</span>
+                <div ng-show="getRankShow" style="width: 100%;height: 40px;background: #e4e5e7;text-align: center;line-height: 40px">正在计算排名...</div>
+                <div ng-show="rankShow" style="display: -webkit-flex;-webkit-justify-content: space-between;width: 100%">
+                    <i style="font-style: normal;height: 40px;line-height: 40px;text-align: center">他二大爷</i>
+                    <i style="font-style: normal;height: 40px;line-height: 40px;text-align: center">羽王星排名</i>
+                    <i style="font-style: normal;height: 40px;line-height: 40px;text-align: center;">1000名/12312</i>
+                </div>
+            </div>
+
+        </div>
+        <div style="width: 100%;height: 5px;background: #e4e5e7"></div>
+        <div class="count">
+            当前参与总人数：12312人
+        </div>
+
+
+
+        <div style="width: 100%;height: 5px;background: #e4e5e7"></div>
+        <div>
+            <div style="width: 100%;height: 30px;line-height: 30px;font-size: 16px;text-align: center;margin-bottom: 10px">羽王星总排名榜</div>
+            <div style="width:50%;border-right: 1px dashed #D8D9D9;display: inline-block">
+                <div style="width: 100%;height: 30px;line-height: 30px;margin-bottom: 10px" ng-repeat="rankList in rankLists" ng-show="$index < 4">
+                    <span style="display:inline-block;width:15px;height: 30px;line-height: 30px;margin-left: 20px;overflow: hidden;font-size: 16px">{{rankList.rank}}</span>
+                    <img style="width: 30px;height: 30px" ng-src="{{rankList.avatar}}"/>
+                    <span style="display:inline-block;height: 30px;line-height: 30px;margin-left: 5px;overflow: hidden;font-size: 16px">{{rankList.nickname}}</span>
+                </div>
+            </div>
+            <div style="margin-bottom: 5px;display: inline-block">
+                <div style="width: 100%;height: 30px;line-height: 30px;margin-bottom: 10px" ng-repeat="rankList in rankLists" ng-show="$index >=4">
+                    <span style="display:inline-block;width:15px;height: 30px;line-height: 30px;margin-left: 20px;overflow: hidden;font-size: 16px">{{rankList.rank}}</span>
+                    <img style="width: 30px;height: 30px" ng-src="{{rankList.avatar}}"/>
+                    <span style="display:inline-block;height: 30px;line-height: 30px;margin-left: 5px;overflow: hidden;font-size: 16px">{{rankList.nickname}}</span>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;height: 5px;background: #e4e5e7"></div>
+
+
+
+
+        <div class="rank-desc">
+            [羽王星]排名是通过好友间胜负关系大数据推算得出，赞誉的人数越多，排名越准确。
+        </div>
+        <div style="padding: 0 40px">
+            <button style="width: 100%;height: 40px;border: none;background: #169BD5;border-radius: 10px;font-size: 15px;color: #ffffff" ng-click="shareTo()">
+                分享给好友，获得你的排名
+            </button>
+        </div>
+    </div>
+    <div ng-show="targetShow">
+        <div class="my-rank">
+            <i>{{userInfo.rank}}</i>
+            <img ng-src="{{userInfo.avatar}}"/>
+            <span style="height: 60px;line-height: 60px;font-size: 16px;margin-left: 50px">{{userInfo.nickname}}</span>
+            <span style="width: 80px;height: 30px;position: absolute;right: 110px;top: 0;font-size: 14px;color: #717071;text-align: center">羽王星排名</span>
+            <span style="width: 80px;height: 30px;line-height: 30px;position: absolute;right: 20px;top: 0;font-size: 16px;text-align: right">{{userInfo.totalRank}}</span>
+
+        </div>
+        <div style="width: 100%;height: 5px;background: #e4e5e7"></div>
+        <ul class="friend-rank">
+            <li ng-repeat="list in lists" ng-show="list.openid != userInfo.openid">
+                <i>{{$index+1}}</i>
+                <img ng-src="{{list.avatar}}"/>
+                <span style="height: 60px;line-height: 60px;font-size: 16px;margin-left: 50px">{{list.nickname}}</span>
+                <img ng-show="list.gender == 0" src="http://img.tianqutiyu.com/2017/c6cdc68491bf4cad9a079b80150f9076.png"/>
+                <img ng-show="list.gender == 0" src="http://img.tianqutiyu.com/2017/2cec8a1dd7644adb98fdaa37d3c6a1d8.png"/>
+                <span style="width: 80px;height: 60px;line-height: 60px;position: absolute;right: 20px;top: 0;font-size: 16px;text-align: right">{{list.totalRank}}</span>
+            </li>
+        </ul>
+    </div>
+    <div ng-show="shareShow" ng-click="cancelShare()" class="share" style="width:100%;height: 100%;position: absolute;top: 0;left:0;background:#000000;opacity: 0.6;z-index: 100;">
+        <span style="font-size: 20px;color: #ffffff;display: block;height: 50px;margin-top: 100px;padding:0 20px">快转发给你的好友吧，看看你们谁最厉害</span>
+    </div>
+    <input type="hidden"  id="current" value="${user.openId}"/>
+    <input type="hidden"  id="target" value="${targetUser.openId}"/>
+</body>
+</html>

@@ -1,0 +1,232 @@
+input[readonly]:not(.cloned-text-input){
+    background:#FFFFFF;
+}
+.change-personal-info{
+    width: 100%;
+    padding: 0 10px;
+}
+.change-personal-info li{
+    width: 100%;
+    height: 49px;
+    border-bottom: 1px solid #C1C1C0;
+    position: relative;
+}
+.change-personal-info .pe-fist{
+    height: 96px;
+}
+.change-personal-info li:last-of-type{
+    border: none;
+}
+.change-personal-info li span{
+    display: block;
+    width: 64px;
+    height: 49px;
+    line-height: 49px;
+    margin-left: 6px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #727171;
+    overflow: hidden;
+    float: left;
+}
+.change-personal-info li span:nth-of-type(2){
+    display: block;
+    height: 49px;
+    width: 70%;
+    line-height: 49px;
+    margin-left: 0;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #000000;
+    overflow: hidden;
+    float: left;
+}
+.onezone-content{
+    display: inline-block;
+    width: 100%;
+    /* margin-left: 90px;*/
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: 50;
+}
+.show-onezone-datepicker{
+    margin-left: 75px;
+}
+.onezone-datepicker-modal-content .slider{
+    height: 150px;
+}
+.onezone-datepicker-modal-content .slider .slider-slides{
+    height: 150px;
+}
+.change-personal-info .pe-fist span{
+    height: 96px;
+    line-height: 96px;
+}
+.change-personal-info li img{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 6px;
+}
+.fileElem{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 18px;
+    right: 40px;
+}
+.fileSelect{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 18px;
+    right: 40px;
+}
+.preview{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 18px;
+    right: 40px;
+}
+.change-personal-info .pe-fist img:nth-of-type(1){
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 40px;
+    right: 6px;
+}
+.change-personal-info .pe-fist .fileSelect img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.change-personal-info .pe-fist .preview img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.change-personal-info li input{
+    display: inline-block;
+    width: 75%;
+    font-size: 16px;
+    position: absolute;
+    top: 7px;
+}
+.change-personal-info li:nth-of-type(4) .select-sex{
+    display: inline-block;
+    width: 40%;
+    height: 49px;
+    margin: 0;
+    margin-left: -7px;
+    overflow: hidden;
+}
+.change-personal-info li:nth-of-type(4) .select-sex select{
+    width: 120%;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+}
+.change-personal-info .my-projects .projects{
+    display: inline-block;
+    width: 58px;
+    height: 28px;
+    background: #B4B3B4;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+.change-personal-info .my-projects .changeCode{
+    background: #89B929;
+}
+.privacy-title{
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 18px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(to right,#79CAE0,#ffffff);
+}
+.change-personal-info .birth span:nth-of-type(2){
+    color: #000000;
+    margin: 0;
+    width: 50%;
+}
+.my-code{
+    width: 100%;
+    height: 49px;
+
+}
+.my-code .my-code-details{
+    width: 100%;
+    height: 49px;
+    position: relative;
+}
+.my-code .my-code-details span:nth-of-type(1){
+    display: inline-block;
+    width: 64px;
+    height: 49px;
+    line-height: 49px;
+    margin-left: 6px;
+    font-size: 16px;
+    color: #727171;
+    overflow: hidden;
+}
+.my-code .my-code-details i{
+    display: inline-block;
+    height: 49px;
+    overflow: hidden;
+    line-height: 49px;
+}
+.my-code .my-code-details img{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 6px;
+}
+
+.save-my-info{
+    width: 100%;
+    height: 80px;
+    padding: 30px 10px 0;
+}
+.save-my-info span{
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    background: #8DC21F;
+    text-align: center;
+    line-height: 46px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+

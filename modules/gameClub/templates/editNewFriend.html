@@ -1,0 +1,53 @@
+<ion-view ng-controller="editNewFriendCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>填写球友信息</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="tips-content">手动添加的运动员无法获得积分、现场随手礼等奖励。并不能保存到您的好友列表中。建议转发比赛链接，请运动员自主报名。</div>
+        <ul class="list user-info1">
+            <li class="item item-icon-left name">
+                <img class="img-icon" src="img/home/name.png"/>
+                <i>姓名</i>
+                <input type="text" placeholder="请输入真实姓名" ng-model = 'userInfo.realname'>
+            </li>
+            <li class="item item-icon-left sex">
+                <img class="img-icon" src="img/home/sex.png"/>
+                <i>性别</i>
+                <div data-tap-disabled="true" style="display: inline-block;width: 100%">
+                    <select ng-model="selectSex.sex" ng-options="sex.text for sex in sexs" ng-change = changeSex()>
+                    </select>
+                </div>
+            </li>
+            <li class="item item-icon-left">
+                <img class="img-icon" src="img/home/telephone.png"/>
+                <i>联系电话</i>
+                <input type="text" placeholder="请输入手机号码" ng-model = 'userInfo.mobile'>
+            </li>
+            <li class="item item-icon-left" ng-click="toOwnRanking1()">
+                <img class="img-icon" src="img/game_club/single.png"/>
+                <i>单打等级</i>
+                <span ng-if="singleLevel == 1">风级</span>
+                <span ng-if="singleLevel == 4">林级</span>
+                <span ng-if="singleLevel == 7">火级</span>
+                <span ng-if="singleLevel == 10">山级</span>
+                <span  ng-if="singleLevel == null" class="no-setting">未设置</span>
+                <img  class="next-p" src="img/next-page.gif">
+            </li>
+            <li class="item item-icon-left" ng-click="toOwnRanking2()">
+                <img class="img-icon" src="img/game_club/double.png"/>
+                <i>双打等级</i>
+                <span ng-if="doubleLevel == 1">风级</span>
+                <span ng-if="doubleLevel == 4">林级</span>
+                <span ng-if="doubleLevel == 7">火级</span>
+                <span ng-if="doubleLevel == 10">山级</span>
+                <span ng-if="doubleLevel == null" class="no-setting">未设置</span>
+                <img class="next-p" src="img/next-page.gif">
+            </li>
+        </ul>
+
+    </ion-content>
+    <div class="choice-project-btn" ng-click="submitUserInfo()">完成</div>
+</ion-view>

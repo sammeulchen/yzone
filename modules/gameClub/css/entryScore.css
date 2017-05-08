@@ -1,0 +1,117 @@
+.player-join-title{
+    width: 100%;
+    height: 38px;
+    background: #DCDDDD;
+    display: -webkit-flex;
+}
+.player-join{
+    display: inline-block;
+    width: 45%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #000000;
+    padding: 0 13px;
+}
+.vs{
+    width: 10%;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+    display: -webkit-flex;
+    -webkit-justify-content:center;
+    -webkit-align-items:center;
+}
+.vs span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ffffff;
+    text-align: center;
+    font-size: 19px;
+}
+.player-join i{
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.player-join .player-name{
+    display: inline-block;
+    width: 33%;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.player-join span{
+    display: inline-block;
+    width: 70%;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.player-join-last{
+    text-align: right;
+}
+.entry-score{
+    padding: 21px 32px 8px;
+    border-bottom: 1px solid #B5B6B6;
+}
+.entry-total-score{
+    padding: 21px 32px 8px;
+}
+.entry-score-part{
+    width: 100%;
+    display: -webkit-flex;
+}
+.entry-score-l,.entry-score-r{
+    width: 35%;
+}
+.entry-score-l{
+    padding-right: 20px;
+}
+.entry-score-r{
+    padding-left: 20px;
+}
+.entry-score-l input,.entry-score-r input{
+    width: 100%;
+    height: 24px;
+    border: 1px solid #727171;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.entry-score-c{
+    width: 30%;
+    border-left: 1px solid #79CAE0;
+    border-right: 1px solid #79CAE0;
+}
+.entry-total-score-c{
+    width: 30%;
+}
+.entry-total-score-c{
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #79CAE0;
+    font-size: 14px;
+    text-align: center;
+}
+.entry-score-c span{
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #79CAE0;
+    font-size: 14px;
+    text-align: center;
+}

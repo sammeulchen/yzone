@@ -1,0 +1,29 @@
+<ion-view ng-controller="groupSettingGroupCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>分组及项目详情设置</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="add-group">
+            <div class="group-input-box">
+                <span>组一</span>
+                <input type="text" placeholder="组别名称">
+                <input type="text" placeholder="组别描述">
+            </div>
+            <div class="select-item" ng-click="toEventsGradeGroup()">
+                <span>选择项目</span>
+                <i></i>
+            </div>
+        </div>
+        <div class="sure-btn">
+            <button class="button button-block button-positive">
+                确定
+            </button>
+        </div>
+
+    </ion-content>
+
+</ion-view>

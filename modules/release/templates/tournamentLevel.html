@@ -1,0 +1,27 @@
+<ion-view ng-controller="tournamentLevelCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>赛事级别</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="tournament-level-tips">为了公平计算参赛者积分，请正确选择赛事级别</div>
+        <ul class="level-description">
+            <li>
+                <img src="img/icon-levelone.png"/>
+                <span>羽众一级</span>
+                <span>跨省（直辖市）级的赛事</span>
+            </li>
+            <li>
+                <img src="img/icon-levelone.png"/>
+                <span>羽众一级</span>
+                <span>俱乐部级别赛事（单项参赛人数在16人及以上）</span>
+            </li>
+        </ul>
+    </ion-content>
+    <div class="rules-details-btn">
+        <span>确定</span>
+    </div>
+</ion-view>

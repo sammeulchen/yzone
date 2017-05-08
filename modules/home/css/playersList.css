@@ -1,0 +1,107 @@
+.scroll{
+    width: 100%;
+    min-height: 100%;
+    background: #F7F8F7;
+}
+.players-lists{
+    width: 100%;
+    padding:0 12px;
+}
+.players-lists li{
+    width: 100%;
+    height: 91px;
+    display: -webkit-flex;
+    border-bottom: 1px solid #DCDCDC;
+    position: relative;
+}
+.players-lists li span:nth-of-type(1){
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.players-lists li span:nth-of-type(1) img{
+    width: 100%;
+    height: 100%;
+}
+.players-lists li span:nth-of-type(2){
+    height: 91px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 70px;
+    line-height: 91px;
+}
+.players-lists li div{
+    width: 50%;
+    position: relative;
+}
+
+.players-lists1 .players-list1{
+    background: linear-gradient(to right,#79CAE0,#ffffff);
+    padding-bottom: 5px;
+}
+.players-lists1 ul{
+    width: 100%;
+    background: #F7F8F7;
+    padding: 0 12px;
+}
+.my-gg-details li{
+    border-bottom: 1px solid #DCDCDC;
+    background: #F7F8F7;
+}
+.my-gg-details li:nth-of-type(1){
+    height: 90px;
+    position: relative;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(1){
+    display: inline-block;
+    width: 60px;
+    height: 90px;
+
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(1) img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    border-radius: 100%;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2){
+    display: inline-block;
+    height: 90px;
+    margin-left: 10px;
+    /*overflow: hidden;
+    padding-top:25px;*/
+    position: absolute;
+    top: 25px;
+}
+.my-gg-details li:nth-of-type(1) span:nth-of-type(2) i{
+    display: block;
+    font-size: 16px;
+    color: #727171;
+    height: 25px;
+    overflow: hidden;
+    line-height: 25px;
+}
+.my-gg-details .team-name{
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #727171;
+}
+.my-gg-details .team-name img{
+    width: 9px;
+    height: 20px;
+    position: absolute;
+    right: 6px;
+    top: 16px;
+}
+.my-gg-details .team-name span:nth-of-type(2){
+    color: #000000;
+    margin-left: 10px;
+}

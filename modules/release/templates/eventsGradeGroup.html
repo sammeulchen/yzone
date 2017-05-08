@@ -1,0 +1,108 @@
+<ion-view ng-controller="eventsGradeGroupCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>项目及等级设定（多选）</span>
+        <a href="#/home"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="scaleGroup">
+            <div class="wind-scaleGroup">
+                <div class="scale-title wind-scale-title">
+                    <i></i>
+                    <span>风级</span>
+                    <b></b>
+                </div>
+                <div class="scale-events-group">
+                    <div class="scale-events-group">
+                        <div class="scale-events-list" ng-repeat="scaleEventsList in scaleEventsLists">
+                            <ion-checkbox>
+                                {{scaleEventsList.name}}
+                            </ion-checkbox>
+                            <b ng-click="toEventsDetailsGroupMan(scaleEventsList.id)">设置项目详情</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scaleGroup">
+            <div class="wind-scaleGroup">
+                <div class="scale-title forest-scale-title">
+                    <i></i>
+                    <span>林级</span>
+                    <b></b>
+                </div>
+                <div class="scale-events-group">
+                    <div class="scale-events-list" ng-repeat="scaleEventsList in scaleEventsLists">
+                        <ion-checkbox>
+                            {{scaleEventsList.name}}
+                        </ion-checkbox>
+                        <b ng-click="toEventsDetailsGroupMan(scaleEventsList.id)">设置项目详情</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scaleGroup">
+            <div class="wind-scaleGroup">
+                <div class="scale-title fire-scale-title">
+                    <i></i>
+                    <span>火级</span>
+                    <b></b>
+                </div>
+                <div class="scale-events-group">
+                    <div class="scale-events-list" ng-repeat="scaleEventsList in scaleEventsLists">
+                        <ion-checkbox>
+                            {{scaleEventsList.name}}
+                        </ion-checkbox>
+                        <b ng-click="toEventsDetailsGroupMan(scaleEventsList.id)">设置项目详情</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scaleGroup">
+            <div class="wind-scaleGroup">
+                <div class="scale-title mount-scale-title">
+                    <i></i>
+                    <span>山级</span>
+                    <b></b>
+                </div>
+                <div class="scale-events-group">
+                    <div class="scale-events-list" ng-repeat="scaleEventsList in scaleEventsLists">
+                        <ion-checkbox>
+                            {{scaleEventsList.name}}
+                        </ion-checkbox>
+                        <b ng-click="toEventsDetailsGroupMan(scaleEventsList.id)">设置项目详情</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="scaleGroup">
+            <div class="wind-scaleGroup">
+                <div class="scale-title none-scale-title">
+                    <i></i>
+                    <span>无级</span>
+                </div>
+                <div class="scale-events-group">
+                    <div class="scale-events-list" ng-repeat="scaleEventsList in scaleEventsLists">
+                        <ion-checkbox>
+                            {{scaleEventsList.name}}
+                        </ion-checkbox>
+                        <b ng-click="toEventsDetailsGroupMan(scaleEventsList.id)">设置项目详情</b>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="sure-bottom">
+            <button class="btn-sure">
+                确定
+            </button>
+        </div>
+
+    </ion-content>
+</ion-view>

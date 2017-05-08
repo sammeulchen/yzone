@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <input type="file" id="fileElem" multiple style="display:none" onchange="handleFiles(this.files)">
+    <a href="#" id="fileSelect">Select some files</a>
+    <div id="preview"></div>
+<script>
+    var fileSelect = document.getElementById("fileSelect"),
+            fileElem = document.getElementById("fileElem");
+            preview = document.getElementById("preview")
+
+    fileSelect.addEventListener("click", function (e) {
+        if (fileElem) {
+            fileElem.click();
+        }
+        e.preventDefault(); // prevent navigation to "#"
+    }, false);
+
+    function handleFiles(files) {
+        console.log(files)
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var imageType = /^image\//;
+
+            if (!imageType.test(file.type)) {
+                continue;
+            }
+            var img = document.createElement("img");
+            img.classList.add("obj");
+            img.file = file;
+            // 假设 "preview" 是将要展示图片的 div
+            preview.appendChild(img);
+
+            var reader = new FileReader();
+            reader.onload = (function (aImg) {
+                return function (e) {
+                    aImg.src = e.target.result;
+                };
+            })(img);
+            reader.readAsDataURL(file);
+
+
+
+            // postFile()
+            //1.创建异步对象（小浏览器）
+
+
+            var fd = new FormData();
+            var req = new XMLHttpRequest();
+            fd.append('file', files[0]);
+
+            //2.设置参数
+            req.open("post", "http://192.168.4.64/api/upload", true);
+
+            //3.设置 请求 报文体 的 编码格式（设置为 表单默认编码格式）
+            // req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            // req.setRequestHeader("")
+            //4.设置回调函数
+            req.onreadystatechange = function () {
+                //请求状态readyState=4准备就绪,服务器返回的状态码status=200接收成功
+                if (req.readyState == 4 && req.status == 200) {
+                    console.log(req.responseText)
+                }
+            };
+
+            //4.发送异步请求
+            console.log(fd)
+            req.send(fd);
+
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html> 

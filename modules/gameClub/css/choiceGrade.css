@@ -1,0 +1,117 @@
+.set-person-count{
+    height: 46px;
+    line-height: 46px;
+    padding: 0 13px 0 21px;
+    position: relative;
+}
+.set-person-count span:nth-of-type(1){
+    font-size: 16px;
+    color: #000000;
+}
+.set-person-count span:nth-of-type(2){
+    display: block;
+    height: 20px;
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    top: 13px;
+    right:13px;
+}
+.set-person-count span:nth-of-type(2) input{
+    display: block;
+    width: 40px;
+    height: 19px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #DCDDDD;
+    float: left;
+}
+.set-person-count span:nth-of-type(2) i{
+    display: block;
+    width: 30px;
+    height: 19px;
+    text-align: center;
+    background: #DCDDDD;
+    float: left;
+    line-height: 19px;
+}
+.set-grade{
+    padding: 0 13px 0 21px;
+}
+.set-grade-title{
+    font-size: 16px;
+    height: 32px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 5px;
+ }
+
+.set-grade .item-radio .item-content{
+    padding-left: 30px;
+    padding-right: 0;
+    white-space: inherit;
+}
+.set-grade .ion-checkmark{
+    left: 0;
+    padding:14px 0;
+}
+.set-grade .disable-pointer-events{
+    background-image: url('../../../img/game_club/radio.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 0 24px;
+}
+.set-grade .item-radio input:checked + .radio-content .item-content{
+    background: #ffffff;
+}
+.set-grade .ion-checkmark:before{
+    background-image: url('../../../img/game_club/radio_checked.png');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 0 10px;
+    content: "";
+    width: 22px;
+    height: 35px;
+}
+.set-grade .item{
+    border-left: none;
+    border-right: none;
+    white-space: normal;
+}
+.set-grade .item:nth-of-type(1){
+    border-top: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.set_grade_desc {
+    width: 100%;
+    height: 52px;
+    padding: 11px 0;
+    border-bottom: 1px solid #E2E2E1;
+    position: relative;
+}
+.set_grade_desc img{
+    width: 35px;
+    margin-top: 3px;
+}
+.set_grade_desc span{
+    display: block;
+    position: absolute;
+    top: 18px;
+    margin-left: 40px;
+    line-height: 16px;
+    font-size: 14px;
+    height:40px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}

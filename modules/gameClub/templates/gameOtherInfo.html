@@ -1,0 +1,14 @@
+<ion-modal-view>
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="closeModal()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>比赛其他信息</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="other-info">
+            <textarea ng-model="gameInfo.remark" placeholder="竞赛规程、注意事项、俱乐部须知等"></textarea>
+        </div>
+    </ion-content>
+    <div class="choice-project-btn" ng-click="closeModal()">确定</div>
+</ion-modal-view>

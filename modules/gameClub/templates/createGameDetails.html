@@ -1,0 +1,56 @@
+<ion-view ng-controller="createGameDetailsCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <!--<div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>-->
+        <span>管理比赛</span>
+    </ion-header-bar>
+    <ion-content>
+        <div class="no-create-game" ng-if="gameLists.length == 0">
+            <div class="no-game-title">
+                    <span>
+                      <img src="img/game_club/xiaoren.png"/>
+                    </span>
+            </div>
+            <p class="no-friend">您还没有可以管理的比赛</p>
+        </div>
+        <div class="game-lists-myR" ng-if="gameLists.length != 0">
+            <div class="game-list-myR" ng-repeat="gameList in gameLists">
+                <div ng-click="toGroupDetails(gameList.competitionId)">
+                    <div class="poster-myR">
+                        <img src="{{gameList.banner}}"/>
+                    </div>
+                    <div ng-if = "gameList.status == 3" class="game-status-myR">
+                        <img src="img/home/game_status3.png"/>
+                        <span>报名中</span>
+                    </div>
+                    <div ng-if = "gameList.status == 1" class="game-status-myR">
+                        <img src="img/home/game_status2.png"/>
+                        <span>进行中</span>
+                    </div>
+                    <div ng-if = "gameList.status == 5" class="game-status-myR">
+                        <img src="img/home/game_status1.png"/>
+                        <span>已结束</span>
+                    </div>
+                    <div class="game-desc-myR">
+                        <h3>{{gameList.competitionName}}</h3>
+                        <p>比赛时间： {{gameList.beginDate|date:'MM.dd HH:mm'}}-{{gameList.endDate|date:'MM.dd HH:mm'}}</p>
+                        <p>项目设置：{{gameList.projectName}}</p>
+                        <p>比赛地点：{{gameList.stadiumName}}</p>
+                    </div>
+                </div>
+                <div class="project-myR">
+                    <div class="project-myR-btn">
+                        <span ng-show="gameList.operation.enableAddApply" ng-click="toAddPartner(gameList.projectId,gameList.competitionId)">代报名</span>
+                        <span ng-show="gameList.operation.enableSubGroup" ng-click="toGrouping(gameList.projectId)">分组</span>
+                        <span ng-show="gameList.operation.enableAddScore" ng-click="addScore(gameList.projectId)">登记比分</span>
+                        <span ng-show="gameList.operation.enableAddReferee" ng-click="toReferee(gameList.competitionId)">添加裁判</span>
+                        <span ng-show="gameList.operation.enableQueryScore" ng-click="addScore(gameList.projectId)">查看比分</span>
+                        <span ng-show="gameList.operation.enableQueryScore" ng-click="getRank(gameList.projectId)">查看排名</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ion-infinite-scroll ng-if="hasmore" on-infinite="loadMore()" immediate-check="false" distance="5%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

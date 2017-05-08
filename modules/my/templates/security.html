@@ -1,0 +1,15 @@
+<ion-view ng-controller="securityCtrl">
+    <ion-header-bar align-title="center" class="bar-positive">
+        <div on-tap="goBack()">
+            <img src="img/back.gif"/>
+        </div>
+        <span>账户管理</span>
+        <a href="{{myUrl}}"><img src="img/btn-home.gif"/></a>
+    </ion-header-bar>
+    <ion-content>
+        <div class="change-mobile" ng-click="toVerifyIdentity()">
+            <span>修改绑定手机号</span>
+            <img src="img/next-page.gif"/>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,128 @@
+
+<div class="project-info" ng-show="projectCategory ==2">
+    <ul>
+        <li class="mp-info">
+            <div class="photo">
+                <span class="img1">
+                    <img class="img2" src="{{applyerInfo.avatar}}">
+                </span>
+            </div>
+            <span class="name">
+                {{applyerInfo.applyerName}}
+                <span class="sex-p" ng-show="applyerInfo.age >= 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/icon-boy.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/icon-girl.png">
+                    <i>{{applyerInfo.age}}</i>
+                </span>
+                <span class="sex-pm" ng-show="applyerInfo.age < 0">
+                    <img ng-show="applyerInfo.gender == 1" src="img/home/man.png">
+                    <img ng-show="applyerInfo.gender == 0" src="img/home/femal.png">
+                </span>
+            </span>
+            <div class="level">
+                <span ng-show="applyerInfo.singleLevel == '风级'" class="wind">单打<img src="img/wind-white.gif"/></span>
+                <span ng-show="applyerInfo.singleLevel == '林级'" class="forest">单打<img src="img/forest-white.gif"/></span>
+                <span ng-show="applyerInfo.singleLevel == '火级'" class="fire">单打<img src="img/fire-white.gif"/></span>
+                <span ng-show="applyerInfo.singleLevel == '山级'" class="mount">单打<img src="img/mount-white.gif"/></span>
+                <span ng-show="applyerInfo.doubleLevel == '风级'" class="wind">双打<img src="img/wind-white.gif"/></span>
+                <span ng-show="applyerInfo.doubleLevel == '林级'" class="forest">双打<img src="img/forest-white.gif"/></span>
+                <span ng-show="applyerInfo.doubleLevel == '火级'" class="fire">双打<img src="img/fire-white.gif"/></span>
+                <span ng-show="applyerInfo.doubleLevel == '山级'" class="mount">双打<img src="img/mount-white.gif"/></span>
+
+            </div>
+
+        </li>
+        <li ng-show="applyerInfo.cerNumber != null && applyerInfo.cerNumber != ''">
+            <span>证件号码</span>
+            <span>{{applyerInfo.cerNumber}}</span>
+        </li>
+        <li>
+            <span>手机号码</span>
+            <span>{{applyerInfo.mobile}}</span>
+        </li>
+    </ul>
+    <div class="project-info-btn" ng-click="toUserReg()" ng-if="applyerInfo.applyer && !afterApplyDate">
+        修改
+        <img src="img/home/edit_btn.png"/>
+    </div>
+</div>
+<div class="project-info" ng-show="projectCategory ==3">
+    <ul>
+        <li>
+            <span>队伍名称</span>
+            <span>{{applyerInfo.teamName}}</span>
+        </li>
+    </ul>
+    <div class="project-info-btn" ng-click="changeInfo1()" ng-if="applyerInfo.applyer && !afterApplyDate">
+        修改
+        <img src="img/home/edit_btn.png"/>
+    </div>
+</div>
+<div class="project-info" ng-show="projectCategory ==3">
+    <ul style="width: 100%">
+        <li>
+            <span>领队姓名</span>
+            <span>{{applyerInfo.applyerName}}</span>
+        </li>
+        <li>
+            <span>领队电话</span>
+            <span>{{applyerInfo.mobile}}</span>
+        </li>
+    </ul>
+    <div class="project-info-btn" ng-click="changeLeader(competitionId,orderId)" ng-if="applyerInfo.applyer">
+        转让领队
+        <!--<img src="img/home/edit_btn.png"/>-->
+    </div>
+</div>
+<div class="project-info" ng-show="projectCategory ==3 && applyerInfo.coachName != ''">
+    <ul>
+        <li>
+            <span>教练姓名</span>
+            <span>{{applyerInfo.coachName}}</span>
+        </li>
+    </ul>
+    <div class="project-info-btn" ng-click="changeInfo3()" ng-if="applyerInfo.applyer && !afterApplyDate">
+        修改
+        <img src="img/home/edit_btn.png"/>
+    </div>
+</div>
+<div class="kl_2"></div>
+<div class="project-info">
+    <ul>
+        <li ng-show="projectInfo.groupName != '不分组' && projectInfo.groupName != null && projectInfo.groupName != ''">
+            <span>参赛组别</span>
+            <span>{{projectInfo.groupName}}</span>
+        </li>
+        <li ng-show="projectInfo.className != '无级' && projectInfo.className != null && projectInfo.className != ''">
+            <span>参赛级别</span>
+            <span>{{projectInfo.className}}</span>
+        </li>
+        <li>
+            <span>参赛项目</span>
+            <span>{{projectInfo.name}}</span>
+        </li>
+    </ul>
+    <div class="project-info-btn" ng-click="toSelectedProject()" ng-if="applyerInfo.applyer && projectCategory !=3 && !afterApplyDate">
+        修改
+        <img src="img/home/edit_btn.png"/>
+    </div>
+</div>
+<div class="kl_2"></div>
+<div class="project-info">
+    <ul>
+        <li>
+            <span>报名费</span>
+            <span>￥{{applyerInfo.price}}（{{progressInfo.payStatus}}）</span>
+        </li>
+    </ul>
+</div>
+<div class="kl_2"></div>
+<div class="project-info">
+    <ul>
+        <li ng-show="progressInfo.drawlogResult != ''">
+            <span>抽签结果</span>
+            <span>{{progressInfo.drawlogResult}}</span>
+        </li>
+    </ul>
+</div>
+<div class="kl_3"></div>
